@@ -2,6 +2,8 @@
 
 Seed data and a small React app for the Lichess broadcast of the 2026 FIDE Candidates Open.
 
+License: GPL-3.0. The live analysis feature uses a bundled Stockfish browser build in `vendor/stockfish`.
+
 Current snapshot date: 2026-03-29
 
 Files:
