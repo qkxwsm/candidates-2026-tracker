@@ -1,41 +1,65 @@
 {
   "event": "FIDE Candidates 2026",
   "division": "Women",
-  "snapshot_date": "2026-03-29",
+  "snapshot_date": "2026-03-30",
   "source": "https://lichess.org/broadcast/fide-candidates-2026-women/xj4qM8Nw",
   "website": "https://candidates2026.fide.com/",
   "players": [
     {
       "name": "Divya Deshmukh",
-      "rating": 2497
+      "fide_id": 35006916,
+      "rating": 2497,
+      "rapid_rating": 2416,
+      "blitz_rating": 2351
     },
     {
       "name": "Muzychuk, Anna",
-      "rating": 2522
+      "fide_id": 14111330,
+      "rating": 2522,
+      "rapid_rating": 2398,
+      "blitz_rating": 2400
     },
     {
       "name": "Vaishali, Rameshbabu",
-      "rating": 2470
+      "fide_id": 5091756,
+      "rating": 2470,
+      "rapid_rating": 2387,
+      "blitz_rating": 2371
     },
     {
       "name": "Assaubayeva, Bibisara",
-      "rating": 2516
+      "fide_id": 13708694,
+      "rating": 2516,
+      "rapid_rating": 2439,
+      "blitz_rating": 2457
     },
     {
       "name": "Goryachkina, Aleksandra",
-      "rating": 2534
+      "fide_id": 4147103,
+      "rating": 2534,
+      "rapid_rating": 2499,
+      "blitz_rating": 2424
     },
     {
       "name": "Lagno, Kateryna",
-      "rating": 2508
+      "fide_id": 14109336,
+      "rating": 2508,
+      "rapid_rating": 2435,
+      "blitz_rating": 2414
     },
     {
       "name": "Zhu, Jiner",
-      "rating": 2578
+      "fide_id": 8608059,
+      "rating": 2578,
+      "rapid_rating": 2479,
+      "blitz_rating": 2411
     },
     {
       "name": "Tan, Zhongyi",
-      "rating": 2535
+      "fide_id": 8603642,
+      "rating": 2535,
+      "rapid_rating": 2502,
+      "blitz_rating": 2424
     }
   ],
   "rounds": [

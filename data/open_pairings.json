@@ -1,40 +1,65 @@
 {
-  "event": "FIDE Candidates 2026: Open",
-  "snapshot_date": "2026-03-29",
+  "event": "FIDE Candidates 2026",
+  "division": "Open",
+  "snapshot_date": "2026-03-30",
   "source": "https://lichess.org/broadcast/fide-candidates-2026-open/BLA70Vds",
   "website": "https://candidates2026.fide.com/",
   "players": [
     {
       "name": "Caruana, Fabiano",
-      "rating": 2795
+      "fide_id": 2020009,
+      "rating": 2795,
+      "rapid_rating": 2727,
+      "blitz_rating": 2769
     },
     {
       "name": "Nakamura, Hikaru",
-      "rating": 2810
+      "fide_id": 2016192,
+      "rating": 2810,
+      "rapid_rating": 2742,
+      "blitz_rating": 2838
     },
     {
       "name": "Praggnanandhaa R",
-      "rating": 2741
+      "fide_id": 25059530,
+      "rating": 2741,
+      "rapid_rating": 2663,
+      "blitz_rating": 2698
     },
     {
       "name": "Giri, Anish",
-      "rating": 2753
+      "fide_id": 24116068,
+      "rating": 2753,
+      "rapid_rating": 2689,
+      "blitz_rating": 2666
     },
     {
       "name": "Bluebaum, Matthias",
-      "rating": 2698
+      "fide_id": 24651516,
+      "rating": 2698,
+      "rapid_rating": 2587,
+      "blitz_rating": 2634
     },
     {
       "name": "Wei, Yi",
-      "rating": 2754
+      "fide_id": 8603405,
+      "rating": 2754,
+      "rapid_rating": 2726,
+      "blitz_rating": 2698
     },
     {
       "name": "Sindarov, Javokhir",
-      "rating": 2745
+      "fide_id": 14205483,
+      "rating": 2745,
+      "rapid_rating": 2727,
+      "blitz_rating": 2662
     },
     {
       "name": "Esipenko, Andrey",
-      "rating": 2698
+      "fide_id": 24175439,
+      "rating": 2698,
+      "rapid_rating": 2657,
+      "blitz_rating": 2652
     }
   ],
   "rounds": [

@@ -7,7 +7,7 @@ const WHITE_ADVANTAGE_ELO = 35;
 const DRAW_RATE_AT_EQUAL = 0.5;
 const DRAW_DECAY_ELO = 300;
 const ROUND_ZERO_KEY = "__round0__";
-const SIMULATION_CACHE_VERSION = "v2";
+const SIMULATION_CACHE_VERSION = "v3";
 const FORM_PRIOR_GAMES = 6;
 const FORM_MAX_ELO_SHIFT = 120;
 const PLAYER_PALETTE = [
@@ -106,6 +106,205 @@ function probabilityModel(white, black) {
     drawProbability,
     blackWinProbability,
   };
+}
+
+function shuffle(items) {
+  const copy = [...items];
+
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
+  }
+
+  return copy;
+}
+
+function playerRatingForControl(player, control) {
+  if (control === "rapid") {
+    return player.rapidRating ?? player.rating;
+  }
+
+  if (control === "blitz") {
+    return player.blitzRating ?? player.rapidRating ?? player.rating;
+  }
+
+  return player.rating;
+}
+
+function playerForControl(player, control) {
+  return {
+    ...player,
+    rating: playerRatingForControl(player, control),
+  };
+}
+
+function simulateGame(white, black, control) {
+  const probabilities = probabilityModel(
+    playerForControl(white, control),
+    playerForControl(black, control)
+  );
+  const draw = Math.random();
+
+  if (draw < probabilities.whiteWinProbability) {
+    return [1, 0];
+  }
+
+  if (draw < probabilities.whiteWinProbability + probabilities.drawProbability) {
+    return [0.5, 0.5];
+  }
+
+  return [0, 1];
+}
+
+function simulateTwoGameMiniMatch(playerA, playerB, control) {
+  const scores = new Map([
+    [playerA.name, 0],
+    [playerB.name, 0],
+  ]);
+  const firstWhite = Math.random() < 0.5 ? playerA : playerB;
+  const firstBlack = firstWhite.name === playerA.name ? playerB : playerA;
+  const games = [
+    [firstWhite, firstBlack],
+    [firstBlack, firstWhite],
+  ];
+
+  games.forEach(([white, black]) => {
+    const [whiteScore, blackScore] = simulateGame(white, black, control);
+    scores.set(white.name, scores.get(white.name) + whiteScore);
+    scores.set(black.name, scores.get(black.name) + blackScore);
+  });
+
+  return scores;
+}
+
+function suddenDeathWinProbability(playerA, playerB, control) {
+  const aWhite = probabilityModel(
+    playerForControl(playerA, control),
+    playerForControl(playerB, control)
+  );
+  const bWhite = probabilityModel(
+    playerForControl(playerB, control),
+    playerForControl(playerA, control)
+  );
+  const aOneGame =
+    0.5 * aWhite.whiteWinProbability + 0.5 * bWhite.blackWinProbability;
+  const drawOneGame = 0.5 * aWhite.drawProbability + 0.5 * bWhite.drawProbability;
+  const decisiveShare = Math.max(1 - drawOneGame, 1e-9);
+
+  return aOneGame / decisiveShare;
+}
+
+function simulateSuddenDeathMatch(playerA, playerB, control) {
+  return Math.random() < suddenDeathWinProbability(playerA, playerB, control)
+    ? playerA
+    : playerB;
+}
+
+function simulateRoundRobin(players, control) {
+  const scores = new Map(players.map((player) => [player.name, 0]));
+
+  for (let leftIndex = 0; leftIndex < players.length; leftIndex += 1) {
+    for (let rightIndex = leftIndex + 1; rightIndex < players.length; rightIndex += 1) {
+      const left = players[leftIndex];
+      const right = players[rightIndex];
+      const white = Math.random() < 0.5 ? left : right;
+      const black = white.name === left.name ? right : left;
+      const [whiteScore, blackScore] = simulateGame(white, black, control);
+
+      scores.set(white.name, scores.get(white.name) + whiteScore);
+      scores.set(black.name, scores.get(black.name) + blackScore);
+    }
+  }
+
+  return scores;
+}
+
+function leadersFromScores(players, scores) {
+  let bestScore = -Infinity;
+
+  players.forEach((player) => {
+    bestScore = Math.max(bestScore, scores.get(player.name) ?? 0);
+  });
+
+  return players.filter((player) => (scores.get(player.name) ?? 0) === bestScore);
+}
+
+function simulateKnockout(players, control) {
+  let field = shuffle(players);
+
+  while (field.length > 1) {
+    const nextRound = [];
+
+    if (field.length % 2 === 1) {
+      nextRound.push(field.pop());
+    }
+
+    for (let index = 0; index < field.length; index += 2) {
+      nextRound.push(
+        simulateSuddenDeathMatch(field[index], field[index + 1], control)
+      );
+    }
+
+    field = shuffle(nextRound);
+  }
+
+  return field[0];
+}
+
+function resolveFirstPlaceWinner(tiedPlayers) {
+  if (tiedPlayers.length === 1) {
+    return tiedPlayers[0].name;
+  }
+
+  if (tiedPlayers.length === 2) {
+    const rapidScores = simulateTwoGameMiniMatch(
+      tiedPlayers[0],
+      tiedPlayers[1],
+      "rapid"
+    );
+    const rapidLeaders = leadersFromScores(tiedPlayers, rapidScores);
+
+    if (rapidLeaders.length === 1) {
+      return rapidLeaders[0].name;
+    }
+
+    const blitzScores = simulateTwoGameMiniMatch(
+      tiedPlayers[0],
+      tiedPlayers[1],
+      "blitz"
+    );
+    const blitzLeaders = leadersFromScores(tiedPlayers, blitzScores);
+
+    if (blitzLeaders.length === 1) {
+      return blitzLeaders[0].name;
+    }
+
+    return simulateSuddenDeathMatch(
+      tiedPlayers[0],
+      tiedPlayers[1],
+      "blitz"
+    ).name;
+  }
+
+  const rapidLeaders = leadersFromScores(
+    tiedPlayers,
+    simulateRoundRobin(tiedPlayers, "rapid")
+  );
+
+  if (rapidLeaders.length === 1) {
+    return rapidLeaders[0].name;
+  }
+
+  const blitzLeaders = leadersFromScores(
+    rapidLeaders,
+    simulateRoundRobin(rapidLeaders, "blitz")
+  );
+
+  if (blitzLeaders.length === 1) {
+    return blitzLeaders[0].name;
+  }
+
+  return simulateKnockout(blitzLeaders, "blitz").name;
 }
 
 function expectedScoreForPlayer(player, opponent, isWhite, formDelta = 0) {
@@ -225,6 +424,25 @@ function buildSimulation(data, completedRoundCount) {
   const currentScores = new Map(data.players.map((player) => [player.name, 0]));
   const remainingGames = [];
   const posteriorForm = inferPosteriorForm(data, completedRoundCount, playerLookup);
+  const adjustedPlayers = new Map(
+    data.players.map((player) => {
+      const formDelta = posteriorForm.get(player.name) ?? 0;
+      return [
+        player.name,
+        {
+          ...player,
+          rating: player.rating + formDelta,
+          rapidRating: (player.rapid_rating ?? player.rapidRating ?? player.rating) + formDelta,
+          blitzRating:
+            (player.blitz_rating ??
+              player.blitzRating ??
+              player.rapid_rating ??
+              player.rapidRating ??
+              player.rating) + formDelta,
+        },
+      ];
+    })
+  );
 
   data.rounds.forEach((round, roundIndex) => {
     round.pairings.forEach((game) => {
@@ -239,16 +457,8 @@ function buildSimulation(data, completedRoundCount) {
       }
 
       remainingGames.push({
-        white: {
-          ...playerLookup.get(game.white),
-          rating:
-            playerLookup.get(game.white).rating + (posteriorForm.get(game.white) ?? 0),
-        },
-        black: {
-          ...playerLookup.get(game.black),
-          rating:
-            playerLookup.get(game.black).rating + (posteriorForm.get(game.black) ?? 0),
-        },
+        white: adjustedPlayers.get(game.white),
+        black: adjustedPlayers.get(game.black),
       });
     });
   });
@@ -293,10 +503,17 @@ function buildSimulation(data, completedRoundCount) {
         score: scores.get(player.name),
       }))
       .sort((left, right) => right.score - left.score || left.name.localeCompare(right.name));
+    const firstPlaceScore = ranking[0]?.score ?? 0;
+    const firstPlaceGroup = ranking
+      .filter((entry) => entry.score === firstPlaceScore)
+      .map((entry) => adjustedPlayers.get(entry.name));
+    const firstPlaceWinner = resolveFirstPlaceWinner(firstPlaceGroup);
 
     ranking.forEach((entry) => {
       stats.get(entry.name).expectedScoreSum += entry.score;
     });
+
+    stats.get(firstPlaceWinner).winShares += 1;
 
     let index = 0;
     while (index < ranking.length) {
@@ -318,10 +535,6 @@ function buildSimulation(data, completedRoundCount) {
 
         for (let rank = startRank; rank <= endRank; rank += 1) {
           stat.rankBuckets[rank - 1] += tieShare;
-        }
-
-        if (startRank === 1) {
-          stat.winShares += tieShare;
         }
       });
 
@@ -1159,7 +1372,7 @@ export function App() {
                   h(
                     "p",
                     { className: "model-note info-paragraph" },
-                    "Probabilities are generated using 100,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, a draw model that starts at 50% for equal-strength players and decays as the rating gap grows, and a posterior form adjustment inferred from completed games."
+                    "Probabilities are generated using 100,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, a draw model that starts at 50% for equal-strength players and decays as the rating gap grows, a posterior form adjustment inferred from completed games, and official public FIDE rapid and blitz ratings for first-place playoff simulations."
                   ),
                   h(
                     "div",

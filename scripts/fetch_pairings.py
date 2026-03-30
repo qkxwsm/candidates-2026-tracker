@@ -9,6 +9,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
+PROFILE_RATING_PATTERNS = {
+    "rating": re.compile(
+        r'<div class="profile-standart profile-game .*?<p>(\d+)</p>.*?STANDARD',
+        re.DOTALL,
+    ),
+    "rapid_rating": re.compile(
+        r'<div class="profile-rapid profile-game .*?<p>(\d+)</p>.*?RAPID',
+        re.DOTALL,
+    ),
+    "blitz_rating": re.compile(
+        r'<div class="profile-blitz profile-game .*?<p>(\d+)</p>.*?BLITZ',
+        re.DOTALL,
+    ),
+}
 
 TOURS = {
     "open": {
@@ -47,6 +61,21 @@ def normalize_result(result: str | None) -> str | None:
     return result
 
 
+def fetch_fide_ratings(fide_id: int | None) -> dict:
+    if not fide_id:
+        return {}
+
+    profile_html = fetch(f"https://ratings.fide.com/profile/{fide_id}")
+    ratings = {}
+
+    for key, pattern in PROFILE_RATING_PATTERNS.items():
+        match = pattern.search(profile_html)
+        if match:
+            ratings[key] = int(match.group(1))
+
+    return ratings
+
+
 def fetch_tour(config: dict) -> dict:
     initial = page_data(fetch(config["start_url"]))
     relay = initial["relay"]
@@ -58,10 +87,15 @@ def fetch_tour(config: dict) -> dict:
             name = player["name"]
             if name not in seen:
                 seen.add(name)
+                fide_id = player.get("fideId")
+                fide_ratings = fetch_fide_ratings(fide_id)
                 players.append(
                     {
                         "name": name,
-                        "rating": player.get("rating"),
+                        "fide_id": fide_id,
+                        "rating": fide_ratings.get("rating", player.get("rating")),
+                        "rapid_rating": fide_ratings.get("rapid_rating"),
+                        "blitz_rating": fide_ratings.get("blitz_rating"),
                     }
                 )
 
