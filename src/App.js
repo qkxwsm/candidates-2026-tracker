@@ -2,12 +2,12 @@ const { React } = window;
 const { useEffect, useMemo, useState } = React;
 const h = React.createElement;
 
-const SIMULATION_COUNT = 100000;
+const SIMULATION_COUNT = 1000000;
 const WHITE_ADVANTAGE_ELO = 35;
 const DRAW_RATE_AT_EQUAL = 0.5;
 const DRAW_DECAY_ELO = 300;
 const ROUND_ZERO_KEY = "__round0__";
-const SIMULATION_CACHE_VERSION = "v3";
+const SIMULATION_CACHE_VERSION = "v4";
 const FORM_PRIOR_GAMES = 6;
 const FORM_MAX_ELO_SHIFT = 120;
 const PLAYER_PALETTE = [
@@ -1372,7 +1372,7 @@ export function App() {
                   h(
                     "p",
                     { className: "model-note info-paragraph" },
-                    "Probabilities are generated using 100,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, a draw model that starts at 50% for equal-strength players and decays as the rating gap grows, a posterior form adjustment inferred from completed games, and official public FIDE rapid and blitz ratings for first-place playoff simulations."
+                    "Probabilities are generated using 1,000,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, a draw model that starts at 50% for equal-strength players and decays as the rating gap grows, a posterior form adjustment inferred from completed games, and official public FIDE rapid and blitz ratings for first-place playoff simulations."
                   ),
                   h(
                     "div",
