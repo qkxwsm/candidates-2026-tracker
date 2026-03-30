@@ -59,7 +59,7 @@
       "fide_id": 24175439,
       "rating": 2698,
       "rapid_rating": 2657,
-      "blitz_rating": 2652
+      "blitz_rating": 2651
     }
   ],
   "rounds": [
@@ -117,7 +117,7 @@
           "board": 2,
           "white": "Giri, Anish",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "AtOYVAjA",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/AtOYVAjA"
         },

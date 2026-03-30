@@ -45,7 +45,7 @@
       "fide_id": 14109336,
       "rating": 2508,
       "rapid_rating": 2435,
-      "blitz_rating": 2414
+      "blitz_rating": 2415
     },
     {
       "name": "Zhu, Jiner",
@@ -109,7 +109,7 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Tan, Zhongyi",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "y6tctIgJ",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-2/EMkf0c6e/y6tctIgJ"
         },
@@ -125,7 +125,7 @@
           "board": 3,
           "white": "Assaubayeva, Bibisara",
           "black": "Goryachkina, Aleksandra",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "HThmFMFX",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-2/EMkf0c6e/HThmFMFX"
         },
