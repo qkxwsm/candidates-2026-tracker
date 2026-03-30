@@ -610,13 +610,15 @@ function buildRoundSimulations(data) {
   return roundSnapshots;
 }
 
-function buildWinProbabilityHistory(data, roundSnapshots) {
-  const completedSnapshots = roundSnapshots.filter((snapshot) => snapshot.isCompletedSnapshot);
+function buildWinProbabilityHistory(data, roundSnapshots, maxRoundNumber) {
+  const visibleSnapshots = roundSnapshots.filter(
+    (snapshot) => snapshot.roundNumber <= maxRoundNumber
+  );
 
   return data.players.map((player, index) => ({
     name: player.name,
     color: playerColor(player.name, index),
-    points: completedSnapshots.map((snapshot, index) => ({
+    points: visibleSnapshots.map((snapshot, index) => ({
       x: index,
       label: snapshot.label,
       value:
@@ -1214,6 +1216,7 @@ export function App() {
     !isRoundCompleted(data.rounds[completedRounds.length])
       ? data.rounds[completedRounds.length].name
       : null;
+  const forecastFrontierRoundNumber = completedRounds.length + (liveRoundName ? 1 : 0);
 
   const playersByRating = useMemo(() => {
     if (!data) return [];
@@ -1445,17 +1448,26 @@ export function App() {
     if (!data || !forecastSnapshots) return null;
     return {
       division: selectedDivision,
-      series: buildWinProbabilityHistory(data, forecastSnapshots),
+      series: buildWinProbabilityHistory(
+        data,
+        forecastSnapshots,
+        forecastFrontierRoundNumber
+      ),
     };
-  }, [data, forecastSnapshots, selectedDivision]);
+  }, [data, forecastFrontierRoundNumber, forecastSnapshots, selectedDivision]);
 
   const forecastRows = useMemo(() => {
     if (!forecastSnapshots) return null;
+    const selectedRoundNumber = Math.max(activeRoundIndex + 1, 0);
+    const effectiveRoundNumber = Math.min(
+      selectedRoundNumber,
+      forecastFrontierRoundNumber
+    );
     const snapshot = forecastSnapshots.find(
-      (entry) => entry.roundNumber === Math.max(activeRoundIndex + 1, 0)
+      (entry) => entry.roundNumber === effectiveRoundNumber
     );
     return snapshot ? mergeSimulationTables([], snapshot.results) : null;
-  }, [activeRoundIndex, forecastSnapshots]);
+  }, [activeRoundIndex, forecastFrontierRoundNumber, forecastSnapshots]);
 
   const selectedRoundWinRows = useMemo(() => {
     if (!forecastRows) return null;
