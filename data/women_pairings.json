@@ -1,0 +1,463 @@
+{
+  "event": "FIDE Candidates 2026",
+  "division": "Women",
+  "snapshot_date": "2026-03-29",
+  "source": "https://lichess.org/broadcast/fide-candidates-2026-women/xj4qM8Nw",
+  "website": "https://candidates2026.fide.com/",
+  "players": [
+    {
+      "name": "Divya Deshmukh",
+      "rating": 2497
+    },
+    {
+      "name": "Muzychuk, Anna",
+      "rating": 2522
+    },
+    {
+      "name": "Vaishali, Rameshbabu",
+      "rating": 2470
+    },
+    {
+      "name": "Assaubayeva, Bibisara",
+      "rating": 2516
+    },
+    {
+      "name": "Goryachkina, Aleksandra",
+      "rating": 2534
+    },
+    {
+      "name": "Lagno, Kateryna",
+      "rating": 2508
+    },
+    {
+      "name": "Zhu, Jiner",
+      "rating": 2578
+    },
+    {
+      "name": "Tan, Zhongyi",
+      "rating": 2535
+    }
+  ],
+  "rounds": [
+    {
+      "name": "Round 1",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-1/diPdGkEA",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Divya Deshmukh",
+          "black": "Muzychuk, Anna",
+          "result": "1/2-1/2"
+        },
+        {
+          "board": 2,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Assaubayeva, Bibisara",
+          "result": "1/2-1/2"
+        },
+        {
+          "board": 3,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Lagno, Kateryna",
+          "result": "1/2-1/2"
+        },
+        {
+          "board": 4,
+          "white": "Zhu, Jiner",
+          "black": "Tan, Zhongyi",
+          "result": "1/2-1/2"
+        }
+      ]
+    },
+    {
+      "name": "Round 2",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-2/EMkf0c6e",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Lagno, Kateryna",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Divya Deshmukh",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 3",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-3/2qEm9CH3",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Zhu, Jiner",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Tan, Zhongyi",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 4",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-4/MDv2BlCp",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Divya Deshmukh",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 5",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-5/VAELuM6E",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Zhu, Jiner",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Tan, Zhongyi",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Lagno, Kateryna",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 6",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-6/hmGcNp3P",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Zhu, Jiner",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Tan, Zhongyi",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Lagno, Kateryna",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 7",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-7/QqBr2Kpr",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Divya Deshmukh",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 8",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-8/R0BP4Jy4",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Lagno, Kateryna",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Tan, Zhongyi",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 9",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-9/6Ukl08Ir",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Tan, Zhongyi",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Zhu, Jiner",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 10",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-10/Es2IjSwE",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Divya Deshmukh",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Lagno, Kateryna",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 11",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-11/fDNFUpG9",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Lagno, Kateryna",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Tan, Zhongyi",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Zhu, Jiner",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 12",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-12/u3pemMHq",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Divya Deshmukh",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 13",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-13/o7DgltDn",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Assaubayeva, Bibisara",
+          "black": "Muzychuk, Anna",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Lagno, Kateryna",
+          "black": "Divya Deshmukh",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Tan, Zhongyi",
+          "black": "Vaishali, Rameshbabu",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Zhu, Jiner",
+          "black": "Goryachkina, Aleksandra",
+          "result": "*"
+        }
+      ]
+    },
+    {
+      "name": "Round 14",
+      "url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-14/dllZX7eJ",
+      "pairings": [
+        {
+          "board": 1,
+          "white": "Muzychuk, Anna",
+          "black": "Zhu, Jiner",
+          "result": "*"
+        },
+        {
+          "board": 2,
+          "white": "Goryachkina, Aleksandra",
+          "black": "Tan, Zhongyi",
+          "result": "*"
+        },
+        {
+          "board": 3,
+          "white": "Vaishali, Rameshbabu",
+          "black": "Lagno, Kateryna",
+          "result": "*"
+        },
+        {
+          "board": 4,
+          "white": "Divya Deshmukh",
+          "black": "Assaubayeva, Bibisara",
+          "result": "*"
+        }
+      ]
+    }
+  ]
+}
