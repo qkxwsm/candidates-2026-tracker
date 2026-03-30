@@ -327,7 +327,7 @@ def resolve_first_place_winners(order: np.ndarray, sorted_scores: np.ndarray, ra
     return winners
 
 
-def rank_bucket_counts(order: np.ndarray, sorted_scores: np.ndarray) -> np.ndarray:
+def rank_bucket_counts(order: np.ndarray, sorted_scores: np.ndarray, winners: np.ndarray) -> np.ndarray:
     batch_size, player_count = order.shape
     group_start = np.zeros((batch_size, player_count), dtype=np.int64)
     group_end = np.zeros((batch_size, player_count), dtype=np.int64)
@@ -357,6 +357,25 @@ def rank_bucket_counts(order: np.ndarray, sorted_scores: np.ndarray) -> np.ndarr
             0.0,
         )
         np.add.at(bucket_counts[:, rank_index], order.ravel(), contribution.ravel())
+
+    top_tie_sizes = np.sum(sorted_scores == sorted_scores[:, [0]], axis=1)
+
+    for row_index in np.where(top_tie_sizes > 1)[0]:
+        tie_size = int(top_tie_sizes[row_index])
+        tied_players = order[row_index, :tie_size]
+        winner = int(winners[row_index])
+        equal_share = 1.0 / tie_size
+
+        for player_index in tied_players:
+            bucket_counts[player_index, :tie_size] -= equal_share
+
+        bucket_counts[winner, 0] += 1.0
+
+        remaining_players = tied_players[tied_players != winner]
+        if len(remaining_players):
+            remaining_share = 1.0 / len(remaining_players)
+            for player_index in remaining_players:
+                bucket_counts[player_index, 1:tie_size] += remaining_share
 
     return bucket_counts
 
@@ -436,7 +455,7 @@ def build_snapshot(data: dict, completed_round_count: int) -> dict:
         sorted_scores = np.take_along_axis(scores, order, axis=1)
         winners = resolve_first_place_winners(order, sorted_scores, rapid_ratings, blitz_ratings, rng)
         win_counts += np.bincount(winners, minlength=player_count)
-        rank_buckets += rank_bucket_counts(order, sorted_scores)
+        rank_buckets += rank_bucket_counts(order, sorted_scores, winners)
         processed += batch_size
 
     results = []
