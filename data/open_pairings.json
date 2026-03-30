@@ -109,7 +109,7 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Nakamura, Hikaru",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "q1PvC2Uo",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/q1PvC2Uo"
         },
@@ -125,7 +125,7 @@
           "board": 3,
           "white": "Wei, Yi",
           "black": "Praggnanandhaa R",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "qxEw2unq",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/qxEw2unq"
         },
@@ -133,7 +133,7 @@
           "board": 4,
           "white": "Sindarov, Javokhir",
           "black": "Bluebaum, Matthias",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "CcAexOtH",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/CcAexOtH"
         }

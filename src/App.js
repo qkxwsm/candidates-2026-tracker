@@ -9,6 +9,7 @@ const DRAW_DECAY_ELO = 300;
 const ROUND_ZERO_KEY = "__round0__";
 const SIMULATION_CACHE_VERSION = "v4";
 const LIVE_ROUND_CACHE_TTL_MS = 5 * 60 * 1000;
+const LIVE_ROUND_POLL_MS = 60 * 1000;
 const LIVE_WDL_CACHE_TTL_MS = 5 * 60 * 1000;
 const STOCKFISH_DEPTH = 12;
 const FORM_PRIOR_GAMES = 6;
@@ -1402,26 +1403,31 @@ export function App() {
     }
 
     let cancelled = false;
+    const loadLiveRound = () => {
+      fetch(`/api/live-round?roundUrl=${encodeURIComponent(sourceLiveRound.url)}`)
+        .then((response) => response.json())
+        .then((payload) => {
+          if (cancelled || payload.error) return;
+          setLiveRoundData(payload);
+          safeLocalStorageSet(
+            cacheKey,
+            JSON.stringify({
+              timestamp: Date.now(),
+              payload,
+            })
+          );
+        })
+        .catch(() => {
+          // Ignore live round fetch failures and keep the page usable.
+        });
+    };
 
-    fetch(`/api/live-round?roundUrl=${encodeURIComponent(sourceLiveRound.url)}`)
-      .then((response) => response.json())
-      .then((payload) => {
-        if (cancelled || payload.error) return;
-        setLiveRoundData(payload);
-        safeLocalStorageSet(
-          cacheKey,
-          JSON.stringify({
-            timestamp: Date.now(),
-            payload,
-          })
-        );
-      })
-      .catch(() => {
-        // Ignore live round fetch failures and keep the page usable.
-      });
+    loadLiveRound();
+    const intervalId = window.setInterval(loadLiveRound, LIVE_ROUND_POLL_MS);
 
     return () => {
       cancelled = true;
+      window.clearInterval(intervalId);
     };
   }, [sourceLiveRound]);
 
