@@ -6,6 +6,7 @@ import subprocess
 from datetime import date
 from pathlib import Path
 
+from build_forecasts import build_forecast_payload
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -28,12 +29,14 @@ TOURS = {
     "open": {
         "start_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK",
         "outfile": DATA_DIR / "open_pairings.json",
+        "forecast_outfile": DATA_DIR / "open_forecasts.json",
         "division": "Open",
         "event": "FIDE Candidates 2026",
     },
     "women": {
         "start_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-1/diPdGkEA",
         "outfile": DATA_DIR / "women_pairings.json",
+        "forecast_outfile": DATA_DIR / "women_forecasts.json",
         "division": "Women",
         "event": "FIDE Candidates 2026",
     },
@@ -138,6 +141,9 @@ def main() -> None:
         payload = fetch_tour(config)
         config["outfile"].write_text(
             json.dumps(payload, indent=2, ensure_ascii=True) + "\n"
+        )
+        config["forecast_outfile"].write_text(
+            json.dumps(build_forecast_payload(payload), indent=2, ensure_ascii=True) + "\n"
         )
 
 

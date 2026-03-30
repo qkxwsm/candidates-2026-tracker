@@ -831,19 +831,24 @@ function HistoryChart({ series }) {
 
 export function App() {
   const [datasets, setDatasets] = useState(null);
+  const [forecastPayloads, setForecastPayloads] = useState(null);
   const [selectedDivision] = useState(() => divisionFromPath(window.location.pathname));
   const [activeRound, setActiveRound] = useState("");
-  const [roundSimulations, setRoundSimulations] = useState(null);
-  const [historySeries, setHistorySeries] = useState(null);
 
   useEffect(() => {
     Promise.all([
       fetch("/data/open_pairings.json").then((response) => response.json()),
       fetch("/data/women_pairings.json").then((response) => response.json()),
-    ]).then(([openData, womenData]) => {
+      fetch("/data/open_forecasts.json").then((response) => response.json()),
+      fetch("/data/women_forecasts.json").then((response) => response.json()),
+    ]).then(([openData, womenData, openForecasts, womenForecasts]) => {
       setDatasets({
         Open: { ...openData, division: "Open", event: "FIDE Candidates 2026" },
         Women: womenData,
+      });
+      setForecastPayloads({
+        Open: openForecasts,
+        Women: womenForecasts,
       });
     });
   }, []);
@@ -914,13 +919,26 @@ export function App() {
   const showPairingScores =
     !!round && (isRoundCompleted(round) || activeRoundIndex === nextRoundIndex);
 
+  const forecastSnapshots = useMemo(() => {
+    if (!forecastPayloads) return null;
+    return forecastPayloads[selectedDivision]?.snapshots ?? null;
+  }, [forecastPayloads, selectedDivision]);
+
+  const historySeries = useMemo(() => {
+    if (!data || !forecastSnapshots) return null;
+    return {
+      division: selectedDivision,
+      series: buildWinProbabilityHistory(data, forecastSnapshots),
+    };
+  }, [data, forecastSnapshots, selectedDivision]);
+
   const forecastRows = useMemo(() => {
-    if (!roundSimulations || roundSimulations.division !== selectedDivision) return null;
-    const snapshot = roundSimulations.snapshots.find(
+    if (!forecastSnapshots) return null;
+    const snapshot = forecastSnapshots.find(
       (entry) => entry.roundNumber === Math.max(activeRoundIndex + 1, 0)
     );
     return snapshot ? mergeSimulationTables([], snapshot.results) : null;
-  }, [activeRoundIndex, roundSimulations, selectedDivision]);
+  }, [activeRoundIndex, forecastSnapshots]);
 
   const selectedRoundWinRows = useMemo(() => {
     if (!forecastRows) return null;
@@ -948,60 +966,6 @@ export function App() {
       points: player.points.filter((point) => Number(point.label) <= Math.max(activeRoundIndex + 1, 0)),
     }));
   }, [activeRoundIndex, legendSeries]);
-
-  useEffect(() => {
-    if (!data) return;
-
-    setRoundSimulations(null);
-    setHistorySeries(null);
-    const timer = window.setTimeout(() => {
-      const cacheKey = simulationCacheKey(data, selectedDivision);
-
-      try {
-        const cached = window.localStorage.getItem(cacheKey);
-        if (cached) {
-          const parsed = JSON.parse(cached);
-          setRoundSimulations({
-            division: selectedDivision,
-            snapshots: parsed.snapshots,
-          });
-          setHistorySeries({
-            division: selectedDivision,
-            series: parsed.historySeries,
-          });
-          return;
-        }
-      } catch (_error) {
-        // Ignore cache read failures and recompute below.
-      }
-
-      const snapshots = buildRoundSimulations(data);
-      const series = buildWinProbabilityHistory(data, snapshots);
-
-      try {
-        window.localStorage.setItem(
-          cacheKey,
-          JSON.stringify({
-            snapshots,
-            historySeries: series,
-          })
-        );
-      } catch (_error) {
-        // Ignore cache write failures and keep the in-memory results.
-      }
-
-      setRoundSimulations({
-        division: selectedDivision,
-        snapshots,
-      });
-      setHistorySeries({
-        division: selectedDivision,
-        series,
-      });
-    }, 0);
-
-    return () => window.clearTimeout(timer);
-  }, [data, selectedDivision]);
 
   if (!data) {
     return h(
