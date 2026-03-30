@@ -608,6 +608,13 @@ function buildTicks(minValue, maxValue, count) {
   return Array.from({ length: count }, (_, index) => minValue + step * index);
 }
 
+function divisionFromPath(pathname) {
+  const normalized = pathname.toLowerCase().replace(/\/+$/, "");
+  if (normalized.endsWith("/women")) return "Women";
+  if (normalized.endsWith("/open")) return "Open";
+  return "Open";
+}
+
 function HistoryChart({ series }) {
   const [hoveredPoint, setHoveredPoint] = useState(null);
   const width = 960;
@@ -824,15 +831,15 @@ function HistoryChart({ series }) {
 
 export function App() {
   const [datasets, setDatasets] = useState(null);
-  const [selectedDivision, setSelectedDivision] = useState("Open");
+  const [selectedDivision] = useState(() => divisionFromPath(window.location.pathname));
   const [activeRound, setActiveRound] = useState("");
   const [roundSimulations, setRoundSimulations] = useState(null);
   const [historySeries, setHistorySeries] = useState(null);
 
   useEffect(() => {
     Promise.all([
-      fetch("./data/open_pairings.json").then((response) => response.json()),
-      fetch("./data/women_pairings.json").then((response) => response.json()),
+      fetch("/data/open_pairings.json").then((response) => response.json()),
+      fetch("/data/women_pairings.json").then((response) => response.json()),
     ]).then(([openData, womenData]) => {
       setDatasets({
         Open: { ...openData, division: "Open", event: "FIDE Candidates 2026" },
@@ -1025,12 +1032,12 @@ export function App() {
           { className: "division-toggle", role: "tablist", "aria-label": "Division" },
           ...["Open", "Women"].map((division) =>
             h(
-              "button",
+              "a",
               {
                 key: division,
-                type: "button",
                 className: division === selectedDivision ? "division-tab active" : "division-tab",
-                onClick: () => setSelectedDivision(division),
+                href: division === "Open" ? "/open/" : "/women/",
+                "aria-current": division === selectedDivision ? "page" : undefined,
               },
               division
             )
