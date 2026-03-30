@@ -51,17 +51,21 @@ function simulationCacheKey(data, division) {
   ].join(":");
 }
 
-function formatResult(result) {
-  if (result === "1/2-1/2") return "1/2-1/2";
+function normalizeResult(result) {
+  if (result === "½-½") return "1/2-1/2";
   return result ?? "*";
 }
 
+function formatResult(result) {
+  return normalizeResult(result);
+}
+
 function completedGames(pairings) {
-  return pairings.filter((game) => game.result && game.result !== "*").length;
+  return pairings.filter((game) => normalizeResult(game.result) !== "*").length;
 }
 
 function isRoundCompleted(round) {
-  return round.pairings.every((game) => game.result && game.result !== "*");
+  return round.pairings.every((game) => normalizeResult(game.result) !== "*");
 }
 
 function externalLink(label, href) {
@@ -345,9 +349,10 @@ function expectedScoreForPlayer(player, opponent, isWhite, formDelta = 0) {
 }
 
 function scoreForResult(result) {
-  if (result === "1-0") return [1, 0];
-  if (result === "0-1") return [0, 1];
-  if (result === "1/2-1/2") return [0.5, 0.5];
+  const normalized = normalizeResult(result);
+  if (normalized === "1-0") return [1, 0];
+  if (normalized === "0-1") return [0, 1];
+  if (normalized === "1/2-1/2") return [0.5, 0.5];
   return [0, 0];
 }
 
@@ -442,7 +447,8 @@ function inferPosteriorForm(data, completedRoundCount, playerLookup) {
   return formMap;
 }
 
-function buildSimulation(data, completedRoundCount) {
+function buildSimulation(data, completedRoundCount, options = {}) {
+  const simulationCount = options.simulationCount ?? SIMULATION_COUNT;
   const playerLookup = new Map(data.players.map((player) => [player.name, player]));
   const currentScores = new Map(data.players.map((player) => [player.name, 0]));
   const remainingGames = [];
@@ -470,7 +476,7 @@ function buildSimulation(data, completedRoundCount) {
   data.rounds.forEach((round, roundIndex) => {
     round.pairings.forEach((game) => {
       const shouldTreatAsComplete =
-        roundIndex < completedRoundCount && game.result && game.result !== "*";
+        roundIndex < completedRoundCount && normalizeResult(game.result) !== "*";
 
       if (shouldTreatAsComplete) {
         const [whiteScore, blackScore] = scoreForResult(game.result);
@@ -500,7 +506,7 @@ function buildSimulation(data, completedRoundCount) {
     ])
   );
 
-  for (let iteration = 0; iteration < SIMULATION_COUNT; iteration += 1) {
+  for (let iteration = 0; iteration < simulationCount; iteration += 1) {
     const scores = new Map(currentScores);
 
     remainingGames.forEach((game) => {
@@ -551,15 +557,27 @@ function buildSimulation(data, completedRoundCount) {
       const tiedGroup = ranking.slice(index, groupEnd);
       const startRank = index + 1;
       const endRank = groupEnd;
-      const tieShare = 1 / tiedGroup.length;
+      if (startRank === 1 && tiedGroup.length > 1) {
+        stats.get(firstPlaceWinner).rankBuckets[0] += 1;
+        const remainingTied = tiedGroup.filter((entry) => entry.name !== firstPlaceWinner);
+        const remainingRanks = endRank - 1;
+        const tieShare = remainingRanks > 0 ? 1 / remainingTied.length : 0;
 
-      tiedGroup.forEach((entry) => {
-        const stat = stats.get(entry.name);
-
-        for (let rank = startRank; rank <= endRank; rank += 1) {
-          stat.rankBuckets[rank - 1] += tieShare;
-        }
-      });
+        remainingTied.forEach((entry) => {
+          const stat = stats.get(entry.name);
+          for (let rank = 2; rank <= endRank; rank += 1) {
+            stat.rankBuckets[rank - 1] += tieShare;
+          }
+        });
+      } else {
+        const tieShare = 1 / tiedGroup.length;
+        tiedGroup.forEach((entry) => {
+          const stat = stats.get(entry.name);
+          for (let rank = startRank; rank <= endRank; rank += 1) {
+            stat.rankBuckets[rank - 1] += tieShare;
+          }
+        });
+      }
 
       index = groupEnd;
     }
@@ -568,7 +586,7 @@ function buildSimulation(data, completedRoundCount) {
   return Array.from(stats.values())
     .map((stat) => {
       const rankDistribution = stat.rankBuckets.map(
-        (bucket) => bucket / SIMULATION_COUNT
+        (bucket) => bucket / simulationCount
       );
       const expectedRank = rankDistribution.reduce(
         (total, probability, bucketIndex) => total + probability * (bucketIndex + 1),
@@ -577,9 +595,9 @@ function buildSimulation(data, completedRoundCount) {
 
       return {
         ...stat,
-        expectedScore: stat.expectedScoreSum / SIMULATION_COUNT,
+        expectedScore: stat.expectedScoreSum / simulationCount,
         expectedRank,
-        winProbability: stat.winShares / SIMULATION_COUNT,
+        winProbability: stat.winShares / simulationCount,
         rankDistribution,
       };
     })
@@ -1184,39 +1202,115 @@ export function App() {
     return datasets[selectedDivision] ?? null;
   }, [datasets, selectedDivision]);
 
-  useEffect(() => {
-    if (!data) return;
-    const completedRounds = data.rounds.filter(isRoundCompleted);
-    const defaultRound =
-      data.rounds[completedRounds.length] ??
-      completedRounds[completedRounds.length - 1] ??
-      null;
-    setActiveRound(defaultRound?.name ?? ROUND_ZERO_KEY);
-  }, [data]);
+  const dataWithLiveResults = useMemo(() => {
+    if (!data || !liveRoundData?.games?.length) {
+      return data;
+    }
+
+    const liveResults = new Map(
+      liveRoundData.games.map((game) => [
+        `${game.white}::${game.black}`,
+        normalizeResult(game.result),
+      ])
+    );
+
+    const hasCompletedLiveResult = Array.from(liveResults.values()).some(
+      (result) => result !== "*"
+    );
+
+    if (!hasCompletedLiveResult) {
+      return data;
+    }
+
+    return {
+      ...data,
+      rounds: data.rounds.map((roundEntry) =>
+        roundEntry.url !== liveRoundData.roundUrl
+          ? roundEntry
+          : {
+              ...roundEntry,
+              pairings: roundEntry.pairings.map((game) => ({
+                ...game,
+                result: liveResults.get(`${game.white}::${game.black}`) ?? game.result,
+              })),
+            }
+      ),
+    };
+  }, [data, liveRoundData]);
 
   const round = useMemo(() => {
-    if (!data) return null;
+    if (!dataWithLiveResults) return null;
     if (activeRound === ROUND_ZERO_KEY) return null;
-    return data.rounds.find((entry) => entry.name === activeRound) ?? null;
-  }, [activeRound, data]);
+    return dataWithLiveResults.rounds.find((entry) => entry.name === activeRound) ?? null;
+  }, [activeRound, dataWithLiveResults]);
 
   const activeRoundIndex = useMemo(() => {
-    if (!data || !round) return -1;
-    return data.rounds.findIndex((entry) => entry.name === round.name);
-  }, [data, round]);
+    if (!dataWithLiveResults || !round) return -1;
+    return dataWithLiveResults.rounds.findIndex((entry) => entry.name === round.name);
+  }, [dataWithLiveResults, round]);
 
   const completedRounds = useMemo(() => {
+    if (!dataWithLiveResults) return [];
+    return dataWithLiveResults.rounds.filter(isRoundCompleted);
+  }, [dataWithLiveResults]);
+
+  const sourceCompletedRounds = useMemo(() => {
     if (!data) return [];
     return data.rounds.filter(isRoundCompleted);
   }, [data]);
 
   const latestCompletedRound = completedRounds[completedRounds.length - 1] ?? null;
-  const liveRoundName =
-    data?.rounds[completedRounds.length] &&
-    !isRoundCompleted(data.rounds[completedRounds.length])
-      ? data.rounds[completedRounds.length].name
+  const liveRound =
+    dataWithLiveResults?.rounds[completedRounds.length] &&
+    !isRoundCompleted(dataWithLiveResults.rounds[completedRounds.length])
+      ? dataWithLiveResults.rounds[completedRounds.length]
       : null;
-  const forecastFrontierRoundNumber = completedRounds.length + (liveRoundName ? 1 : 0);
+  const sourceLiveRound =
+    data?.rounds[sourceCompletedRounds.length] &&
+    !isRoundCompleted(data.rounds[sourceCompletedRounds.length])
+      ? data.rounds[sourceCompletedRounds.length]
+      : null;
+  const sourceLiveRoundHasStarted = useMemo(() => {
+    if (!sourceLiveRound || !liveRoundData?.games?.length) {
+      return false;
+    }
+
+    return liveRoundData.games.some(
+      (game) =>
+        normalizeResult(game.result) !== "*" ||
+        !!game.lastMove ||
+        !!game.lastMoveSan ||
+        (typeof game.ply === "number" && game.ply > 0)
+    );
+  }, [liveRoundData, sourceLiveRound]);
+  const liveFrontierRound =
+    sourceLiveRoundHasStarted &&
+    liveRound &&
+    sourceLiveRound &&
+    liveRound.url === sourceLiveRound.url
+      ? liveRound
+      : null;
+  useEffect(() => {
+    if (!dataWithLiveResults) return;
+    const mergedCompletedRounds = dataWithLiveResults.rounds.filter(isRoundCompleted);
+    const mergedLiveRound =
+      dataWithLiveResults.rounds[mergedCompletedRounds.length] &&
+      !isRoundCompleted(dataWithLiveResults.rounds[mergedCompletedRounds.length])
+        ? dataWithLiveResults.rounds[mergedCompletedRounds.length]
+        : null;
+    const defaultRound =
+      sourceLiveRoundHasStarted &&
+      mergedLiveRound &&
+      sourceLiveRound &&
+      mergedLiveRound.url === sourceLiveRound.url
+        ? mergedLiveRound
+        : mergedCompletedRounds[mergedCompletedRounds.length - 1] ?? null;
+
+    setActiveRound(defaultRound?.name ?? ROUND_ZERO_KEY);
+  }, [dataWithLiveResults, sourceLiveRound, sourceLiveRoundHasStarted]);
+  const liveRoundName = liveFrontierRound?.name ?? null;
+  const forecastFrontierRoundNumber =
+    completedRounds.length + (liveFrontierRound ? 1 : 0);
 
   const playersByRating = useMemo(() => {
     if (!data) return [];
@@ -1225,13 +1319,16 @@ export function App() {
   const nextRoundIndex = completedRounds.length;
   const pairingsRefreshLabel = useMemo(() => {
     const timestamp =
-      round && !isRoundCompleted(round)
+      round &&
+      sourceLiveRound &&
+      round.url === sourceLiveRound.url &&
+      !isRoundCompleted(round)
         ? liveRoundData?.fetchedAt ?? datasetRefreshTimes?.[selectedDivision] ?? null
         : datasetRefreshTimes?.[selectedDivision] ?? null;
 
     const formatted = formatRefreshTime(timestamp);
     return formatted ? `Last Refreshed ${formatted}` : null;
-  }, [datasetRefreshTimes, liveRoundData, round, selectedDivision]);
+  }, [datasetRefreshTimes, liveRoundData, round, selectedDivision, sourceLiveRound]);
 
   const playerRatings = useMemo(() => {
     if (!data) return new Map();
@@ -1239,17 +1336,17 @@ export function App() {
   }, [data]);
 
   const scoresBeforeSelectedRound = useMemo(() => {
-    if (!data) return new Map();
-    const standings = standingsThroughRound(data, Math.max(activeRoundIndex, 0));
+    if (!dataWithLiveResults) return new Map();
+    const standings = standingsThroughRound(dataWithLiveResults, Math.max(activeRoundIndex, 0));
     return new Map(standings.map((player) => [player.name, player.score]));
-  }, [activeRoundIndex, data]);
+  }, [activeRoundIndex, dataWithLiveResults]);
 
   const completedGamesByPlayer = useMemo(() => {
-    if (!data) return new Map();
+    if (!dataWithLiveResults) return new Map();
 
-    const counts = new Map(data.players.map((player) => [player.name, 0]));
+    const counts = new Map(dataWithLiveResults.players.map((player) => [player.name, 0]));
 
-    data.rounds.slice(0, activeRoundIndex + 1).forEach((roundEntry) => {
+    dataWithLiveResults.rounds.slice(0, activeRoundIndex + 1).forEach((roundEntry) => {
       roundEntry.pairings.forEach((game) => {
         if (!game.result || game.result === "*") return;
         counts.set(game.white, (counts.get(game.white) ?? 0) + 1);
@@ -1258,14 +1355,14 @@ export function App() {
     });
 
     return counts;
-  }, [activeRoundIndex, data]);
+  }, [activeRoundIndex, dataWithLiveResults]);
 
   const liveScoresByPlayer = useMemo(() => {
-    if (!data) return new Map();
+    if (!dataWithLiveResults) return new Map();
 
-    const scores = new Map(data.players.map((player) => [player.name, 0]));
+    const scores = new Map(dataWithLiveResults.players.map((player) => [player.name, 0]));
 
-    data.rounds.slice(0, activeRoundIndex + 1).forEach((roundEntry) => {
+    dataWithLiveResults.rounds.slice(0, activeRoundIndex + 1).forEach((roundEntry) => {
       roundEntry.pairings.forEach((game) => {
         if (!game.result || game.result === "*") return;
         const [whiteScore, blackScore] = scoreForResult(game.result);
@@ -1275,18 +1372,18 @@ export function App() {
     });
 
     return scores;
-  }, [activeRoundIndex, data]);
+  }, [activeRoundIndex, dataWithLiveResults]);
 
   const showPairingScores =
     !!round && (isRoundCompleted(round) || activeRoundIndex === nextRoundIndex);
 
   useEffect(() => {
-    if (!round || isRoundCompleted(round)) {
+    if (!sourceLiveRound) {
       setLiveRoundData(null);
       return;
     }
 
-    const cacheKey = liveRoundCacheKey(round.url);
+    const cacheKey = liveRoundCacheKey(sourceLiveRound.url);
 
     try {
       const cached = safeLocalStorageGet(cacheKey);
@@ -1306,7 +1403,7 @@ export function App() {
 
     let cancelled = false;
 
-    fetch(`/api/live-round?roundUrl=${encodeURIComponent(round.url)}`)
+    fetch(`/api/live-round?roundUrl=${encodeURIComponent(sourceLiveRound.url)}`)
       .then((response) => response.json())
       .then((payload) => {
         if (cancelled || payload.error) return;
@@ -1326,7 +1423,7 @@ export function App() {
     return () => {
       cancelled = true;
     };
-  }, [round]);
+  }, [sourceLiveRound]);
 
   useEffect(() => {
     if (!liveRoundData?.games?.length) {
@@ -1444,6 +1541,13 @@ export function App() {
     return forecastPayloads[selectedDivision]?.snapshots ?? null;
   }, [forecastPayloads, selectedDivision]);
 
+  const liveForecastData = useMemo(() => {
+    if (!data || !dataWithLiveResults || dataWithLiveResults === data) {
+      return null;
+    }
+    return dataWithLiveResults;
+  }, [data, dataWithLiveResults]);
+
   const historySeries = useMemo(() => {
     if (!data || !forecastSnapshots) return null;
     return {
@@ -1463,11 +1567,24 @@ export function App() {
       selectedRoundNumber,
       forecastFrontierRoundNumber
     );
+    if (
+      liveForecastData &&
+      effectiveRoundNumber === forecastFrontierRoundNumber &&
+      liveRoundName
+    ) {
+      return buildSimulation(liveForecastData, effectiveRoundNumber);
+    }
     const snapshot = forecastSnapshots.find(
       (entry) => entry.roundNumber === effectiveRoundNumber
     );
     return snapshot ? mergeSimulationTables([], snapshot.results) : null;
-  }, [activeRoundIndex, forecastFrontierRoundNumber, forecastSnapshots]);
+  }, [
+    activeRoundIndex,
+    forecastFrontierRoundNumber,
+    forecastSnapshots,
+    liveForecastData,
+    liveRoundName,
+  ]);
 
   const selectedRoundWinRows = useMemo(() => {
     if (!forecastRows) return null;
@@ -1490,11 +1607,35 @@ export function App() {
   const visibleHistorySeries = useMemo(() => {
     if (!legendSeries.length) return [];
 
-    return legendSeries.map((player) => ({
+    const filtered = legendSeries.map((player) => ({
       ...player,
       points: player.points.filter((point) => Number(point.label) <= Math.max(activeRoundIndex + 1, 0)),
     }));
-  }, [activeRoundIndex, legendSeries]);
+
+    if (!selectedRoundWinRows || !liveForecastData || !liveRoundName) {
+      return filtered;
+    }
+
+    const frontierLabel = String(forecastFrontierRoundNumber);
+    return filtered.map((player) => ({
+      ...player,
+      points: player.points.map((point) =>
+        point.label === frontierLabel
+          ? {
+              ...point,
+              value: selectedRoundWinRows.get(player.name) ?? point.value,
+            }
+          : point
+      ),
+    }));
+  }, [
+    activeRoundIndex,
+    forecastFrontierRoundNumber,
+    legendSeries,
+    liveForecastData,
+    liveRoundName,
+    selectedRoundWinRows,
+  ]);
 
   if (!data) {
     return h(
@@ -1582,14 +1723,16 @@ export function App() {
               { value: ROUND_ZERO_KEY },
               "Round 0 (before tournament)"
             ),
-            ...data.rounds.map((entry) =>
+            ...(dataWithLiveResults?.rounds ?? data.rounds).map((entry) =>
               h(
                 "option",
                 { key: `round-option-${entry.name}`, value: entry.name },
                 `${entry.name}${
                   isRoundCompleted(entry)
                     ? " (completed)"
-                    : entry.name === liveRoundName
+                    : sourceLiveRoundHasStarted &&
+                        sourceLiveRound &&
+                        entry.url === sourceLiveRound.url
                       ? " (live)"
                       : ""
                 }`
@@ -1665,7 +1808,11 @@ export function App() {
                   { className: "round-summary" },
                   [
                     `${round.name} ◆ ${completedGames(round.pairings)} of ${round.pairings.length} games finished`,
-                    pairingsRefreshLabel ? ` ◆ ${pairingsRefreshLabel}` : "",
+                    isRoundCompleted(round)
+                      ? " ◆ completed"
+                      : pairingsRefreshLabel
+                        ? ` ◆ ${pairingsRefreshLabel}`
+                        : "",
                   ].join("")
                 )
               : h(

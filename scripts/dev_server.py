@@ -48,6 +48,12 @@ def extract_chapter_move_info(data: dict) -> dict:
     }
 
 
+def normalize_result(result: str | None) -> str:
+    if result == "½-½":
+        return "1/2-1/2"
+    return result or "*"
+
+
 def build_live_games(round_url: str, data: dict) -> list[dict]:
     chapters = data.get("study", {}).get("chapters", [])
     games = []
@@ -75,7 +81,7 @@ def build_live_games(round_url: str, data: dict) -> list[dict]:
                 "lastMove": chapter.get("lastMove"),
                 "lastMoveSan": move_info["lastMoveSan"],
                 "ply": move_info["ply"],
-                "result": chapter.get("status") or "*",
+                "result": normalize_result(chapter.get("status")),
                 "broadcastUrl": broadcast_url,
             }
         )

@@ -19,6 +19,13 @@ function parsePageData(html) {
   return JSON.parse(match[1]);
 }
 
+function normalizeResult(result) {
+  if (result === "½-½") {
+    return "1/2-1/2";
+  }
+  return result ?? "*";
+}
+
 function extractChapterMoveInfo(data) {
   const treeParts = data?.data?.treeParts ?? [];
   const lastPart = treeParts[treeParts.length - 1] ?? null;
@@ -67,7 +74,7 @@ async function buildLiveGames(roundUrl, data) {
         lastMove: chapter.lastMove ?? null,
         lastMoveSan: chapterMoveInfo.lastMoveSan,
         ply: chapterMoveInfo.ply,
-        result: chapter.status ?? "*",
+        result: normalizeResult(chapter.status),
         broadcastUrl,
       };
     })
