@@ -71,25 +71,33 @@
           "board": 1,
           "white": "Caruana, Fabiano",
           "black": "Nakamura, Hikaru",
-          "result": "1-0"
+          "result": "1-0",
+          "chapter_id": "iGcbKclc",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK/iGcbKclc"
         },
         {
           "board": 2,
           "white": "Praggnanandhaa R",
           "black": "Giri, Anish",
-          "result": "1-0"
+          "result": "1-0",
+          "chapter_id": "qIPzQJgf",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK/qIPzQJgf"
         },
         {
           "board": 3,
           "white": "Bluebaum, Matthias",
           "black": "Wei, Yi",
-          "result": "1/2-1/2"
+          "result": "1/2-1/2",
+          "chapter_id": "MXjq3pPw",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK/MXjq3pPw"
         },
         {
           "board": 4,
           "white": "Sindarov, Javokhir",
           "black": "Esipenko, Andrey",
-          "result": "1-0"
+          "result": "1-0",
+          "chapter_id": "0DOOxhwM",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK/0DOOxhwM"
         }
       ]
     },
@@ -101,25 +109,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "q1PvC2Uo",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/q1PvC2Uo"
         },
         {
           "board": 2,
           "white": "Giri, Anish",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "AtOYVAjA",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/AtOYVAjA"
         },
         {
           "board": 3,
           "white": "Wei, Yi",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "qxEw2unq",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/qxEw2unq"
         },
         {
           "board": 4,
           "white": "Sindarov, Javokhir",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "CcAexOtH",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-2/FRTlzP2X/CcAexOtH"
         }
       ]
     },
@@ -131,25 +147,33 @@
           "board": 1,
           "white": "Bluebaum, Matthias",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "8fhADxUe",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/8fhADxUe"
         },
         {
           "board": 2,
           "white": "Praggnanandhaa R",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "NUotXF78",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/NUotXF78"
         },
         {
           "board": 3,
           "white": "Caruana, Fabiano",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "8EWUBjpx",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/8EWUBjpx"
         },
         {
           "board": 4,
           "white": "Nakamura, Hikaru",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "AaJLmuxI",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/AaJLmuxI"
         }
       ]
     },
@@ -161,25 +185,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "xbSQ7kmG",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/xbSQ7kmG"
         },
         {
           "board": 2,
           "white": "Wei, Yi",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "YLi0q7tr",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/YLi0q7tr"
         },
         {
           "board": 3,
           "white": "Sindarov, Javokhir",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Jzyakrf4",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/Jzyakrf4"
         },
         {
           "board": 4,
           "white": "Bluebaum, Matthias",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "QH9KXWpV",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/QH9KXWpV"
         }
       ]
     },
@@ -191,25 +223,33 @@
           "board": 1,
           "white": "Praggnanandhaa R",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "doQytm8e",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/doQytm8e"
         },
         {
           "board": 2,
           "white": "Caruana, Fabiano",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "wuNBfSXX",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/wuNBfSXX"
         },
         {
           "board": 3,
           "white": "Nakamura, Hikaru",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "IDNHChak",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/IDNHChak"
         },
         {
           "board": 4,
           "white": "Giri, Anish",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "2pyjWUYv",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/2pyjWUYv"
         }
       ]
     },
@@ -221,25 +261,33 @@
           "board": 1,
           "white": "Caruana, Fabiano",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "JSl2MlKS",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/JSl2MlKS"
         },
         {
           "board": 2,
           "white": "Nakamura, Hikaru",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "kMneswLv",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/kMneswLv"
         },
         {
           "board": 3,
           "white": "Giri, Anish",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "EIKU0dE4",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/EIKU0dE4"
         },
         {
           "board": 4,
           "white": "Wei, Yi",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "lkyNaDkn",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/lkyNaDkn"
         }
       ]
     },
@@ -251,25 +299,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "GyvRkvrq",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/GyvRkvrq"
         },
         {
           "board": 2,
           "white": "Sindarov, Javokhir",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "y08guWvT",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/y08guWvT"
         },
         {
           "board": 3,
           "white": "Bluebaum, Matthias",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "hD8wlplM",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/hD8wlplM"
         },
         {
           "board": 4,
           "white": "Praggnanandhaa R",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "JgG5oLO8",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/JgG5oLO8"
         }
       ]
     },
@@ -281,25 +337,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "ZX9XCBWV",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-8/XYRPyV8x/ZX9XCBWV"
         },
         {
           "board": 2,
           "white": "Wei, Yi",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "EcncMf6v",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-8/XYRPyV8x/EcncMf6v"
         },
         {
           "board": 3,
           "white": "Giri, Anish",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Zf9KYA5U",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-8/XYRPyV8x/Zf9KYA5U"
         },
         {
           "board": 4,
           "white": "Nakamura, Hikaru",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "I1fOQ2oU",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-8/XYRPyV8x/I1fOQ2oU"
         }
       ]
     },
@@ -311,25 +375,33 @@
           "board": 1,
           "white": "Nakamura, Hikaru",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "k4o9glRT",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-9/hTVc2Qgj/k4o9glRT"
         },
         {
           "board": 2,
           "white": "Caruana, Fabiano",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "oK0Qfzp0",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-9/hTVc2Qgj/oK0Qfzp0"
         },
         {
           "board": 3,
           "white": "Praggnanandhaa R",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Be6M3c27",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-9/hTVc2Qgj/Be6M3c27"
         },
         {
           "board": 4,
           "white": "Bluebaum, Matthias",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "f5Qxbrgi",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-9/hTVc2Qgj/f5Qxbrgi"
         }
       ]
     },
@@ -341,25 +413,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "UO81qK9U",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/UO81qK9U"
         },
         {
           "board": 2,
           "white": "Sindarov, Javokhir",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "RN9BrHlK",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/RN9BrHlK"
         },
         {
           "board": 3,
           "white": "Wei, Yi",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "rnuH0n1M",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/rnuH0n1M"
         },
         {
           "board": 4,
           "white": "Giri, Anish",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Uav0LRGT",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/Uav0LRGT"
         }
       ]
     },
@@ -371,25 +451,33 @@
           "board": 1,
           "white": "Giri, Anish",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "8vgpc9aK",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-11/seMTFSPr/8vgpc9aK"
         },
         {
           "board": 2,
           "white": "Nakamura, Hikaru",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Pc2LpFiv",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-11/seMTFSPr/Pc2LpFiv"
         },
         {
           "board": 3,
           "white": "Caruana, Fabiano",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "ErakVcBp",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-11/seMTFSPr/ErakVcBp"
         },
         {
           "board": 4,
           "white": "Praggnanandhaa R",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "LmFrCH8s",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-11/seMTFSPr/LmFrCH8s"
         }
       ]
     },
@@ -401,25 +489,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Y6jzoASo",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/Y6jzoASo"
         },
         {
           "board": 2,
           "white": "Bluebaum, Matthias",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "AIHuz0Li",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/AIHuz0Li"
         },
         {
           "board": 3,
           "white": "Sindarov, Javokhir",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "Vgtzckwb",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/Vgtzckwb"
         },
         {
           "board": 4,
           "white": "Wei, Yi",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "EqHkv1Mp",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/EqHkv1Mp"
         }
       ]
     },
@@ -431,25 +527,33 @@
           "board": 1,
           "white": "Wei, Yi",
           "black": "Esipenko, Andrey",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "jIlkfHzg",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-13/rFG1W5Tp/jIlkfHzg"
         },
         {
           "board": 2,
           "white": "Giri, Anish",
           "black": "Sindarov, Javokhir",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "VQ8n3g1Y",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-13/rFG1W5Tp/VQ8n3g1Y"
         },
         {
           "board": 3,
           "white": "Nakamura, Hikaru",
           "black": "Bluebaum, Matthias",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "yAKbKBUi",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-13/rFG1W5Tp/yAKbKBUi"
         },
         {
           "board": 4,
           "white": "Caruana, Fabiano",
           "black": "Praggnanandhaa R",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "OoIq5ptK",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-13/rFG1W5Tp/OoIq5ptK"
         }
       ]
     },
@@ -461,25 +565,33 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Caruana, Fabiano",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "gi2VX6NQ",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/gi2VX6NQ"
         },
         {
           "board": 2,
           "white": "Praggnanandhaa R",
           "black": "Nakamura, Hikaru",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "dNacvFdc",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/dNacvFdc"
         },
         {
           "board": 3,
           "white": "Bluebaum, Matthias",
           "black": "Giri, Anish",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "f07nrkYa",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/f07nrkYa"
         },
         {
           "board": 4,
           "white": "Sindarov, Javokhir",
           "black": "Wei, Yi",
-          "result": "*"
+          "result": "*",
+          "chapter_id": "9j4CNe46",
+          "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/9j4CNe46"
         }
       ]
     }

@@ -542,6 +542,34 @@ tbody tr + tr td {
   color: #f8f0e4;
 }
 
+.live-game-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+.live-result-stack,
+.live-meta-stack {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.live-eval-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #d7bea1;
+  white-space: nowrap;
+}
+
+.live-wdl-label {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #bda489;
+  white-space: nowrap;
+}
+
 @media (max-width: 720px) {
   .page-shell {
     padding: 16px 12px 24px;

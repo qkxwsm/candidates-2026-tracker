@@ -8,6 +8,9 @@ const DRAW_RATE_AT_EQUAL = 0.5;
 const DRAW_DECAY_ELO = 300;
 const ROUND_ZERO_KEY = "__round0__";
 const SIMULATION_CACHE_VERSION = "v4";
+const LIVE_ROUND_CACHE_TTL_MS = 5 * 60 * 1000;
+const LIVE_WDL_CACHE_TTL_MS = 5 * 60 * 1000;
+const STOCKFISH_DEPTH = 12;
 const FORM_PRIOR_GAMES = 6;
 const FORM_MAX_ELO_SHIFT = 120;
 const PLAYER_PALETTE = [
@@ -615,6 +618,295 @@ function divisionFromPath(pathname) {
   return "Open";
 }
 
+function liveRoundCacheKey(roundUrl) {
+  return `candidates-2026-live-round:${roundUrl}`;
+}
+
+function liveWdlCacheKey(fen) {
+  return `candidates-2026-live-wdl:${fen}`;
+}
+
+function formatLiveWdl(wdlData) {
+  if (!wdlData) return null;
+
+  const values = [
+    ["W", wdlData.whiteWinProbability],
+    ["D", wdlData.drawProbability],
+    ["B", wdlData.blackWinProbability],
+  ];
+
+  if (values.some(([, value]) => typeof value !== "number")) {
+    return null;
+  }
+
+  return values
+    .map(([label, value]) => `${label} ${(value * 100).toFixed(1)}%`)
+    .join(" | ");
+}
+
+function formatLiveEval(evalData) {
+  if (!evalData) return null;
+
+  if (typeof evalData.mate === "number") {
+    return `Mate ${evalData.mate > 0 ? "+" : ""}${evalData.mate}`;
+  }
+
+  if (typeof evalData.cp === "number") {
+    const pawns = evalData.cp / 100;
+    return pawns > 0 ? `+${pawns.toFixed(2)}` : pawns.toFixed(2);
+  }
+
+  return null;
+}
+
+function formatLiveMove(game) {
+  if (!game) return null;
+
+  if (game.lastMoveSan && typeof game.ply === "number" && game.ply > 0) {
+    const moveNumber = Math.ceil(game.ply / 2);
+    const prefix = game.ply % 2 === 1 ? `${moveNumber}.` : `${moveNumber}...`;
+    return `${prefix} ${game.lastMoveSan}`;
+  }
+
+  return game.lastMove ?? null;
+}
+
+function parseStockfishWdl(line) {
+  const wdlMatch = line.match(/\bwdl\s+(\d+)\s+(\d+)\s+(\d+)/);
+
+  if (!wdlMatch) {
+    return null;
+  }
+
+  const whiteWin = Number(wdlMatch[1]);
+  const draw = Number(wdlMatch[2]);
+  const blackWin = Number(wdlMatch[3]);
+  const total = whiteWin + draw + blackWin;
+
+  if (!total) {
+    return null;
+  }
+
+  return {
+    whiteWinProbability: whiteWin / total,
+    drawProbability: draw / total,
+    blackWinProbability: blackWin / total,
+  };
+}
+
+function parseStockfishScore(line) {
+  const cpMatch = line.match(/\bscore\s+cp\s+(-?\d+)/);
+  if (cpMatch) {
+    return {
+      cp: Number(cpMatch[1]),
+      mate: null,
+    };
+  }
+
+  const mateMatch = line.match(/\bscore\s+mate\s+(-?\d+)/);
+  if (mateMatch) {
+    return {
+      cp: null,
+      mate: Number(mateMatch[1]),
+    };
+  }
+
+  return null;
+}
+
+function sideToMoveFromFen(fen) {
+  if (typeof fen !== "string") return null;
+  const parts = fen.split(" ");
+  return parts[1] === "w" || parts[1] === "b" ? parts[1] : null;
+}
+
+function normalizeAnalysisForWhite(fen, analysis) {
+  if (!analysis) return null;
+
+  if (sideToMoveFromFen(fen) !== "b") {
+    return analysis;
+  }
+
+  return {
+    ...analysis,
+    whiteWinProbability:
+      typeof analysis.blackWinProbability === "number"
+        ? analysis.blackWinProbability
+        : analysis.whiteWinProbability,
+    blackWinProbability:
+      typeof analysis.whiteWinProbability === "number"
+        ? analysis.whiteWinProbability
+        : analysis.blackWinProbability,
+    cp: typeof analysis.cp === "number" ? -analysis.cp : analysis.cp,
+    mate: typeof analysis.mate === "number" ? -analysis.mate : analysis.mate,
+  };
+}
+
+const stockfishState = {
+  worker: null,
+  ready: false,
+  initPromise: null,
+  queue: [],
+  activeTask: null,
+};
+
+function dispatchStockfishQueue() {
+  if (
+    !stockfishState.ready ||
+    !stockfishState.worker ||
+    stockfishState.activeTask ||
+    !stockfishState.queue.length
+  ) {
+    return;
+  }
+
+  const task = stockfishState.queue.shift();
+  stockfishState.activeTask = {
+    ...task,
+    latestWdl: null,
+    latestScore: null,
+  };
+
+  stockfishState.worker.postMessage("ucinewgame");
+  stockfishState.worker.postMessage(`position fen ${task.fen}`);
+  stockfishState.worker.postMessage(`go depth ${STOCKFISH_DEPTH}`);
+}
+
+function ensureStockfishWorker() {
+  if (stockfishState.initPromise) {
+    return stockfishState.initPromise;
+  }
+
+  stockfishState.initPromise = new Promise((resolve, reject) => {
+    try {
+      const worker = new Worker("/vendor/stockfish/stockfish.js");
+      stockfishState.worker = worker;
+
+      worker.addEventListener("message", (event) => {
+        const line = typeof event.data === "string" ? event.data.trim() : "";
+
+        if (!line) return;
+
+        if (line === "uciok") {
+          worker.postMessage("setoption name UCI_ShowWDL value true");
+          worker.postMessage("setoption name Threads value 1");
+          worker.postMessage("isready");
+          return;
+        }
+
+        if (line === "readyok") {
+          stockfishState.ready = true;
+          resolve(worker);
+          dispatchStockfishQueue();
+          return;
+        }
+
+        const activeTask = stockfishState.activeTask;
+
+        if (!activeTask) {
+          return;
+        }
+
+        const parsedWdl = parseStockfishWdl(line);
+        if (parsedWdl) {
+          activeTask.latestWdl = parsedWdl;
+        }
+
+        const parsedScore = parseStockfishScore(line);
+        if (parsedScore) {
+          activeTask.latestScore = parsedScore;
+        }
+
+        if (!line.startsWith("bestmove")) {
+          return;
+        }
+
+        const result = activeTask.latestWdl
+          ? {
+              ...activeTask.latestWdl,
+              ...(activeTask.latestScore ?? {}),
+            }
+          : null;
+        stockfishState.activeTask = null;
+
+        if (result) {
+          activeTask.resolve(normalizeAnalysisForWhite(activeTask.fen, result));
+        } else {
+          activeTask.reject(new Error("Stockfish did not return WDL data"));
+        }
+
+        dispatchStockfishQueue();
+      });
+
+      worker.addEventListener("error", (error) => {
+        if (!stockfishState.ready) {
+          resetStockfishState(error);
+          reject(error);
+          return;
+        }
+
+        resetStockfishState(error);
+      });
+
+      worker.postMessage("uci");
+    } catch (error) {
+      resetStockfishState(error);
+      reject(error);
+    }
+  });
+
+  return stockfishState.initPromise;
+}
+
+function evaluateFenWithStockfish(fen) {
+  return ensureStockfishWorker().then(
+    () =>
+      new Promise((resolve, reject) => {
+        stockfishState.queue.push({ fen, resolve, reject });
+        dispatchStockfishQueue();
+      })
+  );
+}
+
+function resetStockfishState(error = null) {
+  if (error) {
+    stockfishState.queue.forEach((task) => task.reject(error));
+    if (stockfishState.activeTask) {
+      stockfishState.activeTask.reject(error);
+    }
+  }
+
+  if (stockfishState.worker) {
+    stockfishState.worker.terminate();
+  }
+
+  stockfishState.worker = null;
+  stockfishState.ready = false;
+  stockfishState.initPromise = null;
+  stockfishState.queue = [];
+  stockfishState.activeTask = null;
+}
+
+function stockfishAvailable() {
+  return typeof window !== "undefined" && typeof Worker !== "undefined";
+}
+
+function safeLocalStorageGet(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch (_error) {
+    return null;
+  }
+}
+
+function safeLocalStorageSet(key, value) {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch (_error) {
+    // Ignore local cache write failures.
+  }
+}
+
 function HistoryChart({ series }) {
   const [hoveredPoint, setHoveredPoint] = useState(null);
   const width = 960;
@@ -834,6 +1126,8 @@ export function App() {
   const [forecastPayloads, setForecastPayloads] = useState(null);
   const [selectedDivision] = useState(() => divisionFromPath(window.location.pathname));
   const [activeRound, setActiveRound] = useState("");
+  const [liveRoundData, setLiveRoundData] = useState(null);
+  const [liveWdlData, setLiveWdlData] = useState({});
 
   useEffect(() => {
     Promise.all([
@@ -916,8 +1210,184 @@ export function App() {
     return counts;
   }, [activeRoundIndex, data]);
 
+  const liveScoresByPlayer = useMemo(() => {
+    if (!data) return new Map();
+
+    const scores = new Map(data.players.map((player) => [player.name, 0]));
+
+    data.rounds.slice(0, activeRoundIndex + 1).forEach((roundEntry) => {
+      roundEntry.pairings.forEach((game) => {
+        if (!game.result || game.result === "*") return;
+        const [whiteScore, blackScore] = scoreForResult(game.result);
+        scores.set(game.white, (scores.get(game.white) ?? 0) + whiteScore);
+        scores.set(game.black, (scores.get(game.black) ?? 0) + blackScore);
+      });
+    });
+
+    return scores;
+  }, [activeRoundIndex, data]);
+
   const showPairingScores =
     !!round && (isRoundCompleted(round) || activeRoundIndex === nextRoundIndex);
+
+  useEffect(() => {
+    if (!round || isRoundCompleted(round)) {
+      setLiveRoundData(null);
+      return;
+    }
+
+    const cacheKey = liveRoundCacheKey(round.url);
+
+    try {
+      const cached = safeLocalStorageGet(cacheKey);
+      if (cached) {
+        try {
+          const parsed = JSON.parse(cached);
+          if (Date.now() - parsed.timestamp < LIVE_ROUND_CACHE_TTL_MS) {
+            setLiveRoundData(parsed.payload);
+          }
+        } catch (_error) {
+          // Ignore malformed local cache entries.
+        }
+      }
+    } catch (_error) {
+      // Ignore local cache read failures.
+    }
+
+    let cancelled = false;
+
+    fetch(`/api/live-round?roundUrl=${encodeURIComponent(round.url)}`)
+      .then((response) => response.json())
+      .then((payload) => {
+        if (cancelled || payload.error) return;
+        setLiveRoundData(payload);
+        safeLocalStorageSet(
+          cacheKey,
+          JSON.stringify({
+            timestamp: Date.now(),
+            payload,
+          })
+        );
+      })
+      .catch(() => {
+        // Ignore live round fetch failures and keep the page usable.
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [round]);
+
+  useEffect(() => {
+    if (!liveRoundData?.games?.length) {
+      setLiveWdlData({});
+      return;
+    }
+
+    if (!stockfishAvailable()) {
+      setLiveWdlData({});
+      return;
+    }
+
+    const pendingGames = liveRoundData.games.filter(
+      (game) => game.result === "*" && game.fen
+    );
+
+    if (!pendingGames.length) {
+      setLiveWdlData({});
+      return;
+    }
+
+    let cancelled = false;
+    const nextWdlData = {};
+    setLiveWdlData({});
+
+    pendingGames.forEach((game) => {
+      const cacheKey = liveWdlCacheKey(game.fen);
+      const cached = safeLocalStorageGet(cacheKey);
+      if (cached) {
+        try {
+          const parsed = JSON.parse(cached);
+          if (Date.now() - parsed.timestamp < LIVE_WDL_CACHE_TTL_MS) {
+            nextWdlData[game.chapterId] = parsed.payload;
+          }
+        } catch (_error) {
+          // Ignore malformed local cache entries.
+        }
+      }
+    });
+
+    if (Object.keys(nextWdlData).length) {
+      setLiveWdlData(nextWdlData);
+    }
+
+    pendingGames.forEach((game) => {
+      if (nextWdlData[game.chapterId]) {
+        return;
+      }
+
+      evaluateFenWithStockfish(game.fen)
+        .then((payload) => {
+          if (cancelled) return;
+          setLiveWdlData((current) => ({
+            ...current,
+            [game.chapterId]: payload,
+          }));
+          safeLocalStorageSet(
+            liveWdlCacheKey(game.fen),
+            JSON.stringify({
+              timestamp: Date.now(),
+              payload,
+            })
+          );
+        })
+        .catch(() => {
+          // Ignore per-board live analysis failures.
+        });
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [liveRoundData]);
+
+  const liveBroadcastUrls = useMemo(() => {
+    const mapping = new Map();
+
+    if (liveRoundData?.games) {
+      liveRoundData.games.forEach((game) => {
+        const key = `${game.white}::${game.black}`;
+        mapping.set(key, game.broadcastUrl);
+      });
+    }
+
+    return mapping;
+  }, [liveRoundData]);
+
+  const liveGamesByPlayers = useMemo(() => {
+    const mapping = new Map();
+
+    if (liveRoundData?.games) {
+      liveRoundData.games.forEach((game) => {
+        mapping.set(`${game.white}::${game.black}`, game);
+      });
+    }
+
+    return mapping;
+  }, [liveRoundData]);
+
+  const liveWdlByPlayers = useMemo(() => {
+    const mapping = new Map();
+
+    if (liveRoundData?.games) {
+      liveRoundData.games.forEach((game) => {
+        const key = `${game.white}::${game.black}`;
+        mapping.set(key, liveWdlData[game.chapterId] ?? null);
+      });
+    }
+
+    return mapping;
+  }, [liveRoundData, liveWdlData]);
 
   const forecastSnapshots = useMemo(() => {
     if (!forecastPayloads) return null;
@@ -1185,7 +1655,74 @@ export function App() {
                             className:
                               game.result === "*" ? "pending-result" : "final-result",
                           },
-                          formatResult(game.result)
+                          game.result === "*" && game.broadcast_url
+                            ? h(
+                                "span",
+                                { className: "live-result-stack" },
+                                (() => {
+                                  const liveGame = liveGamesByPlayers.get(
+                                    `${game.white}::${game.black}`
+                                  );
+                                  const wdlData = liveWdlByPlayers.get(
+                                    `${game.white}::${game.black}`
+                                  );
+                                  const lastMove = formatLiveMove(liveGame);
+                                  const evalLabel = formatLiveEval(wdlData);
+                                  const wdlLabel = formatLiveWdl(wdlData);
+                                  const moveEvalLabel = [lastMove, evalLabel]
+                                    .filter(Boolean)
+                                    .join(" ");
+
+                                  return moveEvalLabel || wdlLabel
+                                    ? h(
+                                        "span",
+                                        { className: "live-meta-stack" },
+                                        moveEvalLabel
+                                          ? h(
+                                              "span",
+                                              { className: "live-eval-label" },
+                                              [
+                                                h(
+                                                  "a",
+                                                  {
+                                                    href:
+                                                      liveBroadcastUrls.get(
+                                                        `${game.white}::${game.black}`
+                                                      ) ?? game.broadcast_url,
+                                                    target: "_blank",
+                                                    rel: "noreferrer",
+                                                    className: "live-game-link",
+                                                  },
+                                                  formatResult(game.result)
+                                                ),
+                                                ` (${moveEvalLabel})`,
+                                              ]
+                                            )
+                                          : null,
+                                        wdlLabel
+                                          ? h(
+                                              "span",
+                                              { className: "live-wdl-label" },
+                                              wdlLabel
+                                            )
+                                          : null
+                                      )
+                                    : h(
+                                        "a",
+                                        {
+                                          href:
+                                            liveBroadcastUrls.get(
+                                              `${game.white}::${game.black}`
+                                            ) ?? game.broadcast_url,
+                                          target: "_blank",
+                                          rel: "noreferrer",
+                                          className: "live-game-link",
+                                        },
+                                        formatResult(game.result)
+                                      );
+                                })()
+                              )
+                            : formatResult(game.result)
                         ),
                         h(
                           "td",
@@ -1273,7 +1810,7 @@ export function App() {
                         h("td", null, player.name),
                         h("td", null, player.rating),
                         h("td", null, completedGamesByPlayer.get(player.name) ?? 0),
-                        h("td", null, formatCurrentScore(player.currentScore)),
+                        h("td", null, formatCurrentScore(liveScoresByPlayer.get(player.name) ?? player.currentScore)),
                         h("td", null, formatScore(player.expectedScore)),
                         h("td", null, formatRank(player.expectedRank)),
                         h("td", { className: "final-result" }, formatPercent(player.winProbability))

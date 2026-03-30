@@ -13,8 +13,10 @@ Files:
 
 Run locally:
 
-- `python3 -m http.server 4173`
+- `python3 scripts/dev_server.py`
 - Open `http://localhost:4173`
+
+Live in-progress boards use the local `/api/live-round` endpoint plus a bundled browser Stockfish build for W/D/B analysis.
 
 Update data manually:
 

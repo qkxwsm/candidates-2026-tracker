@@ -114,6 +114,8 @@ def fetch_tour(config: dict) -> dict:
                     "white": white["name"],
                     "black": black["name"],
                     "result": normalize_result(chapter.get("status")),
+                    "chapter_id": chapter.get("id"),
+                    "broadcast_url": f"{rnd['url']}/{chapter.get('id')}" if chapter.get("id") else rnd["url"],
                 }
             )
 
