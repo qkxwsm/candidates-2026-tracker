@@ -8,8 +8,22 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTFILE = ROOT / "data" / "open_pairings.json"
-START_URL = "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK"
+DATA_DIR = ROOT / "data"
+
+TOURS = {
+    "open": {
+        "start_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-1/uLCZwqAK",
+        "outfile": DATA_DIR / "open_pairings.json",
+        "division": "Open",
+        "event": "FIDE Candidates 2026",
+    },
+    "women": {
+        "start_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-1/diPdGkEA",
+        "outfile": DATA_DIR / "women_pairings.json",
+        "division": "Women",
+        "event": "FIDE Candidates 2026",
+    },
+}
 
 
 def fetch(url: str) -> str:
@@ -33,8 +47,8 @@ def normalize_result(result: str | None) -> str | None:
     return result
 
 
-def main() -> None:
-    initial = page_data(fetch(START_URL))
+def fetch_tour(config: dict) -> dict:
+    initial = page_data(fetch(config["start_url"]))
     relay = initial["relay"]
 
     players = []
@@ -74,8 +88,9 @@ def main() -> None:
             }
         )
 
-    payload = {
-        "event": relay["tour"]["name"],
+    return {
+        "event": config["event"],
+        "division": config["division"],
         "snapshot_date": str(date.today()),
         "source": relay["tour"]["url"],
         "website": relay["tour"]["info"]["website"],
@@ -83,7 +98,13 @@ def main() -> None:
         "rounds": rounds,
     }
 
-    OUTFILE.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n")
+
+def main() -> None:
+    for config in TOURS.values():
+        payload = fetch_tour(config)
+        config["outfile"].write_text(
+            json.dumps(payload, indent=2, ensure_ascii=True) + "\n"
+        )
 
 
 if __name__ == "__main__":
