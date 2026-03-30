@@ -72,6 +72,26 @@ function externalLink(label, href) {
   );
 }
 
+function parseResponseTimestamp(response) {
+  const headerValue =
+    response.headers.get("last-modified") ?? response.headers.get("date");
+  const parsed = headerValue ? Date.parse(headerValue) : NaN;
+  return Number.isFinite(parsed) ? new Date(parsed).toISOString() : new Date().toISOString();
+}
+
+function formatRefreshTime(value) {
+  if (!value) return null;
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return null;
+
+  return new Intl.DateTimeFormat(undefined, {
+    hour: "numeric",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZoneName: "short",
+  }).format(parsed);
+}
+
 function formatPercent(value) {
   return `${(value * 100).toFixed(1)}%`;
 }
@@ -614,7 +634,6 @@ function buildTicks(minValue, maxValue, count) {
 function divisionFromPath(pathname) {
   const normalized = pathname.toLowerCase().replace(/\/+$/, "");
   if (normalized.endsWith("/women")) return "Women";
-  if (normalized.endsWith("/open")) return "Open";
   return "Open";
 }
 
@@ -1124,6 +1143,7 @@ function HistoryChart({ series }) {
 export function App() {
   const [datasets, setDatasets] = useState(null);
   const [forecastPayloads, setForecastPayloads] = useState(null);
+  const [datasetRefreshTimes, setDatasetRefreshTimes] = useState(null);
   const [selectedDivision] = useState(() => divisionFromPath(window.location.pathname));
   const [activeRound, setActiveRound] = useState("");
   const [liveRoundData, setLiveRoundData] = useState(null);
@@ -1131,18 +1151,28 @@ export function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/open_pairings.json").then((response) => response.json()),
-      fetch("/data/women_pairings.json").then((response) => response.json()),
+      fetch("/data/open_pairings.json").then(async (response) => ({
+        data: await response.json(),
+        refreshedAt: parseResponseTimestamp(response),
+      })),
+      fetch("/data/women_pairings.json").then(async (response) => ({
+        data: await response.json(),
+        refreshedAt: parseResponseTimestamp(response),
+      })),
       fetch("/data/open_forecasts.json").then((response) => response.json()),
       fetch("/data/women_forecasts.json").then((response) => response.json()),
-    ]).then(([openData, womenData, openForecasts, womenForecasts]) => {
+    ]).then(([openPairings, womenPairings, openForecasts, womenForecasts]) => {
       setDatasets({
-        Open: { ...openData, division: "Open", event: "FIDE Candidates 2026" },
-        Women: womenData,
+        Open: { ...openPairings.data, division: "Open", event: "FIDE Candidates 2026" },
+        Women: womenPairings.data,
       });
       setForecastPayloads({
         Open: openForecasts,
         Women: womenForecasts,
+      });
+      setDatasetRefreshTimes({
+        Open: openPairings.refreshedAt,
+        Women: womenPairings.refreshedAt,
       });
     });
   }, []);
@@ -1190,6 +1220,15 @@ export function App() {
     return [...data.players].sort((left, right) => right.rating - left.rating);
   }, [data]);
   const nextRoundIndex = completedRounds.length;
+  const pairingsRefreshLabel = useMemo(() => {
+    const timestamp =
+      round && !isRoundCompleted(round)
+        ? liveRoundData?.fetchedAt ?? datasetRefreshTimes?.[selectedDivision] ?? null
+        : datasetRefreshTimes?.[selectedDivision] ?? null;
+
+    const formatted = formatRefreshTime(timestamp);
+    return formatted ? `Last Refreshed ${formatted}` : null;
+  }, [datasetRefreshTimes, liveRoundData, round, selectedDivision]);
 
   const playerRatings = useMemo(() => {
     if (!data) return new Map();
@@ -1478,7 +1517,7 @@ export function App() {
               {
                 key: division,
                 className: division === selectedDivision ? "division-tab active" : "division-tab",
-                href: division === "Open" ? "/open/" : "/women/",
+                href: division === "Open" ? "/" : "/women/",
                 "aria-current": division === selectedDivision ? "page" : undefined,
               },
               division
@@ -1612,12 +1651,18 @@ export function App() {
               ? h(
                   "div",
                   { className: "round-summary" },
-                  `${round.name} ◆ ${completedGames(round.pairings)} of ${round.pairings.length} games finished`
+                  [
+                    `${round.name} ◆ ${completedGames(round.pairings)} of ${round.pairings.length} games finished`,
+                    pairingsRefreshLabel ? ` ◆ ${pairingsRefreshLabel}` : "",
+                  ].join("")
                 )
               : h(
                   "div",
                   { className: "round-summary" },
-                  "Round 0 (before tournament)"
+                  [
+                    "Round 0 (before tournament)",
+                    pairingsRefreshLabel ? ` ◆ ${pairingsRefreshLabel}` : "",
+                  ].join("")
                 )
           )
         ),
@@ -1638,11 +1683,11 @@ export function App() {
                       "tr",
                       null,
                       h("th", null, "Board"),
-                      h("th", null, "White Rating"),
+                      h("th", null, "Rating"),
                       h("th", null, "White"),
                       h("th", null, "Result"),
                       h("th", null, "Black"),
-                      h("th", null, "Black Rating")
+                      h("th", null, "Rating")
                     )
                   ),
                   h(
@@ -1682,12 +1727,11 @@ export function App() {
                                   );
                                   const lastMove = formatLiveMove(liveGame);
                                   const evalLabel = formatLiveEval(wdlData);
-                                  const wdlLabel = formatLiveWdl(wdlData);
                                   const moveEvalLabel = [lastMove, evalLabel]
                                     .filter(Boolean)
                                     .join(" ");
 
-                                  return moveEvalLabel || wdlLabel
+                                  return moveEvalLabel
                                     ? h(
                                         "span",
                                         { className: "live-meta-stack" },
@@ -1711,13 +1755,6 @@ export function App() {
                                                 ),
                                                 ` (${moveEvalLabel})`,
                                               ]
-                                            )
-                                          : null,
-                                        wdlLabel
-                                          ? h(
-                                              "span",
-                                              { className: "live-wdl-label" },
-                                              wdlLabel
                                             )
                                           : null
                                       )

@@ -563,13 +563,6 @@ tbody tr + tr td {
   white-space: nowrap;
 }
 
-.live-wdl-label {
-  font-size: 0.76rem;
-  font-weight: 500;
-  color: #bda489;
-  white-space: nowrap;
-}
-
 @media (max-width: 720px) {
   .page-shell {
     padding: 16px 12px 24px;
