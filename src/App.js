@@ -1155,7 +1155,10 @@ export function App() {
   useEffect(() => {
     if (!data) return;
     const completedRounds = data.rounds.filter(isRoundCompleted);
-    const defaultRound = completedRounds[completedRounds.length - 1] ?? null;
+    const defaultRound =
+      data.rounds[completedRounds.length] ??
+      completedRounds[completedRounds.length - 1] ??
+      null;
     setActiveRound(defaultRound?.name ?? ROUND_ZERO_KEY);
   }, [data]);
 
@@ -1176,6 +1179,11 @@ export function App() {
   }, [data]);
 
   const latestCompletedRound = completedRounds[completedRounds.length - 1] ?? null;
+  const liveRoundName =
+    data?.rounds[completedRounds.length] &&
+    !isRoundCompleted(data.rounds[completedRounds.length])
+      ? data.rounds[completedRounds.length].name
+      : null;
 
   const playersByRating = useMemo(() => {
     if (!data) return [];
@@ -1527,7 +1535,13 @@ export function App() {
               h(
                 "option",
                 { key: `round-option-${entry.name}`, value: entry.name },
-                `${entry.name}${isRoundCompleted(entry) ? " (completed)" : ""}`
+                `${entry.name}${
+                  isRoundCompleted(entry)
+                    ? " (completed)"
+                    : entry.name === liveRoundName
+                      ? " (live)"
+                      : ""
+                }`
               )
             )
           )
