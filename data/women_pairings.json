@@ -147,7 +147,7 @@
           "board": 1,
           "white": "Vaishali, Rameshbabu",
           "black": "Muzychuk, Anna",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "UnHEOEpu",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-3/2qEm9CH3/UnHEOEpu"
         },
@@ -155,7 +155,7 @@
           "board": 2,
           "white": "Goryachkina, Aleksandra",
           "black": "Divya Deshmukh",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "nXH4CkD5",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-3/2qEm9CH3/nXH4CkD5"
         },
@@ -163,7 +163,7 @@
           "board": 3,
           "white": "Zhu, Jiner",
           "black": "Assaubayeva, Bibisara",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "vl6USnZ7",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-3/2qEm9CH3/vl6USnZ7"
         },
@@ -171,7 +171,7 @@
           "board": 4,
           "white": "Tan, Zhongyi",
           "black": "Lagno, Kateryna",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "ZxsenQ1w",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-3/2qEm9CH3/ZxsenQ1w"
         }
