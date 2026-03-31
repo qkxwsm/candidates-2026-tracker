@@ -13,7 +13,7 @@ const LIVE_ROUND_POLL_MS = 60 * 1000;
 const LIVE_WDL_CACHE_TTL_MS = 5 * 60 * 1000;
 const STOCKFISH_DEPTH = 12;
 const FORM_PRIOR_GAMES = 6;
-const FORM_MAX_ELO_SHIFT = 120;
+const FORM_MAX_ELO_SHIFT = 80;
 const PLAYER_PALETTE = [
   "#f6c35b",
   "#ff8a5b",
@@ -1989,7 +1989,7 @@ export function App() {
                       h("th", null, "Result"),
                       h("th", null, "Black"),
                       h("th", null, "Rating"),
-                      h("th", null, "Forecast")
+                      h("th", null, "Pre-Round Forecast")
                     )
                   ),
                   h(
