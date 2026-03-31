@@ -964,6 +964,10 @@ function HistoryChart({ series }) {
   const yMax = Math.min(1, rawMax + padding);
   const safeYMax = yMax === yMin ? Math.min(1, yMin + 0.05) : yMax;
   const yTicks = buildTicks(yMin, safeYMax, 5);
+  const hasIsolation = series.some((player) => player.dimmed);
+  const isolatedPlayer = hasIsolation
+    ? series.find((player) => player.highlighted) ?? null
+    : null;
 
   function xScale(index) {
     return margin.left + (innerWidth * index) / stepCount;
@@ -1072,9 +1076,9 @@ function HistoryChart({ series }) {
         h(
           "text",
           {
-            x: width - margin.right,
+            x: margin.left + innerWidth / 2,
             y: height - 10,
-            textAnchor: "end",
+            textAnchor: "middle",
             className: "chart-axis-label",
           },
           "Round"
@@ -1083,7 +1087,15 @@ function HistoryChart({ series }) {
       ...series.map((player) =>
         h(
           "g",
-          { key: `line-${player.name}` },
+          {
+            key: `line-${player.name}`,
+            className:
+              player.dimmed
+                ? "chart-series is-dimmed"
+                : player.highlighted
+                  ? "chart-series is-highlighted"
+                  : "chart-series",
+          },
           h("path", {
             className: "chart-line",
             d: player.points
@@ -1128,6 +1140,47 @@ function HistoryChart({ series }) {
           })
         )
       ),
+      isolatedPlayer
+        ? h(
+            "g",
+            { className: "chart-point-labels" },
+            ...isolatedPlayer.points.map((point) => {
+              const cx = xScale(point.x);
+              const cy = yScale(point.value);
+              const label = formatPercent(point.value);
+              const labelWidth = Math.max(40, label.length * 7 + 12);
+              const labelHeight = 22;
+              const x = Math.min(
+                Math.max(cx - labelWidth / 2, margin.left + 2),
+                width - margin.right - labelWidth - 2
+              );
+              const y = Math.max(cy - 34, margin.top + 2);
+
+              return h(
+                "g",
+                { key: `label-${isolatedPlayer.name}-${point.label}` },
+                h("rect", {
+                  x,
+                  y,
+                  width: labelWidth,
+                  height: labelHeight,
+                  rx: 10,
+                  className: "chart-point-label-box",
+                }),
+                h(
+                  "text",
+                  {
+                    x: x + labelWidth / 2,
+                    y: y + 15,
+                    textAnchor: "middle",
+                    className: "chart-point-label-text",
+                  },
+                  label
+                )
+              );
+            })
+          )
+        : null,
       tooltip
         ? h(
             "g",
@@ -1169,6 +1222,7 @@ export function App() {
   const [activeRound, setActiveRound] = useState("");
   const [liveRoundData, setLiveRoundData] = useState(null);
   const [liveWdlData, setLiveWdlData] = useState({});
+  const [isolatedHistoryPlayer, setIsolatedHistoryPlayer] = useState(null);
 
   useEffect(() => {
     Promise.all([
@@ -1610,13 +1664,27 @@ export function App() {
     );
   }, [historySeries, selectedRoundWinRows, selectedDivision]);
 
+  useEffect(() => {
+    if (!isolatedHistoryPlayer) return;
+    if (!legendSeries.some((player) => player.name === isolatedHistoryPlayer)) {
+      setIsolatedHistoryPlayer(null);
+    }
+  }, [isolatedHistoryPlayer, legendSeries]);
+
   const visibleHistorySeries = useMemo(() => {
     if (!legendSeries.length) return [];
 
-    const filtered = legendSeries.map((player) => ({
-      ...player,
-      points: player.points.filter((point) => Number(point.label) <= Math.max(activeRoundIndex + 1, 0)),
-    }));
+    const filtered = legendSeries.map((player) => {
+      const highlighted = !isolatedHistoryPlayer || player.name === isolatedHistoryPlayer;
+      return {
+        ...player,
+        highlighted,
+        dimmed: !highlighted,
+        points: player.points.filter(
+          (point) => Number(point.label) <= Math.max(activeRoundIndex + 1, 0)
+        ),
+      };
+    });
 
     if (!selectedRoundWinRows || !liveForecastData || !liveRoundName) {
       return filtered;
@@ -1637,6 +1705,7 @@ export function App() {
   }, [
     activeRoundIndex,
     forecastFrontierRoundNumber,
+    isolatedHistoryPlayer,
     legendSeries,
     liveForecastData,
     liveRoundName,
@@ -1778,8 +1847,21 @@ export function App() {
                 { className: "chart-legend" },
                 ...legendSeries.map((player) =>
                   h(
-                    "div",
-                    { key: `legend-${player.name}`, className: "legend-item" },
+                    "button",
+                    {
+                      key: `legend-${player.name}`,
+                      type: "button",
+                      className:
+                        isolatedHistoryPlayer === player.name
+                          ? "legend-item is-active"
+                          : isolatedHistoryPlayer
+                            ? "legend-item is-dimmed"
+                            : "legend-item",
+                      onClick: () =>
+                        setIsolatedHistoryPlayer((current) =>
+                          current === player.name ? null : player.name
+                        ),
+                    },
                     h("span", {
                       className: "legend-swatch",
                       style: { backgroundColor: player.color },

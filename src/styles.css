@@ -269,17 +269,29 @@ button {
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transition: opacity 140ms ease;
 }
 
 .chart-point {
   stroke: rgba(24, 17, 13, 0.95);
   stroke-width: 1.5;
-  transition: r 120ms ease;
+  transition:
+    r 120ms ease,
+    opacity 140ms ease;
 }
 
 .chart-point.active {
   stroke: #fff7ea;
   stroke-width: 2;
+}
+
+.chart-series.is-dimmed .chart-line,
+.chart-series.is-dimmed .chart-point {
+  opacity: 0.18;
+}
+
+.chart-series.is-highlighted .chart-line {
+  stroke-width: 3.6;
 }
 
 .chart-hit-area {
@@ -306,6 +318,18 @@ button {
   font-size: 12px;
 }
 
+.chart-point-label-box {
+  fill: rgba(18, 13, 10, 0.94);
+  stroke: rgba(255, 212, 138, 0.22);
+}
+
+.chart-point-label-text {
+  fill: #f7f1e3;
+  font-size: 11px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
@@ -318,8 +342,27 @@ button {
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
+  border: 0;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+  cursor: pointer;
+  transition:
+    opacity 140ms ease,
+    background 140ms ease,
+    transform 140ms ease;
+}
+
+.legend-item:hover {
+  transform: translateY(-1px);
+}
+
+.legend-item.is-active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.legend-item.is-dimmed {
+  opacity: 0.4;
 }
 
 .legend-text {
