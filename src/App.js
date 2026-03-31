@@ -1373,17 +1373,26 @@ export function App() {
   }, [data]);
   const nextRoundIndex = completedRounds.length;
   const pairingsRefreshLabel = useMemo(() => {
-    const timestamp =
-      round &&
+    const selectedRoundNumber = Math.max(activeRoundIndex + 1, 0);
+    const usesFrontierSnapshot =
       sourceLiveRound &&
-      round.url === sourceLiveRound.url &&
-      !isRoundCompleted(round)
+      selectedRoundNumber >= forecastFrontierRoundNumber &&
+      !!liveRoundData?.fetchedAt;
+    const timestamp =
+      usesFrontierSnapshot
         ? liveRoundData?.fetchedAt ?? datasetRefreshTimes?.[selectedDivision] ?? null
         : datasetRefreshTimes?.[selectedDivision] ?? null;
 
     const formatted = formatRefreshTime(timestamp);
     return formatted ? `Last Refreshed ${formatted}` : null;
-  }, [datasetRefreshTimes, liveRoundData, round, selectedDivision, sourceLiveRound]);
+  }, [
+    activeRoundIndex,
+    datasetRefreshTimes,
+    forecastFrontierRoundNumber,
+    liveRoundData,
+    selectedDivision,
+    sourceLiveRound,
+  ]);
 
   const playerRatings = useMemo(() => {
     if (!data) return new Map();
@@ -2020,7 +2029,24 @@ export function App() {
                                       );
                                 })()
                               )
-                            : formatResult(game.result)
+                            : (() => {
+                                const resultHref =
+                                  liveBroadcastUrls.get(`${game.white}::${game.black}`) ??
+                                  game.broadcast_url;
+
+                                return resultHref
+                                  ? h(
+                                      "a",
+                                      {
+                                        href: resultHref,
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        className: "live-game-link",
+                                      },
+                                      formatResult(game.result)
+                                    )
+                                  : formatResult(game.result);
+                              })()
                         ),
                         h(
                           "td",
