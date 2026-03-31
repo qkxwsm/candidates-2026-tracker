@@ -13,11 +13,11 @@ DATA_DIR = ROOT / "data"
 SIMULATION_COUNT = int(os.environ.get("SIMULATION_COUNT", "1000000"))
 CHUNK_SIZE = int(os.environ.get("SIMULATION_CHUNK_SIZE", "100000"))
 WHITE_ADVANTAGE_ELO = 35
-DRAW_RATE_AT_EQUAL = 0.5
-DRAW_DECAY_ELO = 300
+DRAW_RATE_AT_EQUAL = 0.62
+DRAW_DECAY_ELO = 700
 FORM_PRIOR_GAMES = 6
 FORM_MAX_ELO_SHIFT = 120
-FORECAST_CACHE_VERSION = "server-v1"
+FORECAST_CACHE_VERSION = "server-v2"
 PAIRING_FILES = {
     "open": DATA_DIR / "open_pairings.json",
     "women": DATA_DIR / "women_pairings.json",
@@ -133,10 +133,21 @@ def infer_posterior_form(data: dict, completed_round_count: int, player_lookup: 
     return form_map
 
 
-def simulate_scores_batch(base_scores, remaining_games, batch_size: int, rng: np.random.Generator):
+def simulate_scores_batch(
+    base_scores,
+    remaining_games,
+    batch_size: int,
+    rng: np.random.Generator,
+    tracked_game_count: int = 0,
+):
     scores = np.tile(base_scores, (batch_size, 1)).astype(np.float64)
+    tracked_counts = (
+        np.zeros((tracked_game_count, 3), dtype=np.float64)
+        if tracked_game_count > 0
+        else None
+    )
 
-    for white_index, black_index, white_rating, black_rating in remaining_games:
+    for game_index, (white_index, black_index, white_rating, black_rating) in enumerate(remaining_games):
         _, white_win_probability, draw_probability, _ = probability_model(
             white_rating,
             black_rating,
@@ -151,7 +162,12 @@ def simulate_scores_batch(base_scores, remaining_games, batch_size: int, rng: np
         scores[:, white_index] += white_wins.astype(np.float64) + 0.5 * draws_mask.astype(np.float64)
         scores[:, black_index] += black_wins.astype(np.float64) + 0.5 * draws_mask.astype(np.float64)
 
-    return scores
+        if tracked_counts is not None and game_index < tracked_game_count:
+            tracked_counts[game_index, 0] += white_wins.sum()
+            tracked_counts[game_index, 1] += draws_mask.sum()
+            tracked_counts[game_index, 2] += black_wins.sum()
+
+    return scores, tracked_counts
 
 
 def sudden_death_win_probability(player_a: int, player_b: int, ratings: np.ndarray) -> float:
@@ -417,6 +433,7 @@ def build_snapshot(data: dict, completed_round_count: int) -> dict:
     )
 
     remaining_games = []
+    remaining_game_meta = []
     for round_index, round_data in enumerate(data["rounds"]):
         for game in round_data["pairings"]:
             result = game.get("result")
@@ -440,22 +457,39 @@ def build_snapshot(data: dict, completed_round_count: int) -> dict:
                     classical_ratings[black_index],
                 )
             )
+            remaining_game_meta.append(
+                {
+                    "roundNumber": round_index + 1,
+                    "board": game["board"],
+                    "white": game["white"],
+                    "black": game["black"],
+                }
+            )
 
     rng = np.random.default_rng(seed_for_snapshot(data, completed_round_count))
     expected_score_sum = np.zeros(player_count, dtype=np.float64)
     win_counts = np.zeros(player_count, dtype=np.float64)
     rank_buckets = np.zeros((player_count, player_count), dtype=np.float64)
+    pairing_odds_counts = np.zeros((len(remaining_games), 3), dtype=np.float64)
 
     processed = 0
     while processed < SIMULATION_COUNT:
         batch_size = min(CHUNK_SIZE, SIMULATION_COUNT - processed)
-        scores = simulate_scores_batch(current_scores, remaining_games, batch_size, rng)
+        scores, tracked_counts = simulate_scores_batch(
+            current_scores,
+            remaining_games,
+            batch_size,
+            rng,
+            tracked_game_count=len(remaining_games),
+        )
         expected_score_sum += scores.sum(axis=0)
         order = np.argsort(-scores, axis=1, kind="stable")
         sorted_scores = np.take_along_axis(scores, order, axis=1)
         winners = resolve_first_place_winners(order, sorted_scores, rapid_ratings, blitz_ratings, rng)
         win_counts += np.bincount(winners, minlength=player_count)
         rank_buckets += rank_bucket_counts(order, sorted_scores, winners)
+        if tracked_counts is not None:
+            pairing_odds_counts += tracked_counts
         processed += batch_size
 
     results = []
@@ -481,10 +515,29 @@ def build_snapshot(data: dict, completed_round_count: int) -> dict:
         key=lambda player: (-player["winProbability"], player["expectedRank"])
     )
 
+    pairing_odds_by_round: dict[str, list[dict]] = {}
+    for game_index, meta in enumerate(remaining_game_meta):
+        counts = pairing_odds_counts[game_index]
+        round_key = str(meta["roundNumber"])
+        pairing_odds_by_round.setdefault(round_key, []).append(
+            {
+                "board": meta["board"],
+                "white": meta["white"],
+                "black": meta["black"],
+                "whiteWinProbability": float(counts[0] / SIMULATION_COUNT),
+                "drawProbability": float(counts[1] / SIMULATION_COUNT),
+                "blackWinProbability": float(counts[2] / SIMULATION_COUNT),
+            }
+        )
+
+    pairing_odds = pairing_odds_by_round.get(str(completed_round_count + 1), [])
+
     return {
         "roundNumber": completed_round_count,
         "label": "0" if completed_round_count == 0 else str(completed_round_count),
         "results": results,
+        "pairingOdds": pairing_odds,
+        "pairingOddsByRound": pairing_odds_by_round,
         "isCompletedSnapshot": completed_round_count
         <= sum(1 for round_data in data["rounds"] if is_round_completed(round_data)),
     }

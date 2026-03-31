@@ -4,8 +4,8 @@ const h = React.createElement;
 
 const SIMULATION_COUNT = 1000000;
 const WHITE_ADVANTAGE_ELO = 35;
-const DRAW_RATE_AT_EQUAL = 0.5;
-const DRAW_DECAY_ELO = 300;
+const DRAW_RATE_AT_EQUAL = 0.62;
+const DRAW_DECAY_ELO = 700;
 const ROUND_ZERO_KEY = "__round0__";
 const SIMULATION_CACHE_VERSION = "v4";
 const LIVE_ROUND_CACHE_TTL_MS = 5 * 60 * 1000;
@@ -99,6 +99,23 @@ function formatRefreshTime(value) {
 
 function formatPercent(value) {
   return `${(value * 100).toFixed(1)}%`;
+}
+
+function renderPairingOdds(odds, result) {
+  if (!odds) return "-";
+
+  const normalized = normalizeResult(result);
+  const segments = [
+    { key: "W", value: odds.whiteWinProbability, emphasize: normalized === "1-0" },
+    { key: "D", value: odds.drawProbability, emphasize: normalized === "1/2-1/2" },
+    { key: "B", value: odds.blackWinProbability, emphasize: normalized === "0-1" },
+  ];
+
+  return segments.flatMap((segment, index) => {
+    const content = `${segment.key} ${formatPercent(segment.value)}`;
+    const node = segment.emphasize ? h("strong", null, content) : content;
+    return index < segments.length - 1 ? [node, " | "] : [node];
+  });
 }
 
 function formatScore(value) {
@@ -947,6 +964,10 @@ function safeLocalStorageSet(key, value) {
   }
 }
 
+function fetchJsonNoStore(url) {
+  return fetch(url, { cache: "no-store" });
+}
+
 function HistoryChart({ series }) {
   const [hoveredPoint, setHoveredPoint] = useState(null);
   const width = 960;
@@ -1226,16 +1247,16 @@ export function App() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/data/open_pairings.json").then(async (response) => ({
+      fetchJsonNoStore("/data/open_pairings.json").then(async (response) => ({
         data: await response.json(),
         refreshedAt: parseResponseTimestamp(response),
       })),
-      fetch("/data/women_pairings.json").then(async (response) => ({
+      fetchJsonNoStore("/data/women_pairings.json").then(async (response) => ({
         data: await response.json(),
         refreshedAt: parseResponseTimestamp(response),
       })),
-      fetch("/data/open_forecasts.json").then((response) => response.json()),
-      fetch("/data/women_forecasts.json").then((response) => response.json()),
+      fetchJsonNoStore("/data/open_forecasts.json").then((response) => response.json()),
+      fetchJsonNoStore("/data/women_forecasts.json").then((response) => response.json()),
     ]).then(([openPairings, womenPairings, openForecasts, womenForecasts]) => {
       setDatasets({
         Open: { ...openPairings.data, division: "Open", event: "FIDE Candidates 2026" },
@@ -1655,6 +1676,30 @@ export function App() {
     liveRoundName,
   ]);
 
+  const preRoundPairingOdds = useMemo(() => {
+    if (!forecastSnapshots || activeRoundIndex < 0) return new Map();
+    const displayedRoundNumber = activeRoundIndex + 1;
+    const snapshotRoundNumber = Math.min(
+      activeRoundIndex,
+      forecastFrontierRoundNumber
+    );
+    const snapshot = forecastSnapshots.find(
+      (entry) => entry.roundNumber === snapshotRoundNumber
+    );
+    const pairingOdds =
+      snapshot?.pairingOddsByRound?.[String(displayedRoundNumber)] ??
+      snapshot?.pairingOdds ??
+      [];
+    if (!pairingOdds.length) return new Map();
+
+    return new Map(
+      pairingOdds.map((game) => [
+        `${game.white}::${game.black}`,
+        game,
+      ])
+    );
+  }, [activeRoundIndex, forecastFrontierRoundNumber, forecastSnapshots]);
+
   const selectedRoundWinRows = useMemo(() => {
     if (!forecastRows) return null;
     return new Map(
@@ -1943,122 +1988,129 @@ export function App() {
                       h("th", null, "White"),
                       h("th", null, "Result"),
                       h("th", null, "Black"),
-                      h("th", null, "Rating")
+                      h("th", null, "Rating"),
+                      h("th", null, "Forecast")
                     )
                   ),
                   h(
                     "tbody",
                     null,
                     ...round.pairings.map((game) =>
-                      h(
-                        "tr",
-                        { key: `${round.name}-${game.board}` },
-                        h("td", null, game.board),
-                        h("td", null, playerRatings.get(game.white) ?? "-"),
-                        h(
-                          "td",
-                          null,
-                          showPairingScores
-                            ? `${game.white} (${formatStandingScore(
-                                scoresBeforeSelectedRound.get(game.white) ?? 0
-                              )})`
-                            : game.white
-                        ),
-                        h(
-                          "td",
-                          {
-                            className:
-                              game.result === "*" ? "pending-result" : "final-result",
-                          },
-                          game.result === "*" && game.broadcast_url
-                            ? h(
-                                "span",
-                                { className: "live-result-stack" },
-                                (() => {
-                                  const liveGame = liveGamesByPlayers.get(
-                                    `${game.white}::${game.black}`
-                                  );
-                                  const wdlData = liveWdlByPlayers.get(
-                                    `${game.white}::${game.black}`
-                                  );
-                                  const lastMove = formatLiveMove(liveGame);
-                                  const evalLabel = formatLiveEval(wdlData);
-                                  const moveEvalLabel = [lastMove, evalLabel]
-                                    .filter(Boolean)
-                                    .join(" ");
+                      (() => {
+                        const odds = preRoundPairingOdds.get(
+                          `${game.white}::${game.black}`
+                        );
+                        const resultContent = (() => {
+                          if (game.result === "*" && game.broadcast_url) {
+                            const liveGame = liveGamesByPlayers.get(
+                              `${game.white}::${game.black}`
+                            );
+                            const wdlData = liveWdlByPlayers.get(
+                              `${game.white}::${game.black}`
+                            );
+                            const lastMove = formatLiveMove(liveGame);
+                            const evalLabel = formatLiveEval(wdlData);
+                            const moveEvalLabel = [lastMove, evalLabel]
+                              .filter(Boolean)
+                              .join(" ");
 
-                                  return moveEvalLabel
-                                    ? h(
-                                        "span",
-                                        { className: "live-meta-stack" },
-                                        moveEvalLabel
-                                          ? h(
-                                              "span",
-                                              { className: "live-eval-label" },
-                                              [
-                                                h(
-                                                  "a",
-                                                  {
-                                                    href:
-                                                      liveBroadcastUrls.get(
-                                                        `${game.white}::${game.black}`
-                                                      ) ?? game.broadcast_url,
-                                                    target: "_blank",
-                                                    rel: "noreferrer",
-                                                    className: "live-game-link",
-                                                  },
-                                                  formatResult(game.result)
-                                                ),
-                                                ` (${moveEvalLabel})`,
-                                              ]
-                                            )
-                                          : null
-                                      )
-                                    : h(
-                                        "a",
-                                        {
-                                          href:
-                                            liveBroadcastUrls.get(
-                                              `${game.white}::${game.black}`
-                                            ) ?? game.broadcast_url,
-                                          target: "_blank",
-                                          rel: "noreferrer",
-                                          className: "live-game-link",
-                                        },
-                                        formatResult(game.result)
-                                      );
-                                })()
-                              )
-                            : (() => {
-                                const resultHref =
-                                  liveBroadcastUrls.get(`${game.white}::${game.black}`) ??
-                                  game.broadcast_url;
-
-                                return resultHref
-                                  ? h(
+                            return moveEvalLabel
+                              ? h(
+                                  "span",
+                                  { className: "live-eval-label" },
+                                  [
+                                    h(
                                       "a",
                                       {
-                                        href: resultHref,
+                                        href:
+                                          liveBroadcastUrls.get(
+                                            `${game.white}::${game.black}`
+                                          ) ?? game.broadcast_url,
                                         target: "_blank",
                                         rel: "noreferrer",
                                         className: "live-game-link",
                                       },
                                       formatResult(game.result)
-                                    )
-                                  : formatResult(game.result);
-                              })()
-                        ),
-                        h(
-                          "td",
-                          null,
-                          showPairingScores
-                            ? `${game.black} (${formatStandingScore(
-                                scoresBeforeSelectedRound.get(game.black) ?? 0
-                              )})`
-                            : game.black
-                        ),
-                        h("td", null, playerRatings.get(game.black) ?? "-")
-                      )
+                                    ),
+                                    ` (${moveEvalLabel})`,
+                                  ]
+                                )
+                              : h(
+                                  "a",
+                                  {
+                                    href:
+                                      liveBroadcastUrls.get(
+                                        `${game.white}::${game.black}`
+                                      ) ?? game.broadcast_url,
+                                    target: "_blank",
+                                    rel: "noreferrer",
+                                    className: "live-game-link",
+                                  },
+                                  formatResult(game.result)
+                                );
+                          }
+
+                          const resultHref =
+                            liveBroadcastUrls.get(`${game.white}::${game.black}`) ??
+                            game.broadcast_url;
+
+                          return resultHref
+                            ? h(
+                                "a",
+                                {
+                                  href: resultHref,
+                                  target: "_blank",
+                                  rel: "noreferrer",
+                                  className: "live-game-link",
+                                },
+                                formatResult(game.result)
+                              )
+                            : formatResult(game.result);
+                        })();
+
+                        return h(
+                          "tr",
+                          { key: `${round.name}-${game.board}` },
+                          h("td", null, game.board),
+                          h("td", null, playerRatings.get(game.white) ?? "-"),
+                          h(
+                            "td",
+                            null,
+                            showPairingScores
+                              ? `${game.white} (${formatStandingScore(
+                                  scoresBeforeSelectedRound.get(game.white) ?? 0
+                                )})`
+                              : game.white
+                          ),
+                          h(
+                            "td",
+                            {
+                              className:
+                                game.result === "*" ? "pending-result" : "final-result",
+                            },
+                            h("span", { className: "live-result-stack" }, resultContent)
+                          ),
+                          h(
+                            "td",
+                            null,
+                            showPairingScores
+                              ? `${game.black} (${formatStandingScore(
+                                  scoresBeforeSelectedRound.get(game.black) ?? 0
+                                )})`
+                              : game.black
+                          ),
+                          h("td", null, playerRatings.get(game.black) ?? "-"),
+                          h(
+                            "td",
+                            { className: "forecast-cell" },
+                            h(
+                              "span",
+                              { className: "pairing-odds" },
+                              renderPairingOdds(odds, game.result)
+                            )
+                          )
+                        );
+                      })()
                     )
                   )
                 )
@@ -2204,7 +2256,7 @@ export function App() {
                   h(
                     "p",
                     { className: "model-note info-paragraph" },
-                    "Probabilities are generated using 1,000,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, a draw model that starts at 50% for equal-strength players and decays as the rating gap grows, a posterior form adjustment inferred from completed games, and official public FIDE rapid and blitz ratings for first-place playoff simulations."
+                    "Probabilities are generated using 1,000,000 Monte Carlo runs with a 35 Elo white-edge assumption, FIDE expected score as the base signal, and a calibrated draw model that makes equal-strength games more drawish and increases decisiveness more gradually as the rating gap grows, so the baseline simulation better matches recent Candidates tournaments. The model also includes a posterior form adjustment inferred from completed games and official public FIDE rapid and blitz ratings for first-place playoff simulations."
                   ),
                   h(
                     "div",

@@ -606,6 +606,17 @@ tbody tr + tr td {
   white-space: nowrap;
 }
 
+.forecast-cell {
+  white-space: nowrap;
+}
+
+.pairing-odds {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #d7bea1;
+  white-space: nowrap;
+}
+
 @media (max-width: 720px) {
   .page-shell {
     padding: 16px 12px 24px;
