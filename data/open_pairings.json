@@ -1,16 +1,16 @@
 {
   "event": "FIDE Candidates 2026",
   "division": "Open",
-  "snapshot_date": "2026-03-30",
+  "snapshot_date": "2026-03-31",
   "source": "https://lichess.org/broadcast/fide-candidates-2026-open/BLA70Vds",
   "website": "https://candidates2026.fide.com/",
   "players": [
     {
       "name": "Caruana, Fabiano",
       "fide_id": 2020009,
-      "rating": 2795,
+      "rating": 2793,
       "rapid_rating": 2727,
-      "blitz_rating": 2769
+      "blitz_rating": 2749
     },
     {
       "name": "Nakamura, Hikaru",
@@ -36,7 +36,7 @@
     {
       "name": "Bluebaum, Matthias",
       "fide_id": 24651516,
-      "rating": 2698,
+      "rating": 2695,
       "rapid_rating": 2587,
       "blitz_rating": 2634
     },
@@ -163,7 +163,7 @@
           "board": 3,
           "white": "Caruana, Fabiano",
           "black": "Wei, Yi",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "8EWUBjpx",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/8EWUBjpx"
         },
