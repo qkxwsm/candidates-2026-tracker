@@ -17,7 +17,7 @@ DRAW_RATE_AT_EQUAL = 0.62
 DRAW_DECAY_ELO = 700
 FORM_PRIOR_GAMES = 6
 FORM_MAX_ELO_SHIFT = 80
-FORECAST_CACHE_VERSION = "server-v2"
+FORECAST_CACHE_VERSION = "server-v3"
 PAIRING_FILES = {
     "open": DATA_DIR / "open_pairings.json",
     "women": DATA_DIR / "women_pairings.json",

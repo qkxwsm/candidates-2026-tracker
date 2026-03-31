@@ -1638,6 +1638,8 @@ export function App() {
     return dataWithLiveResults;
   }, [data, dataWithLiveResults]);
 
+  const hasMergedResultUpdates = !!liveForecastData;
+
   const historySeries = useMemo(() => {
     if (!data || !forecastSnapshots) return null;
     return {
@@ -1659,8 +1661,7 @@ export function App() {
     );
     if (
       liveForecastData &&
-      effectiveRoundNumber === forecastFrontierRoundNumber &&
-      liveRoundName
+      effectiveRoundNumber === forecastFrontierRoundNumber
     ) {
       return buildSimulation(liveForecastData, effectiveRoundNumber);
     }
@@ -1740,7 +1741,7 @@ export function App() {
       };
     });
 
-    if (!selectedRoundWinRows || !liveForecastData || !liveRoundName) {
+    if (!selectedRoundWinRows || !hasMergedResultUpdates) {
       return filtered;
     }
 
@@ -1761,8 +1762,7 @@ export function App() {
     forecastFrontierRoundNumber,
     isolatedHistoryPlayer,
     legendSeries,
-    liveForecastData,
-    liveRoundName,
+    hasMergedResultUpdates,
     selectedRoundWinRows,
   ]);
 
