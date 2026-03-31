@@ -1652,6 +1652,14 @@ export function App() {
     };
   }, [data, forecastFrontierRoundNumber, forecastSnapshots, selectedDivision]);
 
+  const frontierForecastRows = useMemo(() => {
+    if (!liveForecastData || !forecastFrontierRoundNumber) {
+      return null;
+    }
+
+    return buildSimulation(liveForecastData, forecastFrontierRoundNumber);
+  }, [forecastFrontierRoundNumber, liveForecastData]);
+
   const forecastRows = useMemo(() => {
     if (!forecastSnapshots) return null;
     const selectedRoundNumber = Math.max(activeRoundIndex + 1, 0);
@@ -1660,10 +1668,10 @@ export function App() {
       forecastFrontierRoundNumber
     );
     if (
-      liveForecastData &&
+      frontierForecastRows &&
       effectiveRoundNumber === forecastFrontierRoundNumber
     ) {
-      return buildSimulation(liveForecastData, effectiveRoundNumber);
+      return frontierForecastRows;
     }
     const snapshot = forecastSnapshots.find(
       (entry) => entry.roundNumber === effectiveRoundNumber
@@ -1672,9 +1680,8 @@ export function App() {
   }, [
     activeRoundIndex,
     forecastFrontierRoundNumber,
+    frontierForecastRows,
     forecastSnapshots,
-    liveForecastData,
-    liveRoundName,
   ]);
 
   const preRoundPairingOdds = useMemo(() => {

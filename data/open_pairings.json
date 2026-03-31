@@ -147,7 +147,7 @@
           "board": 1,
           "white": "Bluebaum, Matthias",
           "black": "Esipenko, Andrey",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "8fhADxUe",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/8fhADxUe"
         },
@@ -155,7 +155,7 @@
           "board": 2,
           "white": "Praggnanandhaa R",
           "black": "Sindarov, Javokhir",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "NUotXF78",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/NUotXF78"
         },
@@ -171,7 +171,7 @@
           "board": 4,
           "white": "Nakamura, Hikaru",
           "black": "Giri, Anish",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "AaJLmuxI",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-3/SDizieNR/AaJLmuxI"
         }
