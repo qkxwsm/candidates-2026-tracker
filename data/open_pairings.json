@@ -185,7 +185,7 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Giri, Anish",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "xbSQ7kmG",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/xbSQ7kmG"
         },
@@ -201,7 +201,7 @@
           "board": 3,
           "white": "Sindarov, Javokhir",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "Jzyakrf4",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-4/97di6JjX/Jzyakrf4"
         },
