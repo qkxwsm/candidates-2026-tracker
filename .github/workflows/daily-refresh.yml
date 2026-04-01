@@ -1,8 +1,11 @@
-name: Daily Refresh
+name: Scheduled Refresh
 
 on:
   schedule:
     - cron: "0 15 * * *"
+    - cron: "0 17 * * *"
+    - cron: "0 19 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 permissions:
