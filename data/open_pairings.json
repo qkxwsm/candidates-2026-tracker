@@ -223,7 +223,7 @@
           "board": 1,
           "white": "Praggnanandhaa R",
           "black": "Esipenko, Andrey",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "doQytm8e",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/doQytm8e"
         },
@@ -231,7 +231,7 @@
           "board": 2,
           "white": "Caruana, Fabiano",
           "black": "Bluebaum, Matthias",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "wuNBfSXX",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/wuNBfSXX"
         },
@@ -247,7 +247,7 @@
           "board": 4,
           "white": "Giri, Anish",
           "black": "Wei, Yi",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "2pyjWUYv",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-5/liBI9Brw/2pyjWUYv"
         }
