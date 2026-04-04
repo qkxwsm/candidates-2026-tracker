@@ -261,7 +261,7 @@
           "board": 1,
           "white": "Caruana, Fabiano",
           "black": "Esipenko, Andrey",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "JSl2MlKS",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/JSl2MlKS"
         },
@@ -269,7 +269,7 @@
           "board": 2,
           "white": "Nakamura, Hikaru",
           "black": "Praggnanandhaa R",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "kMneswLv",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/kMneswLv"
         },
@@ -285,7 +285,7 @@
           "board": 4,
           "white": "Wei, Yi",
           "black": "Sindarov, Javokhir",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "lkyNaDkn",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-6/WmbQrSNz/lkyNaDkn"
         }
