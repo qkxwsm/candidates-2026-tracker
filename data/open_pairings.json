@@ -299,7 +299,7 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Wei, Yi",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "GyvRkvrq",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/GyvRkvrq"
         },
@@ -323,7 +323,7 @@
           "board": 4,
           "white": "Praggnanandhaa R",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "JgG5oLO8",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-7/aVbIuZ7Q/JgG5oLO8"
         }
