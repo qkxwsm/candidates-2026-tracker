@@ -3939,144 +3939,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.586563,
-          "expectedRank": 1.674693999999957,
-          "winProbability": 0.641789,
+          "expectedScore": 8.580425,
+          "expectedRank": 1.6696039999999575,
+          "winProbability": 0.648803,
           "rankDistribution": [
-            0.6417889999999546,
-            0.18575474285717597,
-            0.08892955952378866,
-            0.045041776190475676,
-            0.02266169285714289,
-            0.010667526190476314,
-            0.004119509523809507,
-            0.0010361928571428567
+            0.6488029999999552,
+            0.1800908285714633,
+            0.08680439523807307,
+            0.044519861904761523,
+            0.023163028571428674,
+            0.011127695238095333,
+            0.004384128571428552,
+            0.0011070619047619042
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.3963015,
-          "expectedRank": 3.6442605000002017,
-          "winProbability": 0.105906,
+          "expectedScore": 7.3925,
+          "expectedRank": 3.6468730000002507,
+          "winProbability": 0.108227,
           "rankDistribution": [
-            0.10590599999998841,
-            0.21761130714287102,
-            0.1999919238095423,
-            0.16735334047621034,
-            0.13092059047620527,
-            0.09397684047618868,
-            0.058641223809522,
-            0.02559877380952384
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.041187,
-          "expectedRank": 4.37320750000039,
-          "winProbability": 0.071603,
-          "rankDistribution": [
-            0.07160300000000323,
-            0.1403179238095259,
-            0.15865462380953757,
-            0.1605455571428854,
-            0.15384639047621468,
-            0.1382137238095397,
-            0.1102419904761938,
-            0.06657679047618903
+            0.10822699999998844,
+            0.2203464785714419,
+            0.1956130452381172,
+            0.1633995119047915,
+            0.13006084523810957,
+            0.09562726190476087,
+            0.0603587952380931,
+            0.026367061904762
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.005307,
-          "expectedRank": 4.451345000000411,
-          "winProbability": 0.059621,
+          "currentScore": 3.5,
+          "expectedScore": 7.0808105,
+          "expectedRank": 4.2880765000004155,
+          "winProbability": 0.062031,
           "rankDistribution": [
-            0.059621000000003394,
-            0.13948965714285858,
-            0.1555988571428703,
-            0.16123310714288563,
-            0.15700019047621608,
-            0.14259435714287425,
-            0.11525405714286188,
-            0.06920877380952221
+            0.062031000000003576,
+            0.14887144523809853,
+            0.16933827857146186,
+            0.17112626190478025,
+            0.1601690119047893,
+            0.13632992857144408,
+            0.10011449523809593,
+            0.05201957857142819
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.966793,
-          "expectedRank": 4.533603000000419,
-          "winProbability": 0.057051,
+          "expectedScore": 6.961594,
+          "expectedRank": 4.5478075000004266,
+          "winProbability": 0.05799,
           "rankDistribution": [
-            0.05705100000000352,
-            0.13066372380952426,
-            0.15191322380953615,
-            0.15879512380955133,
-            0.15759870714288274,
-            0.14713270714287585,
-            0.12124950714286332,
-            0.0755960071428551
+            0.05799000000000345,
+            0.13273708809523893,
+            0.14931237142858336,
+            0.15469528809526503,
+            0.15467478809526353,
+            0.14806920476192445,
+            0.12433418809524534,
+            0.07818707142856919
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.990676,
+          "expectedRank": 4.477458500000419,
+          "winProbability": 0.057388,
+          "rankDistribution": [
+            0.05738800000000381,
+            0.12692278809523844,
+            0.15698753809525245,
+            0.16760077142859356,
+            0.1645967714285996,
+            0.1479480214285914,
+            0.11426163809524294,
+            0.06429447142856999
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.9809825,
-          "expectedRank": 4.5117630000004185,
-          "winProbability": 0.052486,
+          "expectedScore": 6.978494,
+          "expectedRank": 4.520329000000417,
+          "winProbability": 0.053636,
           "rankDistribution": [
-            0.05248600000000339,
-            0.13854055714285804,
-            0.15405320714287007,
-            0.15965682380955193,
-            0.157156907142883,
-            0.14497324047620866,
-            0.11928112380952947,
-            0.07385214047618853
+            0.05363600000000337,
+            0.1416964380952396,
+            0.15167097142858368,
+            0.15513055476193188,
+            0.1539707214285963,
+            0.14562572142859018,
+            0.12199968809524454,
+            0.07626990476190267
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2672895,
-          "expectedRank": 5.963738500000002,
-          "winProbability": 0.009197,
+          "expectedScore": 6.264113,
+          "expectedRank": 5.981765999999995,
+          "winProbability": 0.009482,
           "rankDistribution": [
-            0.009196999999999894,
-            0.03610010714285755,
-            0.06492997380952102,
-            0.09920907380952472,
-            0.13944774047620956,
-            0.1875929904761989,
-            0.2402664904761752,
-            0.2232566238095197
+            0.009481999999999923,
+            0.037434454761905246,
+            0.0644299880952354,
+            0.09668667142857114,
+            0.13508608809525574,
+            0.18423417142858228,
+            0.24463003809522194,
+            0.22801658809523345
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7555765,
-          "expectedRank": 6.84738850000008,
-          "winProbability": 0.002347,
+          "expectedScore": 5.7513875,
+          "expectedRank": 6.868085500000093,
+          "winProbability": 0.002443,
           "rankDistribution": [
-            0.002347000000000003,
-            0.011521980952381052,
-            0.025928630952380984,
-            0.048165197619047334,
-            0.08136778095237261,
-            0.13484861428573014,
-            0.23094609761903562,
-            0.4648746976190615
+            0.0024430000000000033,
+            0.011900478571428653,
+            0.025843411904761932,
+            0.0468410785714286,
+            0.07827874523808744,
+            0.13103799523810986,
+            0.2299170285714168,
+            0.47373826190477764
           ]
         }
       ],
@@ -4085,33 +4085,33 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Divya Deshmukh",
-          "whiteWinProbability": 0.343854,
-          "drawProbability": 0.550294,
-          "blackWinProbability": 0.105852
+          "whiteWinProbability": 0.342425,
+          "drawProbability": 0.550897,
+          "blackWinProbability": 0.106678
         },
         {
           "board": 2,
           "white": "Assaubayeva, Bibisara",
           "black": "Vaishali, Rameshbabu",
-          "whiteWinProbability": 0.217686,
-          "drawProbability": 0.607413,
-          "blackWinProbability": 0.174901
+          "whiteWinProbability": 0.218665,
+          "drawProbability": 0.606628,
+          "blackWinProbability": 0.174707
         },
         {
           "board": 3,
           "white": "Lagno, Kateryna",
           "black": "Goryachkina, Aleksandra",
-          "whiteWinProbability": 0.24243,
-          "drawProbability": 0.596237,
-          "blackWinProbability": 0.161333
+          "whiteWinProbability": 0.242775,
+          "drawProbability": 0.596226,
+          "blackWinProbability": 0.160999
         },
         {
           "board": 4,
           "white": "Tan, Zhongyi",
           "black": "Zhu, Jiner",
-          "whiteWinProbability": 0.190541,
-          "drawProbability": 0.618966,
-          "blackWinProbability": 0.190493
+          "whiteWinProbability": 0.187592,
+          "drawProbability": 0.617269,
+          "blackWinProbability": 0.195139
         }
       ],
       "pairingOddsByRound": {
@@ -4120,17 +4120,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.256637,
-            "drawProbability": 0.589764,
-            "blackWinProbability": 0.153599
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247126,
-            "drawProbability": 0.593002,
-            "blackWinProbability": 0.159872
+            "whiteWinProbability": 0.256782,
+            "drawProbability": 0.589522,
+            "blackWinProbability": 0.153696
           }
         ],
         "8": [
@@ -4138,33 +4130,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343854,
-            "drawProbability": 0.550294,
-            "blackWinProbability": 0.105852
+            "whiteWinProbability": 0.342425,
+            "drawProbability": 0.550897,
+            "blackWinProbability": 0.106678
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.217686,
-            "drawProbability": 0.607413,
-            "blackWinProbability": 0.174901
+            "whiteWinProbability": 0.218665,
+            "drawProbability": 0.606628,
+            "blackWinProbability": 0.174707
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.24243,
-            "drawProbability": 0.596237,
-            "blackWinProbability": 0.161333
+            "whiteWinProbability": 0.242775,
+            "drawProbability": 0.596226,
+            "blackWinProbability": 0.160999
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.190541,
-            "drawProbability": 0.618966,
-            "blackWinProbability": 0.190493
+            "whiteWinProbability": 0.187592,
+            "drawProbability": 0.617269,
+            "blackWinProbability": 0.195139
           }
         ],
         "9": [
@@ -4172,33 +4164,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151841,
-            "drawProbability": 0.58769,
-            "blackWinProbability": 0.260469
+            "whiteWinProbability": 0.151853,
+            "drawProbability": 0.587508,
+            "blackWinProbability": 0.260639
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.275365,
-            "drawProbability": 0.580767,
-            "blackWinProbability": 0.143868
+            "whiteWinProbability": 0.28227,
+            "drawProbability": 0.577219,
+            "blackWinProbability": 0.140511
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.307786,
-            "drawProbability": 0.566057,
-            "blackWinProbability": 0.126157
+            "whiteWinProbability": 0.306677,
+            "drawProbability": 0.566789,
+            "blackWinProbability": 0.126534
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.249076,
-            "drawProbability": 0.593092,
-            "blackWinProbability": 0.157832
+            "whiteWinProbability": 0.249466,
+            "drawProbability": 0.592686,
+            "blackWinProbability": 0.157848
           }
         ],
         "10": [
@@ -4206,33 +4198,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.349135,
-            "drawProbability": 0.547496,
-            "blackWinProbability": 0.103369
+            "whiteWinProbability": 0.348472,
+            "drawProbability": 0.547994,
+            "blackWinProbability": 0.103534
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.244459,
-            "drawProbability": 0.594409,
-            "blackWinProbability": 0.161132
+            "whiteWinProbability": 0.244149,
+            "drawProbability": 0.594853,
+            "blackWinProbability": 0.160998
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.193102,
-            "drawProbability": 0.618445,
-            "blackWinProbability": 0.188453
+            "whiteWinProbability": 0.188538,
+            "drawProbability": 0.618413,
+            "blackWinProbability": 0.193049
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.297112,
-            "drawProbability": 0.571204,
-            "blackWinProbability": 0.131684
+            "whiteWinProbability": 0.297182,
+            "drawProbability": 0.570732,
+            "blackWinProbability": 0.132086
           }
         ],
         "11": [
@@ -4240,33 +4232,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.174761,
-            "drawProbability": 0.607091,
-            "blackWinProbability": 0.218148
+            "whiteWinProbability": 0.174579,
+            "drawProbability": 0.607227,
+            "blackWinProbability": 0.218194
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.252983,
-            "drawProbability": 0.591173,
-            "blackWinProbability": 0.155844
+            "whiteWinProbability": 0.252591,
+            "drawProbability": 0.591288,
+            "blackWinProbability": 0.156121
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.274397,
-            "drawProbability": 0.580992,
-            "blackWinProbability": 0.144611
+            "whiteWinProbability": 0.279873,
+            "drawProbability": 0.578138,
+            "blackWinProbability": 0.141989
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.27193,
-            "drawProbability": 0.581753,
-            "blackWinProbability": 0.146317
+            "whiteWinProbability": 0.271936,
+            "drawProbability": 0.58244,
+            "blackWinProbability": 0.145624
           }
         ],
         "12": [
@@ -4274,33 +4266,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.33301,
-            "drawProbability": 0.554666,
-            "blackWinProbability": 0.112324
+            "whiteWinProbability": 0.333021,
+            "drawProbability": 0.55511,
+            "blackWinProbability": 0.111869
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230512,
-            "drawProbability": 0.601209,
-            "blackWinProbability": 0.168279
+            "whiteWinProbability": 0.224233,
+            "drawProbability": 0.604426,
+            "blackWinProbability": 0.171341
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.298831,
-            "drawProbability": 0.569853,
-            "blackWinProbability": 0.131316
+            "whiteWinProbability": 0.298737,
+            "drawProbability": 0.570023,
+            "blackWinProbability": 0.13124
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214606,
-            "drawProbability": 0.60867,
-            "blackWinProbability": 0.176724
+            "whiteWinProbability": 0.214531,
+            "drawProbability": 0.607778,
+            "blackWinProbability": 0.177691
           }
         ],
         "13": [
@@ -4308,33 +4300,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151874,
-            "drawProbability": 0.58868,
-            "blackWinProbability": 0.259446
+            "whiteWinProbability": 0.152936,
+            "drawProbability": 0.58803,
+            "blackWinProbability": 0.259034
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.253558,
-            "drawProbability": 0.590164,
-            "blackWinProbability": 0.156278
+            "whiteWinProbability": 0.253244,
+            "drawProbability": 0.590359,
+            "blackWinProbability": 0.156397
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216849,
-            "drawProbability": 0.607427,
-            "blackWinProbability": 0.175724
+            "whiteWinProbability": 0.215621,
+            "drawProbability": 0.608291,
+            "blackWinProbability": 0.176088
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.262993,
-            "drawProbability": 0.586614,
-            "blackWinProbability": 0.150393
+            "whiteWinProbability": 0.270402,
+            "drawProbability": 0.582522,
+            "blackWinProbability": 0.147076
           }
         ],
         "14": [
@@ -4342,33 +4334,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325349,
-            "drawProbability": 0.558387,
-            "blackWinProbability": 0.116264
+            "whiteWinProbability": 0.320282,
+            "drawProbability": 0.55995,
+            "blackWinProbability": 0.119768
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.310504,
-            "drawProbability": 0.56458,
-            "blackWinProbability": 0.124916
+            "whiteWinProbability": 0.309354,
+            "drawProbability": 0.565594,
+            "blackWinProbability": 0.125052
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251983,
-            "drawProbability": 0.590449,
-            "blackWinProbability": 0.157568
+            "whiteWinProbability": 0.251687,
+            "drawProbability": 0.591857,
+            "blackWinProbability": 0.156456
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.296651,
-            "drawProbability": 0.571095,
-            "blackWinProbability": 0.132254
+            "whiteWinProbability": 0.297329,
+            "drawProbability": 0.570692,
+            "blackWinProbability": 0.131979
           }
         ]
       },
@@ -4382,144 +4374,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.585344,
-          "expectedRank": 1.6762699999999566,
-          "winProbability": 0.64156,
+          "expectedScore": 8.582319,
+          "expectedRank": 1.667023499999958,
+          "winProbability": 0.649461,
           "rankDistribution": [
-            0.6415599999999545,
-            0.18523717142860469,
-            0.08928445476188386,
-            0.045311988095237496,
-            0.0227379047619048,
-            0.010682904761904881,
-            0.004137221428571413,
-            0.0010483547619047613
+            0.6494609999999554,
+            0.18027015476193956,
+            0.08651080476188258,
+            0.04427057142857108,
+            0.02303882142857153,
+            0.011008904761904862,
+            0.0043579880952380745,
+            0.0010817547619047614
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.3989275,
-          "expectedRank": 3.6393765000002043,
-          "winProbability": 0.106817,
+          "expectedScore": 7.3929555,
+          "expectedRank": 3.6474510000002485,
+          "winProbability": 0.107931,
           "rankDistribution": [
-            0.10681699999998845,
-            0.21807048095239492,
-            0.1996472809524001,
-            0.1670652309524011,
-            0.13039656428572852,
-            0.0940960642857128,
-            0.05860246428571249,
-            0.025304914285714318
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.0427735,
-          "expectedRank": 4.370068000000391,
-          "winProbability": 0.071572,
-          "rankDistribution": [
-            0.07157200000000329,
-            0.14027033571428787,
-            0.15895855238096634,
-            0.16122041904764742,
-            0.15364550238097663,
-            0.1383024190476347,
-            0.11009020238095586,
-            0.06594056904761762
+            0.10793099999998844,
+            0.2210282404762031,
+            0.19511484047621255,
+            0.16313709047621983,
+            0.1301095904762049,
+            0.09589200714285617,
+            0.06062720714285494,
+            0.026160023809523876
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.0029175,
-          "expectedRank": 4.456614000000411,
-          "winProbability": 0.059226,
+          "currentScore": 3.5,
+          "expectedScore": 7.0812305,
+          "expectedRank": 4.288274000000411,
+          "winProbability": 0.061891,
           "rankDistribution": [
-            0.05922600000000343,
-            0.13838654761904892,
-            0.1560722976190609,
-            0.16095909761907604,
-            0.15747451428573978,
-            0.1433538476190652,
-            0.11515559761905225,
-            0.06937209761904595
+            0.06189100000000361,
+            0.14816940714286056,
+            0.1697340404762232,
+            0.1715362904762084,
+            0.16080712380955128,
+            0.13636570714287272,
+            0.09950440714285742,
+            0.05199202380952348
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.9915295,
+          "expectedRank": 4.47485900000042,
+          "winProbability": 0.057993,
+          "rankDistribution": [
+            0.05799300000000383,
+            0.1270223785714292,
+            0.15708289523811006,
+            0.16732517857145038,
+            0.16416801190479047,
+            0.14759859523811492,
+            0.1146393119047666,
+            0.06417062857142725
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.967124,
-          "expectedRank": 4.53198950000042,
-          "winProbability": 0.057051,
+          "expectedScore": 6.961312,
+          "expectedRank": 4.547489000000427,
+          "winProbability": 0.057416,
           "rankDistribution": [
-            0.05705100000000346,
-            0.13125434761904814,
-            0.151431380952393,
-            0.15905736428574185,
-            0.15787211428574008,
-            0.1466082809523997,
-            0.12090814761905393,
-            0.07581736428571224
+            0.05741600000000345,
+            0.13288124761904854,
+            0.14960588095239302,
+            0.1552786142857413,
+            0.15463728095240617,
+            0.14807944761906724,
+            0.12409691428572159,
+            0.07800461428571208
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.981195,
-          "expectedRank": 4.5123305000004175,
-          "winProbability": 0.052412,
+          "expectedScore": 6.977798,
+          "expectedRank": 4.520310500000421,
+          "winProbability": 0.05352,
           "rankDistribution": [
-            0.052412000000003414,
-            0.13885837142857257,
-            0.15386467142858423,
-            0.15985940476193294,
-            0.15680507142859682,
-            0.1446720714285895,
-            0.11911493809524386,
-            0.0744134714285695
+            0.05352000000000343,
+            0.1418209571428587,
+            0.15169750714286973,
+            0.15564445714288458,
+            0.1531290404762153,
+            0.14580720714287598,
+            0.12205685714286373,
+            0.0763239738095217
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.266496,
-          "expectedRank": 5.965329500000004,
-          "winProbability": 0.009125,
+          "expectedScore": 6.2621675,
+          "expectedRank": 5.986627499999991,
+          "winProbability": 0.009416,
           "rankDistribution": [
-            0.009124999999999897,
-            0.03638333095238139,
-            0.06461579761904485,
-            0.09864273095238174,
-            0.13977139761906668,
-            0.1874396476190555,
-            0.24065211428569946,
-            0.2233699809523771
+            0.009415999999999897,
+            0.03700810714285764,
+            0.0642195571428545,
+            0.09619689047619008,
+            0.13530339047620804,
+            0.18430697380953437,
+            0.24500239047617403,
+            0.22854669047618592
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7552225,
-          "expectedRank": 6.8480220000000775,
-          "winProbability": 0.002237,
+          "expectedScore": 5.750688,
+          "expectedRank": 6.867965500000086,
+          "winProbability": 0.002372,
           "rankDistribution": [
-            0.0022369999999999946,
-            0.011539414285714382,
-            0.02612556428571436,
-            0.047883764285714066,
-            0.08129693095237264,
-            0.1348447642857301,
-            0.23133931428570223,
-            0.4647332476190612
+            0.002371999999999999,
+            0.01179950714285723,
+            0.026034473809523867,
+            0.04661090714285713,
+            0.0788067404761825,
+            0.13094115714287183,
+            0.2297149238095127,
+            0.4737202904762048
           ]
         }
       ],
@@ -4528,33 +4520,33 @@
           "board": 1,
           "white": "Tan, Zhongyi",
           "black": "Muzychuk, Anna",
-          "whiteWinProbability": 0.151976,
-          "drawProbability": 0.587281,
-          "blackWinProbability": 0.260743
+          "whiteWinProbability": 0.151566,
+          "drawProbability": 0.587829,
+          "blackWinProbability": 0.260605
         },
         {
           "board": 2,
           "white": "Zhu, Jiner",
           "black": "Lagno, Kateryna",
-          "whiteWinProbability": 0.275982,
-          "drawProbability": 0.580167,
-          "blackWinProbability": 0.143851
+          "whiteWinProbability": 0.282067,
+          "drawProbability": 0.577754,
+          "blackWinProbability": 0.140179
         },
         {
           "board": 3,
           "white": "Goryachkina, Aleksandra",
           "black": "Assaubayeva, Bibisara",
-          "whiteWinProbability": 0.308266,
-          "drawProbability": 0.565806,
-          "blackWinProbability": 0.125928
+          "whiteWinProbability": 0.307435,
+          "drawProbability": 0.56616,
+          "blackWinProbability": 0.126405
         },
         {
           "board": 4,
           "white": "Vaishali, Rameshbabu",
           "black": "Divya Deshmukh",
-          "whiteWinProbability": 0.249853,
-          "drawProbability": 0.592792,
-          "blackWinProbability": 0.157355
+          "whiteWinProbability": 0.250295,
+          "drawProbability": 0.59113,
+          "blackWinProbability": 0.158575
         }
       ],
       "pairingOddsByRound": {
@@ -4563,17 +4555,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.256628,
-            "drawProbability": 0.5894,
-            "blackWinProbability": 0.153972
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247228,
-            "drawProbability": 0.593702,
-            "blackWinProbability": 0.15907
+            "whiteWinProbability": 0.257887,
+            "drawProbability": 0.588567,
+            "blackWinProbability": 0.153546
           }
         ],
         "8": [
@@ -4581,33 +4565,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343872,
-            "drawProbability": 0.549671,
-            "blackWinProbability": 0.106457
+            "whiteWinProbability": 0.344075,
+            "drawProbability": 0.549735,
+            "blackWinProbability": 0.10619
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.217763,
-            "drawProbability": 0.606947,
-            "blackWinProbability": 0.17529
+            "whiteWinProbability": 0.218071,
+            "drawProbability": 0.607161,
+            "blackWinProbability": 0.174768
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.241772,
-            "drawProbability": 0.595882,
-            "blackWinProbability": 0.162346
+            "whiteWinProbability": 0.242518,
+            "drawProbability": 0.595979,
+            "blackWinProbability": 0.161503
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.191675,
-            "drawProbability": 0.619003,
-            "blackWinProbability": 0.189322
+            "whiteWinProbability": 0.186622,
+            "drawProbability": 0.617738,
+            "blackWinProbability": 0.19564
           }
         ],
         "9": [
@@ -4615,33 +4599,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151976,
-            "drawProbability": 0.587281,
-            "blackWinProbability": 0.260743
+            "whiteWinProbability": 0.151566,
+            "drawProbability": 0.587829,
+            "blackWinProbability": 0.260605
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.275982,
-            "drawProbability": 0.580167,
-            "blackWinProbability": 0.143851
+            "whiteWinProbability": 0.282067,
+            "drawProbability": 0.577754,
+            "blackWinProbability": 0.140179
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.308266,
-            "drawProbability": 0.565806,
-            "blackWinProbability": 0.125928
+            "whiteWinProbability": 0.307435,
+            "drawProbability": 0.56616,
+            "blackWinProbability": 0.126405
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.249853,
-            "drawProbability": 0.592792,
-            "blackWinProbability": 0.157355
+            "whiteWinProbability": 0.250295,
+            "drawProbability": 0.59113,
+            "blackWinProbability": 0.158575
           }
         ],
         "10": [
@@ -4649,33 +4633,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.348665,
-            "drawProbability": 0.54742,
-            "blackWinProbability": 0.103915
+            "whiteWinProbability": 0.34912,
+            "drawProbability": 0.547434,
+            "blackWinProbability": 0.103446
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.244271,
-            "drawProbability": 0.594965,
-            "blackWinProbability": 0.160764
+            "whiteWinProbability": 0.243829,
+            "drawProbability": 0.595327,
+            "blackWinProbability": 0.160844
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.192999,
-            "drawProbability": 0.618613,
-            "blackWinProbability": 0.188388
+            "whiteWinProbability": 0.188496,
+            "drawProbability": 0.618519,
+            "blackWinProbability": 0.192985
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.297257,
-            "drawProbability": 0.570803,
-            "blackWinProbability": 0.13194
+            "whiteWinProbability": 0.297561,
+            "drawProbability": 0.570638,
+            "blackWinProbability": 0.131801
           }
         ],
         "11": [
@@ -4683,33 +4667,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.175216,
-            "drawProbability": 0.606327,
-            "blackWinProbability": 0.218457
+            "whiteWinProbability": 0.174272,
+            "drawProbability": 0.607433,
+            "blackWinProbability": 0.218295
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.252414,
-            "drawProbability": 0.591156,
-            "blackWinProbability": 0.15643
+            "whiteWinProbability": 0.253754,
+            "drawProbability": 0.591067,
+            "blackWinProbability": 0.155179
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.274055,
-            "drawProbability": 0.581654,
-            "blackWinProbability": 0.144291
+            "whiteWinProbability": 0.280564,
+            "drawProbability": 0.578268,
+            "blackWinProbability": 0.141168
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.271581,
-            "drawProbability": 0.582667,
-            "blackWinProbability": 0.145752
+            "whiteWinProbability": 0.270719,
+            "drawProbability": 0.583158,
+            "blackWinProbability": 0.146123
           }
         ],
         "12": [
@@ -4717,33 +4701,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.332879,
-            "drawProbability": 0.554524,
-            "blackWinProbability": 0.112597
+            "whiteWinProbability": 0.332802,
+            "drawProbability": 0.555148,
+            "blackWinProbability": 0.11205
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.231356,
-            "drawProbability": 0.600927,
-            "blackWinProbability": 0.167717
+            "whiteWinProbability": 0.22483,
+            "drawProbability": 0.603801,
+            "blackWinProbability": 0.171369
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.30002,
-            "drawProbability": 0.568856,
-            "blackWinProbability": 0.131124
+            "whiteWinProbability": 0.300133,
+            "drawProbability": 0.568741,
+            "blackWinProbability": 0.131126
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.213546,
-            "drawProbability": 0.609585,
-            "blackWinProbability": 0.176869
+            "whiteWinProbability": 0.21395,
+            "drawProbability": 0.608866,
+            "blackWinProbability": 0.177184
           }
         ],
         "13": [
@@ -4751,33 +4735,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152652,
-            "drawProbability": 0.588201,
-            "blackWinProbability": 0.259147
+            "whiteWinProbability": 0.152824,
+            "drawProbability": 0.588218,
+            "blackWinProbability": 0.258958
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.254788,
-            "drawProbability": 0.589368,
-            "blackWinProbability": 0.155844
+            "whiteWinProbability": 0.25315,
+            "drawProbability": 0.590942,
+            "blackWinProbability": 0.155908
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216339,
-            "drawProbability": 0.607286,
-            "blackWinProbability": 0.176375
+            "whiteWinProbability": 0.216087,
+            "drawProbability": 0.607898,
+            "blackWinProbability": 0.176015
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.263143,
-            "drawProbability": 0.586153,
-            "blackWinProbability": 0.150704
+            "whiteWinProbability": 0.269258,
+            "drawProbability": 0.583746,
+            "blackWinProbability": 0.146996
           }
         ],
         "14": [
@@ -4785,33 +4769,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325581,
-            "drawProbability": 0.558576,
-            "blackWinProbability": 0.115843
+            "whiteWinProbability": 0.320186,
+            "drawProbability": 0.560759,
+            "blackWinProbability": 0.119055
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.309813,
-            "drawProbability": 0.56525,
-            "blackWinProbability": 0.124937
+            "whiteWinProbability": 0.309894,
+            "drawProbability": 0.564659,
+            "blackWinProbability": 0.125447
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.25179,
-            "drawProbability": 0.591154,
-            "blackWinProbability": 0.157056
+            "whiteWinProbability": 0.251407,
+            "drawProbability": 0.591561,
+            "blackWinProbability": 0.157032
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.298124,
-            "drawProbability": 0.569704,
-            "blackWinProbability": 0.132172
+            "whiteWinProbability": 0.297605,
+            "drawProbability": 0.570296,
+            "blackWinProbability": 0.132099
           }
         ]
       },
@@ -4825,144 +4809,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.584927,
-          "expectedRank": 1.6770519999999565,
-          "winProbability": 0.64106,
+          "expectedScore": 8.581275,
+          "expectedRank": 1.6680454999999577,
+          "winProbability": 0.649003,
           "rankDistribution": [
-            0.6410599999999546,
-            0.1856284428571758,
-            0.08929695952378873,
-            0.0452753095238089,
-            0.022911309523809598,
-            0.010643309523809645,
-            0.004150759523809507,
-            0.0010339095238095233
+            0.6490029999999548,
+            0.18020663809527301,
+            0.08691838809521592,
+            0.044412888095237746,
+            0.02304505476190483,
+            0.010987388095238198,
+            0.004340238095238078,
+            0.0010864047619047615
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.396432,
-          "expectedRank": 3.644534500000205,
-          "winProbability": 0.106803,
+          "expectedScore": 7.391885,
+          "expectedRank": 3.6493195000002525,
+          "winProbability": 0.108012,
           "rankDistribution": [
-            0.10680299999998827,
-            0.2172169357143001,
-            0.19910003571430532,
-            0.16739923571430543,
-            0.13091065238096714,
-            0.093750235714284,
-            0.05921333571428378,
-            0.0256065690476191
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.0437335,
-          "expectedRank": 4.367171500000392,
-          "winProbability": 0.072149,
-          "rankDistribution": [
-            0.07214900000000332,
-            0.1405646428571449,
-            0.15863064285715664,
-            0.16123150952383805,
-            0.15357859285716718,
-            0.137777926190492,
-            0.11002675952381294,
-            0.06604092619047479
+            0.10801199999998846,
+            0.22080068809525116,
+            0.19492403809526018,
+            0.16308152142860105,
+            0.1301801047619194,
+            0.09574052142857048,
+            0.06082473809523596,
+            0.026436388095238166
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.001076,
-          "expectedRank": 4.461195500000417,
-          "winProbability": 0.058907,
+          "currentScore": 3.5,
+          "expectedScore": 7.0822935,
+          "expectedRank": 4.2863510000004075,
+          "winProbability": 0.062022,
           "rankDistribution": [
-            0.058907000000003415,
-            0.13833223571428704,
-            0.1553021023809655,
-            0.16110556904764786,
-            0.15749848571431152,
-            0.1439304023809703,
-            0.1151730357142905,
-            0.06975116904761737
+            0.062022000000003644,
+            0.14893188809524127,
+            0.1694298880952713,
+            0.1715037047619223,
+            0.16012853809526523,
+            0.1362731214285867,
+            0.09980755476190531,
+            0.05190330476190438
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.990939,
+          "expectedRank": 4.475528000000413,
+          "winProbability": 0.057949,
+          "rankDistribution": [
+            0.057949000000003865,
+            0.1269447357142862,
+            0.15689795238096682,
+            0.16735746904764104,
+            0.16454080238098012,
+            0.1478230523809719,
+            0.11397243571429018,
+            0.06451455238095104
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.966959,
-          "expectedRank": 4.532598000000421,
-          "winProbability": 0.056843,
+          "expectedScore": 6.9615855,
+          "expectedRank": 4.5469595000004235,
+          "winProbability": 0.057714,
           "rankDistribution": [
-            0.05684300000000351,
-            0.13078731904761953,
-            0.15253015238096485,
-            0.15898435238098005,
-            0.15756435238097816,
-            0.14623235238097113,
-            0.12103115238095859,
-            0.076027319047617
+            0.05771400000000348,
+            0.1329317047619056,
+            0.14964072142858337,
+            0.1549236714285983,
+            0.15457358809526336,
+            0.14773192142859093,
+            0.12436937142857857,
+            0.07811502142856919
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.9830475,
-          "expectedRank": 4.507750000000415,
-          "winProbability": 0.052654,
+          "expectedScore": 6.9770105,
+          "expectedRank": 4.521592000000415,
+          "winProbability": 0.053268,
           "rankDistribution": [
-            0.05265400000000346,
-            0.13934833571428673,
-            0.1541860857142983,
-            0.1595067690476469,
-            0.15676951904764447,
-            0.14471293571430374,
-            0.11889005238095815,
-            0.07393230238095047
+            0.05326800000000339,
+            0.1412516690476204,
+            0.15216653571429825,
+            0.15564961904764618,
+            0.15365853571431037,
+            0.14578111904763758,
+            0.1220529857142921,
+            0.0761715357142837
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2693345,
-          "expectedRank": 5.959931500000004,
-          "winProbability": 0.009293,
+          "expectedScore": 6.264327,
+          "expectedRank": 5.982217999999995,
+          "winProbability": 0.009652,
           "rankDistribution": [
-            0.009292999999999906,
-            0.03650798571428614,
-            0.06499191904761631,
-            0.09889781904761999,
-            0.1396443190476381,
-            0.1883853190476266,
-            0.23971511904760442,
-            0.2225645190476153
+            0.009651999999999984,
+            0.03727708809523856,
+            0.06427180476190214,
+            0.096437371428571,
+            0.1352942047619224,
+            0.18450678809524867,
+            0.24455077142855527,
+            0.22800997142856708
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7544905,
-          "expectedRank": 6.849767000000073,
-          "winProbability": 0.002291,
+          "expectedScore": 5.7506845,
+          "expectedRank": 6.8699865000000875,
+          "winProbability": 0.00238,
           "rankDistribution": [
-            0.002290999999999997,
-            0.011614102380952474,
-            0.025962102380952444,
-            0.04759943571428555,
-            0.08112276904761077,
-            0.1345675190476346,
-            0.23179978571427395,
-            0.4650432857142987
+            0.002379999999999996,
+            0.011655588095238194,
+            0.025750671428571445,
+            0.0466337547619049,
+            0.07857917142856365,
+            0.13115608809525256,
+            0.23008190476189377,
+            0.47376282142858595
           ]
         }
       ],
@@ -4971,33 +4955,33 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Vaishali, Rameshbabu",
-          "whiteWinProbability": 0.348761,
-          "drawProbability": 0.547864,
-          "blackWinProbability": 0.103375
+          "whiteWinProbability": 0.348339,
+          "drawProbability": 0.548182,
+          "blackWinProbability": 0.103479
         },
         {
           "board": 2,
           "white": "Divya Deshmukh",
           "black": "Goryachkina, Aleksandra",
-          "whiteWinProbability": 0.244784,
-          "drawProbability": 0.594311,
-          "blackWinProbability": 0.160905
+          "whiteWinProbability": 0.244469,
+          "drawProbability": 0.594442,
+          "blackWinProbability": 0.161089
         },
         {
           "board": 3,
           "white": "Assaubayeva, Bibisara",
           "black": "Zhu, Jiner",
-          "whiteWinProbability": 0.193697,
-          "drawProbability": 0.618724,
-          "blackWinProbability": 0.187579
+          "whiteWinProbability": 0.18889,
+          "drawProbability": 0.61841,
+          "blackWinProbability": 0.1927
         },
         {
           "board": 4,
           "white": "Lagno, Kateryna",
           "black": "Tan, Zhongyi",
-          "whiteWinProbability": 0.298082,
-          "drawProbability": 0.569911,
-          "blackWinProbability": 0.132007
+          "whiteWinProbability": 0.297781,
+          "drawProbability": 0.57028,
+          "blackWinProbability": 0.131939
         }
       ],
       "pairingOddsByRound": {
@@ -5006,17 +4990,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.257207,
-            "drawProbability": 0.588784,
-            "blackWinProbability": 0.154009
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.248006,
-            "drawProbability": 0.593572,
-            "blackWinProbability": 0.158422
+            "whiteWinProbability": 0.256706,
+            "drawProbability": 0.589305,
+            "blackWinProbability": 0.153989
           }
         ],
         "8": [
@@ -5024,33 +5000,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343027,
-            "drawProbability": 0.550485,
-            "blackWinProbability": 0.106488
+            "whiteWinProbability": 0.343582,
+            "drawProbability": 0.550103,
+            "blackWinProbability": 0.106315
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.219056,
-            "drawProbability": 0.605656,
-            "blackWinProbability": 0.175288
+            "whiteWinProbability": 0.2182,
+            "drawProbability": 0.606807,
+            "blackWinProbability": 0.174993
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.24211,
-            "drawProbability": 0.596059,
-            "blackWinProbability": 0.161831
+            "whiteWinProbability": 0.24226,
+            "drawProbability": 0.595894,
+            "blackWinProbability": 0.161846
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.192128,
-            "drawProbability": 0.618407,
-            "blackWinProbability": 0.189465
+            "whiteWinProbability": 0.186987,
+            "drawProbability": 0.617331,
+            "blackWinProbability": 0.195682
           }
         ],
         "9": [
@@ -5058,33 +5034,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151586,
-            "drawProbability": 0.587328,
-            "blackWinProbability": 0.261086
+            "whiteWinProbability": 0.152054,
+            "drawProbability": 0.586514,
+            "blackWinProbability": 0.261432
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.276118,
-            "drawProbability": 0.580277,
-            "blackWinProbability": 0.143605
+            "whiteWinProbability": 0.282328,
+            "drawProbability": 0.577003,
+            "blackWinProbability": 0.140669
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.308374,
-            "drawProbability": 0.565723,
-            "blackWinProbability": 0.125903
+            "whiteWinProbability": 0.306758,
+            "drawProbability": 0.567221,
+            "blackWinProbability": 0.126021
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.24922,
-            "drawProbability": 0.591824,
-            "blackWinProbability": 0.158956
+            "whiteWinProbability": 0.249557,
+            "drawProbability": 0.59231,
+            "blackWinProbability": 0.158133
           }
         ],
         "10": [
@@ -5092,33 +5068,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.348761,
-            "drawProbability": 0.547864,
-            "blackWinProbability": 0.103375
+            "whiteWinProbability": 0.348339,
+            "drawProbability": 0.548182,
+            "blackWinProbability": 0.103479
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.244784,
-            "drawProbability": 0.594311,
-            "blackWinProbability": 0.160905
+            "whiteWinProbability": 0.244469,
+            "drawProbability": 0.594442,
+            "blackWinProbability": 0.161089
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.193697,
-            "drawProbability": 0.618724,
-            "blackWinProbability": 0.187579
+            "whiteWinProbability": 0.18889,
+            "drawProbability": 0.61841,
+            "blackWinProbability": 0.1927
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.298082,
-            "drawProbability": 0.569911,
-            "blackWinProbability": 0.132007
+            "whiteWinProbability": 0.297781,
+            "drawProbability": 0.57028,
+            "blackWinProbability": 0.131939
           }
         ],
         "11": [
@@ -5126,33 +5102,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.175089,
-            "drawProbability": 0.606903,
-            "blackWinProbability": 0.218008
+            "whiteWinProbability": 0.174613,
+            "drawProbability": 0.60674,
+            "blackWinProbability": 0.218647
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.252659,
-            "drawProbability": 0.591032,
-            "blackWinProbability": 0.156309
+            "whiteWinProbability": 0.253437,
+            "drawProbability": 0.590608,
+            "blackWinProbability": 0.155955
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.274487,
-            "drawProbability": 0.580422,
-            "blackWinProbability": 0.145091
+            "whiteWinProbability": 0.280625,
+            "drawProbability": 0.578362,
+            "blackWinProbability": 0.141013
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.271864,
-            "drawProbability": 0.582748,
-            "blackWinProbability": 0.145388
+            "whiteWinProbability": 0.271898,
+            "drawProbability": 0.581454,
+            "blackWinProbability": 0.146648
           }
         ],
         "12": [
@@ -5160,33 +5136,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.332833,
-            "drawProbability": 0.55495,
-            "blackWinProbability": 0.112217
+            "whiteWinProbability": 0.33333,
+            "drawProbability": 0.554638,
+            "blackWinProbability": 0.112032
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230862,
-            "drawProbability": 0.601423,
-            "blackWinProbability": 0.167715
+            "whiteWinProbability": 0.224032,
+            "drawProbability": 0.60437,
+            "blackWinProbability": 0.171598
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.299686,
-            "drawProbability": 0.569815,
-            "blackWinProbability": 0.130499
+            "whiteWinProbability": 0.29907,
+            "drawProbability": 0.570515,
+            "blackWinProbability": 0.130415
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214718,
-            "drawProbability": 0.608011,
-            "blackWinProbability": 0.177271
+            "whiteWinProbability": 0.21526,
+            "drawProbability": 0.608359,
+            "blackWinProbability": 0.176381
           }
         ],
         "13": [
@@ -5194,33 +5170,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.153233,
-            "drawProbability": 0.587855,
-            "blackWinProbability": 0.258912
+            "whiteWinProbability": 0.153026,
+            "drawProbability": 0.587863,
+            "blackWinProbability": 0.259111
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.253858,
-            "drawProbability": 0.590418,
-            "blackWinProbability": 0.155724
+            "whiteWinProbability": 0.25363,
+            "drawProbability": 0.590486,
+            "blackWinProbability": 0.155884
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.215622,
-            "drawProbability": 0.608166,
-            "blackWinProbability": 0.176212
+            "whiteWinProbability": 0.215876,
+            "drawProbability": 0.608561,
+            "blackWinProbability": 0.175563
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.262026,
-            "drawProbability": 0.586918,
-            "blackWinProbability": 0.151056
+            "whiteWinProbability": 0.269607,
+            "drawProbability": 0.583659,
+            "blackWinProbability": 0.146734
           }
         ],
         "14": [
@@ -5228,33 +5204,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325317,
-            "drawProbability": 0.558581,
-            "blackWinProbability": 0.116102
+            "whiteWinProbability": 0.319507,
+            "drawProbability": 0.560614,
+            "blackWinProbability": 0.119879
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.309695,
-            "drawProbability": 0.56529,
-            "blackWinProbability": 0.125015
+            "whiteWinProbability": 0.309143,
+            "drawProbability": 0.56557,
+            "blackWinProbability": 0.125287
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251601,
-            "drawProbability": 0.591291,
-            "blackWinProbability": 0.157108
+            "whiteWinProbability": 0.25136,
+            "drawProbability": 0.590822,
+            "blackWinProbability": 0.157818
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.296398,
-            "drawProbability": 0.571368,
-            "blackWinProbability": 0.132234
+            "whiteWinProbability": 0.297567,
+            "drawProbability": 0.570184,
+            "blackWinProbability": 0.132249
           }
         ]
       },
@@ -5268,144 +5244,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.5854745,
-          "expectedRank": 1.6770989999999566,
-          "winProbability": 0.641697,
+          "expectedScore": 8.58129,
+          "expectedRank": 1.6671979999999584,
+          "winProbability": 0.649596,
           "rankDistribution": [
-            0.6416969999999541,
-            0.18507612142860508,
-            0.08885548809521698,
-            0.04536098809523749,
-            0.02309823809523817,
-            0.010688821428571546,
-            0.004171521428571412,
-            0.001051821428571428
+            0.6495959999999553,
+            0.17960282142860634,
+            0.08698068809521613,
+            0.044562438095237654,
+            0.02285035476190485,
+            0.011002271428571526,
+            0.00430427142857141,
+            0.0011011547619047613
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.398082,
-          "expectedRank": 3.641735500000205,
-          "winProbability": 0.106288,
+          "expectedScore": 7.3913255,
+          "expectedRank": 3.650673500000241,
+          "winProbability": 0.107847,
           "rankDistribution": [
-            0.10628799999998824,
-            0.2180364666666811,
-            0.19975105000001941,
-            0.16725246666668664,
-            0.1305663000000145,
-            0.09383046666666495,
-            0.05890474999999816,
-            0.02537050000000003
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.043047,
-          "expectedRank": 4.368785500000386,
-          "winProbability": 0.071573,
-          "rankDistribution": [
-            0.07157300000000333,
-            0.14021618333333538,
-            0.1590281166666805,
-            0.16131080000002831,
-            0.15427221666669072,
-            0.13813063333334893,
-            0.10944470000000305,
-            0.06602434999999857
+            0.1078469999999884,
+            0.21994260714287023,
+            0.1955575404762122,
+            0.16351957380955126,
+            0.1302304904762049,
+            0.0956650738095228,
+            0.06085424047618832,
+            0.026383473809523883
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.00466,
-          "expectedRank": 4.452548000000412,
-          "winProbability": 0.059848,
+          "currentScore": 3.5,
+          "expectedScore": 7.079782,
+          "expectedRank": 4.291964000000411,
+          "winProbability": 0.061493,
           "rankDistribution": [
-            0.0598480000000034,
-            0.13860969285714414,
-            0.15605585952382273,
-            0.1608904261905047,
-            0.1573125928571685,
-            0.1430038428571603,
-            0.11507137619048088,
-            0.06920820952380788
+            0.061493000000003656,
+            0.148687804761908,
+            0.16928403809527126,
+            0.17105278809525615,
+            0.16028978809526537,
+            0.13690128809525356,
+            0.10015488809523863,
+            0.05213640476190439
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.965422,
-          "expectedRank": 4.535445000000421,
-          "winProbability": 0.056538,
+          "expectedScore": 6.9631235,
+          "expectedRank": 4.54280500000042,
+          "winProbability": 0.058253,
           "rankDistribution": [
-            0.056538000000003495,
-            0.13104333333333387,
-            0.15162805000001225,
-            0.15910446666669434,
-            0.15773746666669258,
-            0.14678513333335222,
-            0.1211882166666728,
-            0.07597533333333127
+            0.05825300000000342,
+            0.13326600714285802,
+            0.14942190714286896,
+            0.15475419047621722,
+            0.15461802380954878,
+            0.1479499404762097,
+            0.12394770714286413,
+            0.07778922380952166
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.991516,
+          "expectedRank": 4.475368500000412,
+          "winProbability": 0.058181,
+          "rankDistribution": [
+            0.05818100000000379,
+            0.12716283809523846,
+            0.15613343809525237,
+            0.1674920047619262,
+            0.16466008809526592,
+            0.14752675476192423,
+            0.11471848809524296,
+            0.06412538809523671
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.981924,
-          "expectedRank": 4.509538000000414,
-          "winProbability": 0.052554,
+          "expectedScore": 6.979006,
+          "expectedRank": 4.517971500000415,
+          "winProbability": 0.053093,
           "rankDistribution": [
-            0.05255400000000346,
-            0.1393162261904773,
-            0.1541140595238224,
-            0.15953592619050413,
-            0.15654800952383485,
-            0.14455259285716077,
-            0.11922342619048178,
-            0.07415575952380762
+            0.053093000000003436,
+            0.1423130738095255,
+            0.15228279047620288,
+            0.15547179047621779,
+            0.15335170714288168,
+            0.14577162380954242,
+            0.12159957380953006,
+            0.07611644047618843
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.265868,
-          "expectedRank": 5.966917000000005,
-          "winProbability": 0.009138,
+          "expectedScore": 6.2642295,
+          "expectedRank": 5.98301349999999,
+          "winProbability": 0.009233,
           "rankDistribution": [
-            0.009137999999999891,
-            0.036322492857143264,
-            0.06467089285714023,
-            0.09845430952380992,
-            0.13921705952382854,
-            0.18762380952381794,
-            0.24111154285712788,
-            0.2234618928571391
+            0.009232999999999903,
+            0.03717332380952428,
+            0.06451617380952114,
+            0.09663220714285695,
+            0.1355362904762079,
+            0.18444945714286748,
+            0.24469807380950764,
+            0.2277614738095191
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7555225,
-          "expectedRank": 6.847932000000079,
-          "winProbability": 0.002364,
+          "expectedScore": 5.7497275,
+          "expectedRank": 6.871006000000092,
+          "winProbability": 0.002304,
           "rankDistribution": [
-            0.0023639999999999976,
-            0.011379483333333428,
-            0.025896483333333383,
-            0.04809061666666644,
-            0.0812481166666584,
-            0.135384700000016,
-            0.23088446666665527,
-            0.4647521333333464
+            0.002303999999999996,
+            0.011851523809523897,
+            0.02582342380952383,
+            0.04651500714285721,
+            0.07846325714284932,
+            0.13073359047620486,
+            0.22972275714284607,
+            0.47458644047620563
           ]
         }
       ],
@@ -5414,33 +5390,33 @@
           "board": 1,
           "white": "Lagno, Kateryna",
           "black": "Muzychuk, Anna",
-          "whiteWinProbability": 0.175424,
-          "drawProbability": 0.6066,
-          "blackWinProbability": 0.217976
+          "whiteWinProbability": 0.175347,
+          "drawProbability": 0.606235,
+          "blackWinProbability": 0.218418
         },
         {
           "board": 2,
           "white": "Tan, Zhongyi",
           "black": "Assaubayeva, Bibisara",
-          "whiteWinProbability": 0.253319,
-          "drawProbability": 0.590015,
-          "blackWinProbability": 0.156666
+          "whiteWinProbability": 0.253132,
+          "drawProbability": 0.590425,
+          "blackWinProbability": 0.156443
         },
         {
           "board": 3,
           "white": "Zhu, Jiner",
           "black": "Divya Deshmukh",
-          "whiteWinProbability": 0.275041,
-          "drawProbability": 0.580632,
-          "blackWinProbability": 0.144327
+          "whiteWinProbability": 0.280291,
+          "drawProbability": 0.577713,
+          "blackWinProbability": 0.141996
         },
         {
           "board": 4,
           "white": "Goryachkina, Aleksandra",
           "black": "Vaishali, Rameshbabu",
-          "whiteWinProbability": 0.271931,
-          "drawProbability": 0.582068,
-          "blackWinProbability": 0.146001
+          "whiteWinProbability": 0.272817,
+          "drawProbability": 0.581516,
+          "blackWinProbability": 0.145667
         }
       ],
       "pairingOddsByRound": {
@@ -5449,17 +5425,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.257172,
-            "drawProbability": 0.589526,
-            "blackWinProbability": 0.153302
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247267,
-            "drawProbability": 0.593544,
-            "blackWinProbability": 0.159189
+            "whiteWinProbability": 0.257762,
+            "drawProbability": 0.588422,
+            "blackWinProbability": 0.153816
           }
         ],
         "8": [
@@ -5467,33 +5435,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343849,
-            "drawProbability": 0.548873,
-            "blackWinProbability": 0.107278
+            "whiteWinProbability": 0.343279,
+            "drawProbability": 0.550504,
+            "blackWinProbability": 0.106217
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.217642,
-            "drawProbability": 0.607953,
-            "blackWinProbability": 0.174405
+            "whiteWinProbability": 0.218578,
+            "drawProbability": 0.607147,
+            "blackWinProbability": 0.174275
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.241776,
-            "drawProbability": 0.596464,
-            "blackWinProbability": 0.16176
+            "whiteWinProbability": 0.243404,
+            "drawProbability": 0.594959,
+            "blackWinProbability": 0.161637
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.190894,
-            "drawProbability": 0.620547,
-            "blackWinProbability": 0.188559
+            "whiteWinProbability": 0.187807,
+            "drawProbability": 0.616712,
+            "blackWinProbability": 0.195481
           }
         ],
         "9": [
@@ -5501,33 +5469,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151761,
-            "drawProbability": 0.587115,
-            "blackWinProbability": 0.261124
+            "whiteWinProbability": 0.151166,
+            "drawProbability": 0.587879,
+            "blackWinProbability": 0.260955
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.276923,
-            "drawProbability": 0.579691,
-            "blackWinProbability": 0.143386
+            "whiteWinProbability": 0.281893,
+            "drawProbability": 0.577393,
+            "blackWinProbability": 0.140714
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.308961,
-            "drawProbability": 0.565114,
-            "blackWinProbability": 0.125925
+            "whiteWinProbability": 0.307147,
+            "drawProbability": 0.56715,
+            "blackWinProbability": 0.125703
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.250192,
-            "drawProbability": 0.592308,
-            "blackWinProbability": 0.1575
+            "whiteWinProbability": 0.249666,
+            "drawProbability": 0.591975,
+            "blackWinProbability": 0.158359
           }
         ],
         "10": [
@@ -5535,33 +5503,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.349565,
-            "drawProbability": 0.546661,
-            "blackWinProbability": 0.103774
+            "whiteWinProbability": 0.348927,
+            "drawProbability": 0.548053,
+            "blackWinProbability": 0.10302
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.243752,
-            "drawProbability": 0.594649,
-            "blackWinProbability": 0.161599
+            "whiteWinProbability": 0.245091,
+            "drawProbability": 0.594488,
+            "blackWinProbability": 0.160421
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.192881,
-            "drawProbability": 0.618601,
-            "blackWinProbability": 0.188518
+            "whiteWinProbability": 0.188742,
+            "drawProbability": 0.618169,
+            "blackWinProbability": 0.193089
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.297308,
-            "drawProbability": 0.571326,
-            "blackWinProbability": 0.131366
+            "whiteWinProbability": 0.297278,
+            "drawProbability": 0.571538,
+            "blackWinProbability": 0.131184
           }
         ],
         "11": [
@@ -5569,33 +5537,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.175424,
-            "drawProbability": 0.6066,
-            "blackWinProbability": 0.217976
+            "whiteWinProbability": 0.175347,
+            "drawProbability": 0.606235,
+            "blackWinProbability": 0.218418
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.253319,
-            "drawProbability": 0.590015,
-            "blackWinProbability": 0.156666
+            "whiteWinProbability": 0.253132,
+            "drawProbability": 0.590425,
+            "blackWinProbability": 0.156443
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.275041,
-            "drawProbability": 0.580632,
-            "blackWinProbability": 0.144327
+            "whiteWinProbability": 0.280291,
+            "drawProbability": 0.577713,
+            "blackWinProbability": 0.141996
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.271931,
-            "drawProbability": 0.582068,
-            "blackWinProbability": 0.146001
+            "whiteWinProbability": 0.272817,
+            "drawProbability": 0.581516,
+            "blackWinProbability": 0.145667
           }
         ],
         "12": [
@@ -5603,33 +5571,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.332887,
-            "drawProbability": 0.554968,
-            "blackWinProbability": 0.112145
+            "whiteWinProbability": 0.333751,
+            "drawProbability": 0.554091,
+            "blackWinProbability": 0.112158
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.231046,
-            "drawProbability": 0.601179,
-            "blackWinProbability": 0.167775
+            "whiteWinProbability": 0.225215,
+            "drawProbability": 0.603583,
+            "blackWinProbability": 0.171202
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.299095,
-            "drawProbability": 0.570299,
-            "blackWinProbability": 0.130606
+            "whiteWinProbability": 0.299436,
+            "drawProbability": 0.569834,
+            "blackWinProbability": 0.13073
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.213741,
-            "drawProbability": 0.609505,
-            "blackWinProbability": 0.176754
+            "whiteWinProbability": 0.214491,
+            "drawProbability": 0.607655,
+            "blackWinProbability": 0.177854
           }
         ],
         "13": [
@@ -5637,33 +5605,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152875,
-            "drawProbability": 0.587779,
-            "blackWinProbability": 0.259346
+            "whiteWinProbability": 0.153264,
+            "drawProbability": 0.588561,
+            "blackWinProbability": 0.258175
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.253582,
-            "drawProbability": 0.590214,
-            "blackWinProbability": 0.156204
+            "whiteWinProbability": 0.253189,
+            "drawProbability": 0.591358,
+            "blackWinProbability": 0.155453
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216203,
-            "drawProbability": 0.607981,
-            "blackWinProbability": 0.175816
+            "whiteWinProbability": 0.216228,
+            "drawProbability": 0.60737,
+            "blackWinProbability": 0.176402
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.262974,
-            "drawProbability": 0.586627,
-            "blackWinProbability": 0.150399
+            "whiteWinProbability": 0.269867,
+            "drawProbability": 0.582595,
+            "blackWinProbability": 0.147538
           }
         ],
         "14": [
@@ -5671,33 +5639,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325769,
-            "drawProbability": 0.557921,
-            "blackWinProbability": 0.11631
+            "whiteWinProbability": 0.319583,
+            "drawProbability": 0.561081,
+            "blackWinProbability": 0.119336
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.309451,
-            "drawProbability": 0.565634,
-            "blackWinProbability": 0.124915
+            "whiteWinProbability": 0.309653,
+            "drawProbability": 0.565491,
+            "blackWinProbability": 0.124856
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251973,
-            "drawProbability": 0.5916,
-            "blackWinProbability": 0.156427
+            "whiteWinProbability": 0.251583,
+            "drawProbability": 0.591351,
+            "blackWinProbability": 0.157066
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.29848,
-            "drawProbability": 0.569731,
-            "blackWinProbability": 0.131789
+            "whiteWinProbability": 0.297455,
+            "drawProbability": 0.57018,
+            "blackWinProbability": 0.132365
           }
         ]
       },
@@ -5711,144 +5679,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.585054,
-          "expectedRank": 1.677171499999956,
-          "winProbability": 0.641071,
+          "expectedScore": 8.5811105,
+          "expectedRank": 1.6678869999999577,
+          "winProbability": 0.649381,
           "rankDistribution": [
-            0.6410709999999551,
-            0.18580502619050906,
-            0.08889650952378841,
-            0.04545295952380892,
-            0.02287295952380961,
-            0.010715042857142972,
-            0.004157992857142841,
-            0.0010285095238095235
+            0.6493809999999556,
+            0.18015255476193992,
+            0.08628558809521551,
+            0.04453410476190438,
+            0.02316193809523822,
+            0.011049021428571523,
+            0.004382454761904743,
+            0.0010533380952380946
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.397912,
-          "expectedRank": 3.6407685000002004,
-          "winProbability": 0.106613,
+          "expectedScore": 7.391959,
+          "expectedRank": 3.6489865000002446,
+          "winProbability": 0.108192,
           "rankDistribution": [
-            0.1066129999999883,
-            0.21713723571429994,
-            0.20038625238097094,
-            0.16752716904763862,
-            0.13068550238096696,
-            0.09373791904761714,
-            0.05854480238095063,
-            0.02536811904761908
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.042845,
-          "expectedRank": 4.369172500000387,
-          "winProbability": 0.071901,
-          "rankDistribution": [
-            0.07190100000000323,
-            0.14072759285714498,
-            0.15846834285715633,
-            0.16049124285717065,
-            0.15403640952383377,
-            0.13834449285715852,
-            0.11005004285714615,
-            0.06598087619047485
+            0.10819199999998838,
+            0.22036528333334643,
+            0.19514575000002166,
+            0.16335131666669525,
+            0.13000156666668092,
+            0.09585431666666554,
+            0.06063044999999797,
+            0.026459316666666736
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.002343,
-          "expectedRank": 4.4586205000004115,
-          "winProbability": 0.059848,
+          "currentScore": 3.5,
+          "expectedScore": 7.081297,
+          "expectedRank": 4.288377500000407,
+          "winProbability": 0.061413,
           "rankDistribution": [
-            0.059848000000003364,
-            0.1382136190476202,
-            0.15508471904763196,
-            0.16087356904764724,
-            0.15730173571431108,
-            0.14325090238096994,
-            0.11583690238095744,
-            0.06959055238095072
+            0.061413000000003666,
+            0.14897986666666996,
+            0.16957883333336637,
+            0.17178871666668388,
+            0.15994888333336052,
+            0.13655388333334867,
+            0.09984885000000053,
+            0.05188796666666631
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.968197,
-          "expectedRank": 4.531105500000422,
-          "winProbability": 0.056731,
+          "expectedScore": 6.96349,
+          "expectedRank": 4.54291600000042,
+          "winProbability": 0.058195,
           "rankDistribution": [
-            0.056731000000003536,
-            0.13115010238095273,
-            0.15220630238096475,
-            0.15934101904764683,
-            0.1575633523809781,
-            0.1464129357143045,
-            0.12096536904762537,
-            0.075629919047617
+            0.05819500000000343,
+            0.13324945714285819,
+            0.14971714047620235,
+            0.1546159071428838,
+            0.15466765714288216,
+            0.14753732380954307,
+            0.12409530714286411,
+            0.07792220714285496
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.990319,
+          "expectedRank": 4.477452000000414,
+          "winProbability": 0.057765,
+          "rankDistribution": [
+            0.057765000000003876,
+            0.12697063809523834,
+            0.15650693809525262,
+            0.16716243809526019,
+            0.16493485476193243,
+            0.14791785476192437,
+            0.1145444547619095,
+            0.06419782142857007
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.9815845,
-          "expectedRank": 4.509644500000416,
-          "winProbability": 0.052335,
+          "expectedScore": 6.977333,
+          "expectedRank": 4.521190000000416,
+          "winProbability": 0.053297,
           "rankDistribution": [
-            0.052335000000003365,
-            0.13943046904762016,
-            0.15412966904763173,
-            0.15979466904764691,
-            0.15643916904764424,
-            0.14471191904763722,
-            0.11885931904762492,
-            0.07429978571428376
+            0.05329700000000342,
+            0.14122781666666817,
+            0.1524907666666795,
+            0.15558923333336075,
+            0.15364890000002468,
+            0.1453629833333517,
+            0.1218806666666731,
+            0.07650263333333124
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2675735,
-          "expectedRank": 5.963654000000004,
-          "winProbability": 0.009202,
+          "expectedScore": 6.263367,
+          "expectedRank": 5.9853224999999926,
+          "winProbability": 0.00934,
           "rankDistribution": [
-            0.009201999999999898,
-            0.03603493571428612,
-            0.06508746904761628,
-            0.09890013571428656,
-            0.13961630238097147,
-            0.18782088571429364,
-            0.24019381904760412,
-            0.22314445238094852
+            0.009339999999999946,
+            0.03709905000000047,
+            0.06435976666666396,
+            0.09649661666666622,
+            0.1348922833333509,
+            0.18475053333334376,
+            0.24473998333331728,
+            0.22832176666666212
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.754491,
-          "expectedRank": 6.849863000000078,
-          "winProbability": 0.002299,
+          "expectedScore": 5.7511245,
+          "expectedRank": 6.867868500000089,
+          "winProbability": 0.002417,
           "rankDistribution": [
-            0.0022989999999999964,
-            0.011501019047619148,
-            0.02574073571428576,
-            0.04761923571428555,
-            0.0814845690476107,
-            0.13500590238096818,
-            0.23139175238094067,
-            0.46495778571429913
+            0.0024169999999999986,
+            0.011955333333333418,
+            0.025915216666666734,
+            0.04646166666666674,
+            0.07874391666665878,
+            0.13097408333334773,
+            0.2298778333333225,
+            0.4736549500000147
           ]
         }
       ],
@@ -5857,33 +5825,33 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Goryachkina, Aleksandra",
-          "whiteWinProbability": 0.332329,
-          "drawProbability": 0.555172,
-          "blackWinProbability": 0.112499
+          "whiteWinProbability": 0.333214,
+          "drawProbability": 0.554491,
+          "blackWinProbability": 0.112295
         },
         {
           "board": 2,
           "white": "Vaishali, Rameshbabu",
           "black": "Zhu, Jiner",
-          "whiteWinProbability": 0.230785,
-          "drawProbability": 0.600826,
-          "blackWinProbability": 0.168389
+          "whiteWinProbability": 0.22426,
+          "drawProbability": 0.604371,
+          "blackWinProbability": 0.171369
         },
         {
           "board": 3,
           "white": "Divya Deshmukh",
           "black": "Tan, Zhongyi",
-          "whiteWinProbability": 0.299879,
-          "drawProbability": 0.56943,
-          "blackWinProbability": 0.130691
+          "whiteWinProbability": 0.299435,
+          "drawProbability": 0.570185,
+          "blackWinProbability": 0.13038
         },
         {
           "board": 4,
           "white": "Assaubayeva, Bibisara",
           "black": "Lagno, Kateryna",
-          "whiteWinProbability": 0.214969,
-          "drawProbability": 0.607621,
-          "blackWinProbability": 0.17741
+          "whiteWinProbability": 0.214311,
+          "drawProbability": 0.608736,
+          "blackWinProbability": 0.176953
         }
       ],
       "pairingOddsByRound": {
@@ -5892,17 +5860,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.256906,
-            "drawProbability": 0.588887,
-            "blackWinProbability": 0.154207
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247645,
-            "drawProbability": 0.592843,
-            "blackWinProbability": 0.159512
+            "whiteWinProbability": 0.257269,
+            "drawProbability": 0.58819,
+            "blackWinProbability": 0.154541
           }
         ],
         "8": [
@@ -5910,33 +5870,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.344115,
-            "drawProbability": 0.550024,
-            "blackWinProbability": 0.105861
+            "whiteWinProbability": 0.343252,
+            "drawProbability": 0.550271,
+            "blackWinProbability": 0.106477
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.218733,
-            "drawProbability": 0.606498,
-            "blackWinProbability": 0.174769
+            "whiteWinProbability": 0.217876,
+            "drawProbability": 0.607141,
+            "blackWinProbability": 0.174983
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.243135,
-            "drawProbability": 0.594677,
-            "blackWinProbability": 0.162188
+            "whiteWinProbability": 0.243201,
+            "drawProbability": 0.59542,
+            "blackWinProbability": 0.161379
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.191019,
-            "drawProbability": 0.620549,
-            "blackWinProbability": 0.188432
+            "whiteWinProbability": 0.187671,
+            "drawProbability": 0.617738,
+            "blackWinProbability": 0.194591
           }
         ],
         "9": [
@@ -5944,33 +5904,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152103,
-            "drawProbability": 0.587138,
-            "blackWinProbability": 0.260759
+            "whiteWinProbability": 0.151847,
+            "drawProbability": 0.586407,
+            "blackWinProbability": 0.261746
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.27567,
-            "drawProbability": 0.580438,
-            "blackWinProbability": 0.143892
+            "whiteWinProbability": 0.281807,
+            "drawProbability": 0.577971,
+            "blackWinProbability": 0.140222
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.30872,
-            "drawProbability": 0.565783,
-            "blackWinProbability": 0.125497
+            "whiteWinProbability": 0.307088,
+            "drawProbability": 0.566454,
+            "blackWinProbability": 0.126458
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.249562,
-            "drawProbability": 0.59312,
-            "blackWinProbability": 0.157318
+            "whiteWinProbability": 0.250256,
+            "drawProbability": 0.592389,
+            "blackWinProbability": 0.157355
           }
         ],
         "10": [
@@ -5978,33 +5938,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.348181,
-            "drawProbability": 0.548315,
-            "blackWinProbability": 0.103504
+            "whiteWinProbability": 0.350148,
+            "drawProbability": 0.546361,
+            "blackWinProbability": 0.103491
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.24456,
-            "drawProbability": 0.594395,
-            "blackWinProbability": 0.161045
+            "whiteWinProbability": 0.244839,
+            "drawProbability": 0.594508,
+            "blackWinProbability": 0.160653
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.193558,
-            "drawProbability": 0.618413,
-            "blackWinProbability": 0.188029
+            "whiteWinProbability": 0.188496,
+            "drawProbability": 0.619206,
+            "blackWinProbability": 0.192298
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.298287,
-            "drawProbability": 0.570374,
-            "blackWinProbability": 0.131339
+            "whiteWinProbability": 0.29752,
+            "drawProbability": 0.570386,
+            "blackWinProbability": 0.132094
           }
         ],
         "11": [
@@ -6012,33 +5972,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.175469,
-            "drawProbability": 0.60571,
-            "blackWinProbability": 0.218821
+            "whiteWinProbability": 0.175404,
+            "drawProbability": 0.606862,
+            "blackWinProbability": 0.217734
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.252829,
-            "drawProbability": 0.591215,
-            "blackWinProbability": 0.155956
+            "whiteWinProbability": 0.25329,
+            "drawProbability": 0.590635,
+            "blackWinProbability": 0.156075
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.273522,
-            "drawProbability": 0.58214,
-            "blackWinProbability": 0.144338
+            "whiteWinProbability": 0.28062,
+            "drawProbability": 0.578259,
+            "blackWinProbability": 0.141121
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.271329,
-            "drawProbability": 0.582401,
-            "blackWinProbability": 0.14627
+            "whiteWinProbability": 0.272154,
+            "drawProbability": 0.582176,
+            "blackWinProbability": 0.14567
           }
         ],
         "12": [
@@ -6046,33 +6006,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.332329,
-            "drawProbability": 0.555172,
-            "blackWinProbability": 0.112499
+            "whiteWinProbability": 0.333214,
+            "drawProbability": 0.554491,
+            "blackWinProbability": 0.112295
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230785,
-            "drawProbability": 0.600826,
-            "blackWinProbability": 0.168389
+            "whiteWinProbability": 0.22426,
+            "drawProbability": 0.604371,
+            "blackWinProbability": 0.171369
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.299879,
-            "drawProbability": 0.56943,
-            "blackWinProbability": 0.130691
+            "whiteWinProbability": 0.299435,
+            "drawProbability": 0.570185,
+            "blackWinProbability": 0.13038
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214969,
-            "drawProbability": 0.607621,
-            "blackWinProbability": 0.17741
+            "whiteWinProbability": 0.214311,
+            "drawProbability": 0.608736,
+            "blackWinProbability": 0.176953
           }
         ],
         "13": [
@@ -6080,33 +6040,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.153256,
-            "drawProbability": 0.587533,
-            "blackWinProbability": 0.259211
+            "whiteWinProbability": 0.153084,
+            "drawProbability": 0.58755,
+            "blackWinProbability": 0.259366
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.254165,
-            "drawProbability": 0.590075,
-            "blackWinProbability": 0.15576
+            "whiteWinProbability": 0.253687,
+            "drawProbability": 0.590342,
+            "blackWinProbability": 0.155971
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216281,
-            "drawProbability": 0.607072,
-            "blackWinProbability": 0.176647
+            "whiteWinProbability": 0.216324,
+            "drawProbability": 0.607175,
+            "blackWinProbability": 0.176501
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.26232,
-            "drawProbability": 0.587113,
-            "blackWinProbability": 0.150567
+            "whiteWinProbability": 0.27007,
+            "drawProbability": 0.582898,
+            "blackWinProbability": 0.147032
           }
         ],
         "14": [
@@ -6114,33 +6074,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325416,
-            "drawProbability": 0.558552,
-            "blackWinProbability": 0.116032
+            "whiteWinProbability": 0.319341,
+            "drawProbability": 0.560677,
+            "blackWinProbability": 0.119982
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.310436,
-            "drawProbability": 0.564448,
-            "blackWinProbability": 0.125116
+            "whiteWinProbability": 0.309254,
+            "drawProbability": 0.564981,
+            "blackWinProbability": 0.125765
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251366,
-            "drawProbability": 0.591786,
-            "blackWinProbability": 0.156848
+            "whiteWinProbability": 0.251486,
+            "drawProbability": 0.591011,
+            "blackWinProbability": 0.157503
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.297512,
-            "drawProbability": 0.57083,
-            "blackWinProbability": 0.131658
+            "whiteWinProbability": 0.29764,
+            "drawProbability": 0.570308,
+            "blackWinProbability": 0.132052
           }
         ]
       },
@@ -6154,144 +6114,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.5850205,
-          "expectedRank": 1.676634499999956,
-          "winProbability": 0.641076,
+          "expectedScore": 8.579049,
+          "expectedRank": 1.6695989999999572,
+          "winProbability": 0.648709,
           "rankDistribution": [
-            0.6410759999999541,
-            0.18573950238098524,
-            0.08935263571426495,
-            0.04521666904761849,
-            0.02278233571428575,
-            0.010613585714285837,
-            0.0041924523809523636,
-            0.0010268190476190472
+            0.6487089999999546,
+            0.1799881428571781,
+            0.08693972619045387,
+            0.04475764285714243,
+            0.023072059523809606,
+            0.01107105952380962,
+            0.004421642857142838,
+            0.0010407261904761902
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.3973535,
-          "expectedRank": 3.6427220000002007,
-          "winProbability": 0.106494,
+          "expectedScore": 7.3937535,
+          "expectedRank": 3.6454800000002567,
+          "winProbability": 0.108179,
           "rankDistribution": [
-            0.1064939999999883,
-            0.21781797857144258,
-            0.19919159523811444,
-            0.1675772119047814,
-            0.13066612857144294,
-            0.0939410452380935,
-            0.05876482857142669,
-            0.02554721190476195
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.041628,
-          "expectedRank": 4.37058950000039,
-          "winProbability": 0.071641,
-          "rankDistribution": [
-            0.07164100000000331,
-            0.14051330238095458,
-            0.15872915238096627,
-            0.1607759857143141,
-            0.1538129857143099,
-            0.13827856904763483,
-            0.11009788571428902,
-            0.06615111904761765
+            0.10817899999998837,
+            0.22092741190477508,
+            0.19545272857145096,
+            0.16298391190479194,
+            0.13036932857144332,
+            0.09568491190476096,
+            0.06002542857142657,
+            0.026377278571428634
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.0043265,
-          "expectedRank": 4.453918000000409,
-          "winProbability": 0.059672,
+          "currentScore": 3.5,
+          "expectedScore": 7.081901,
+          "expectedRank": 4.287303000000412,
+          "winProbability": 0.06169,
           "rankDistribution": [
-            0.05967200000000337,
-            0.13857926190476344,
-            0.15634436190477516,
-            0.16066314523812342,
-            0.1572728119047873,
-            0.14281831190477934,
-            0.11507297857143317,
-            0.06957712857142694
+            0.06169000000000362,
+            0.14900159523809853,
+            0.16928111190479547,
+            0.17197121190477951,
+            0.16023687857145605,
+            0.1360288785714439,
+            0.09979862857142913,
+            0.05199169523809488
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.9917855,
+          "expectedRank": 4.473805500000417,
+          "winProbability": 0.058244,
+          "rankDistribution": [
+            0.058244000000003855,
+            0.12673361190476223,
+            0.1572080785714432,
+            0.1673690785714507,
+            0.16434949523812348,
+            0.14770407857144816,
+            0.1141114785714331,
+            0.06428017857142723
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.965527,
-          "expectedRank": 4.535390000000422,
-          "winProbability": 0.056507,
+          "expectedScore": 6.961576,
+          "expectedRank": 4.546983000000423,
+          "winProbability": 0.057525,
           "rankDistribution": [
-            0.056507000000003506,
-            0.1305836119047623,
-            0.15171817857144063,
-            0.15949039523812303,
-            0.1580689785714545,
-            0.14688472857144755,
-            0.1210304619047682,
-            0.07571664523809318
+            0.05752500000000342,
+            0.13291057857142954,
+            0.14918351190477386,
+            0.15521762857145538,
+            0.15534087857145404,
+            0.14777212857144775,
+            0.12452356190476882,
+            0.07752671190475985
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.982859,
-          "expectedRank": 4.508637000000413,
-          "winProbability": 0.05278,
+          "expectedScore": 6.9781085,
+          "expectedRank": 4.520603500000416,
+          "winProbability": 0.053788,
           "rankDistribution": [
-            0.05278000000000333,
-            0.1390702023809536,
-            0.15413196904763177,
-            0.15961715238098012,
-            0.15662481904764425,
-            0.1447634023809705,
-            0.11895206904762474,
-            0.07406038571428374
+            0.05378800000000337,
+            0.14178024523809654,
+            0.15175362857144092,
+            0.1550938285714556,
+            0.15312766190478658,
+            0.1457277452381138,
+            0.1222170952381018,
+            0.07651179523809318
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2674475,
-          "expectedRank": 5.9647274999999995,
-          "winProbability": 0.009362,
+          "expectedScore": 6.262949,
+          "expectedRank": 5.98578299999999,
+          "winProbability": 0.009432,
           "rankDistribution": [
-            0.009361999999999902,
-            0.036232545238095666,
-            0.06472452857142587,
-            0.09889669523809627,
-            0.13916619523811416,
-            0.1875762785714365,
-            0.2404826619047467,
-            0.22355909523809117
+            0.009431999999999961,
+            0.03675559523809572,
+            0.06451444523809245,
+            0.09622841190476135,
+            0.1352164952381129,
+            0.1849551619047719,
+            0.24461374523807897,
+            0.22828414523809082
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.755838,
-          "expectedRank": 6.847381500000078,
-          "winProbability": 0.002468,
+          "expectedScore": 5.7508775,
+          "expectedRank": 6.870443000000086,
+          "winProbability": 0.002433,
           "rankDistribution": [
-            0.0024679999999999997,
-            0.01146359523809534,
-            0.02580757857142861,
-            0.04776274523809504,
-            0.08160574523808699,
-            0.13512407857144437,
-            0.23140666190474993,
-            0.4643615952381089
+            0.0024330000000000007,
+            0.011902819047619136,
+            0.025666769047619064,
+            0.04637828571428586,
+            0.07828720238094465,
+            0.13105603571429994,
+            0.23028841904760766,
+            0.47398746904763384
           ]
         }
       ],
@@ -6300,33 +6260,33 @@
           "board": 1,
           "white": "Assaubayeva, Bibisara",
           "black": "Muzychuk, Anna",
-          "whiteWinProbability": 0.152551,
-          "drawProbability": 0.588071,
-          "blackWinProbability": 0.259378
+          "whiteWinProbability": 0.152986,
+          "drawProbability": 0.588405,
+          "blackWinProbability": 0.258609
         },
         {
           "board": 2,
           "white": "Lagno, Kateryna",
           "black": "Divya Deshmukh",
-          "whiteWinProbability": 0.253581,
-          "drawProbability": 0.59024,
-          "blackWinProbability": 0.156179
+          "whiteWinProbability": 0.253757,
+          "drawProbability": 0.590488,
+          "blackWinProbability": 0.155755
         },
         {
           "board": 3,
           "white": "Tan, Zhongyi",
           "black": "Vaishali, Rameshbabu",
-          "whiteWinProbability": 0.215988,
-          "drawProbability": 0.608151,
-          "blackWinProbability": 0.175861
+          "whiteWinProbability": 0.21567,
+          "drawProbability": 0.608612,
+          "blackWinProbability": 0.175718
         },
         {
           "board": 4,
           "white": "Zhu, Jiner",
           "black": "Goryachkina, Aleksandra",
-          "whiteWinProbability": 0.26329,
-          "drawProbability": 0.58587,
-          "blackWinProbability": 0.15084
+          "whiteWinProbability": 0.269595,
+          "drawProbability": 0.583036,
+          "blackWinProbability": 0.147369
         }
       ],
       "pairingOddsByRound": {
@@ -6335,17 +6295,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.257084,
-            "drawProbability": 0.589869,
-            "blackWinProbability": 0.153047
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247355,
-            "drawProbability": 0.593452,
-            "blackWinProbability": 0.159193
+            "whiteWinProbability": 0.256601,
+            "drawProbability": 0.589194,
+            "blackWinProbability": 0.154205
           }
         ],
         "8": [
@@ -6353,33 +6305,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343731,
-            "drawProbability": 0.549854,
-            "blackWinProbability": 0.106415
+            "whiteWinProbability": 0.343097,
+            "drawProbability": 0.550668,
+            "blackWinProbability": 0.106235
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.218894,
-            "drawProbability": 0.606272,
-            "blackWinProbability": 0.174834
+            "whiteWinProbability": 0.218912,
+            "drawProbability": 0.606174,
+            "blackWinProbability": 0.174914
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.242316,
-            "drawProbability": 0.595796,
-            "blackWinProbability": 0.161888
+            "whiteWinProbability": 0.242468,
+            "drawProbability": 0.594953,
+            "blackWinProbability": 0.162579
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.191608,
-            "drawProbability": 0.618844,
-            "blackWinProbability": 0.189548
+            "whiteWinProbability": 0.187354,
+            "drawProbability": 0.617721,
+            "blackWinProbability": 0.194925
           }
         ],
         "9": [
@@ -6387,33 +6339,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152067,
-            "drawProbability": 0.58727,
-            "blackWinProbability": 0.260663
+            "whiteWinProbability": 0.151756,
+            "drawProbability": 0.58699,
+            "blackWinProbability": 0.261254
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.275786,
-            "drawProbability": 0.58048,
-            "blackWinProbability": 0.143734
+            "whiteWinProbability": 0.282573,
+            "drawProbability": 0.577549,
+            "blackWinProbability": 0.139878
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.30766,
-            "drawProbability": 0.566066,
-            "blackWinProbability": 0.126274
+            "whiteWinProbability": 0.306974,
+            "drawProbability": 0.567068,
+            "blackWinProbability": 0.125958
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.249508,
-            "drawProbability": 0.593159,
-            "blackWinProbability": 0.157333
+            "whiteWinProbability": 0.250208,
+            "drawProbability": 0.591801,
+            "blackWinProbability": 0.157991
           }
         ],
         "10": [
@@ -6421,33 +6373,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.348279,
-            "drawProbability": 0.548077,
-            "blackWinProbability": 0.103644
+            "whiteWinProbability": 0.348342,
+            "drawProbability": 0.547679,
+            "blackWinProbability": 0.103979
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.244222,
-            "drawProbability": 0.5951,
-            "blackWinProbability": 0.160678
+            "whiteWinProbability": 0.244561,
+            "drawProbability": 0.594828,
+            "blackWinProbability": 0.160611
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.193406,
-            "drawProbability": 0.617734,
-            "blackWinProbability": 0.18886
+            "whiteWinProbability": 0.18814,
+            "drawProbability": 0.618795,
+            "blackWinProbability": 0.193065
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.297174,
-            "drawProbability": 0.570786,
-            "blackWinProbability": 0.13204
+            "whiteWinProbability": 0.29726,
+            "drawProbability": 0.570633,
+            "blackWinProbability": 0.132107
           }
         ],
         "11": [
@@ -6455,33 +6407,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.174339,
-            "drawProbability": 0.607545,
-            "blackWinProbability": 0.218116
+            "whiteWinProbability": 0.174765,
+            "drawProbability": 0.60744,
+            "blackWinProbability": 0.217795
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.253356,
-            "drawProbability": 0.590712,
-            "blackWinProbability": 0.155932
+            "whiteWinProbability": 0.252943,
+            "drawProbability": 0.591318,
+            "blackWinProbability": 0.155739
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.27441,
-            "drawProbability": 0.58093,
-            "blackWinProbability": 0.14466
+            "whiteWinProbability": 0.280203,
+            "drawProbability": 0.578233,
+            "blackWinProbability": 0.141564
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.27169,
-            "drawProbability": 0.582209,
-            "blackWinProbability": 0.146101
+            "whiteWinProbability": 0.271078,
+            "drawProbability": 0.58285,
+            "blackWinProbability": 0.146072
           }
         ],
         "12": [
@@ -6489,33 +6441,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.333126,
-            "drawProbability": 0.554303,
-            "blackWinProbability": 0.112571
+            "whiteWinProbability": 0.332208,
+            "drawProbability": 0.555594,
+            "blackWinProbability": 0.112198
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230977,
-            "drawProbability": 0.600542,
-            "blackWinProbability": 0.168481
+            "whiteWinProbability": 0.224874,
+            "drawProbability": 0.603794,
+            "blackWinProbability": 0.171332
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.300034,
-            "drawProbability": 0.569041,
-            "blackWinProbability": 0.130925
+            "whiteWinProbability": 0.300426,
+            "drawProbability": 0.568703,
+            "blackWinProbability": 0.130871
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214624,
-            "drawProbability": 0.608349,
-            "blackWinProbability": 0.177027
+            "whiteWinProbability": 0.214343,
+            "drawProbability": 0.608018,
+            "blackWinProbability": 0.177639
           }
         ],
         "13": [
@@ -6523,33 +6475,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152551,
-            "drawProbability": 0.588071,
-            "blackWinProbability": 0.259378
+            "whiteWinProbability": 0.152986,
+            "drawProbability": 0.588405,
+            "blackWinProbability": 0.258609
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.253581,
-            "drawProbability": 0.59024,
-            "blackWinProbability": 0.156179
+            "whiteWinProbability": 0.253757,
+            "drawProbability": 0.590488,
+            "blackWinProbability": 0.155755
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.215988,
-            "drawProbability": 0.608151,
-            "blackWinProbability": 0.175861
+            "whiteWinProbability": 0.21567,
+            "drawProbability": 0.608612,
+            "blackWinProbability": 0.175718
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.26329,
-            "drawProbability": 0.58587,
-            "blackWinProbability": 0.15084
+            "whiteWinProbability": 0.269595,
+            "drawProbability": 0.583036,
+            "blackWinProbability": 0.147369
           }
         ],
         "14": [
@@ -6557,33 +6509,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.324796,
-            "drawProbability": 0.558743,
-            "blackWinProbability": 0.116461
+            "whiteWinProbability": 0.318846,
+            "drawProbability": 0.56102,
+            "blackWinProbability": 0.120134
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.310166,
-            "drawProbability": 0.564764,
-            "blackWinProbability": 0.12507
+            "whiteWinProbability": 0.308953,
+            "drawProbability": 0.565718,
+            "blackWinProbability": 0.125329
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251497,
-            "drawProbability": 0.591453,
-            "blackWinProbability": 0.15705
+            "whiteWinProbability": 0.25172,
+            "drawProbability": 0.591627,
+            "blackWinProbability": 0.156653
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.297574,
-            "drawProbability": 0.570523,
-            "blackWinProbability": 0.131903
+            "whiteWinProbability": 0.298045,
+            "drawProbability": 0.569946,
+            "blackWinProbability": 0.132009
           }
         ]
       },
@@ -6597,144 +6549,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.585519,
-          "expectedRank": 1.676385499999957,
-          "winProbability": 0.641599,
+          "expectedScore": 8.5818465,
+          "expectedRank": 1.6682559999999576,
+          "winProbability": 0.649255,
           "rankDistribution": [
-            0.6415989999999551,
-            0.1855442190476518,
-            0.08890418571426503,
-            0.04517148571428511,
-            0.022745152380952437,
-            0.010748152380952496,
-            0.004217552380952363,
-            0.0010702523809523804
+            0.6492549999999546,
+            0.18008420476194045,
+            0.08652662142854879,
+            0.04446562142857107,
+            0.02312103809523819,
+            0.011112371428571527,
+            0.00437032142857141,
+            0.001064821428571428
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.398361,
-          "expectedRank": 3.641004000000202,
-          "winProbability": 0.106585,
+          "expectedScore": 7.3934605,
+          "expectedRank": 3.6463550000002543,
+          "winProbability": 0.108362,
           "rankDistribution": [
-            0.10658499999998838,
-            0.21749743571430008,
-            0.1997997190476379,
-            0.16765390238097183,
-            0.1307544023809669,
-            0.09387048571428401,
-            0.058298002380950696,
-            0.02554105238095241
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.041082,
-          "expectedRank": 4.372057000000386,
-          "winProbability": 0.071681,
-          "rankDistribution": [
-            0.07168100000000326,
-            0.14024696666666872,
-            0.15886255000001367,
-            0.16066210000002806,
-            0.15360585000002405,
-            0.13837368333334893,
-            0.1101681333333366,
-            0.06639971666666528
+            0.10836199999998818,
+            0.22078535000001376,
+            0.19545808333335546,
+            0.16279625000002992,
+            0.1299020000000142,
+            0.09583524999999926,
+            0.060546983333331215,
+            0.02631408333333342
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.0031795,
-          "expectedRank": 4.455816500000409,
-          "winProbability": 0.05952,
+          "currentScore": 3.5,
+          "expectedScore": 7.079505,
+          "expectedRank": 4.2926570000004105,
+          "winProbability": 0.061389,
           "rankDistribution": [
-            0.05952000000000338,
-            0.13852226904762052,
-            0.15599120238096567,
-            0.16077683571431398,
-            0.15731450238097786,
-            0.1429529190476362,
-            0.1154971857142903,
-            0.0694250857142841
+            0.061389000000003746,
+            0.14810511666666973,
+            0.16928553333336688,
+            0.17191775000001733,
+            0.16045808333336065,
+            0.13657700000001533,
+            0.10036238333333403,
+            0.051905133333332965
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.991894,
+          "expectedRank": 4.473128500000411,
+          "winProbability": 0.057808,
+          "rankDistribution": [
+            0.05780800000000389,
+            0.1270685738095242,
+            0.1570500738095382,
+            0.16783905714287864,
+            0.16479455714288485,
+            0.14739047380954323,
+            0.11403284047619511,
+            0.06401642380952248
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.9662925,
-          "expectedRank": 4.533409000000419,
-          "winProbability": 0.056614,
+          "expectedScore": 6.960709,
+          "expectedRank": 4.547735000000418,
+          "winProbability": 0.057509,
           "rankDistribution": [
-            0.05661400000000341,
-            0.1311897023809531,
-            0.15159685238096465,
-            0.15958878571431342,
-            0.15767420238097787,
-            0.14644328571430432,
-            0.12090620238095862,
-            0.07598696904761701
+            0.057509000000003474,
+            0.1330634404761914,
+            0.14965404047620223,
+            0.15496535714288373,
+            0.15447544047621536,
+            0.14768602380954296,
+            0.12439135714286412,
+            0.07825534047618832
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.982457,
-          "expectedRank": 4.508811500000418,
-          "winProbability": 0.052504,
+          "expectedScore": 6.9779935,
+          "expectedRank": 4.520691000000415,
+          "winProbability": 0.053616,
           "rankDistribution": [
-            0.05250400000000338,
-            0.13910501904762015,
-            0.15415155238096542,
-            0.15986100238098044,
-            0.15690225238097777,
-            0.14462708571430388,
-            0.1188676857142914,
-            0.07398140238095045
+            0.053616000000003446,
+            0.1418973000000014,
+            0.15157931666667884,
+            0.1547295500000269,
+            0.15373330000002466,
+            0.1462041333333519,
+            0.12219025000000658,
+            0.07605014999999797
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2675255,
-          "expectedRank": 5.963743500000006,
-          "winProbability": 0.009103,
+          "expectedScore": 6.2643135,
+          "expectedRank": 5.982684999999991,
+          "winProbability": 0.009507,
           "rankDistribution": [
-            0.009102999999999905,
-            0.03647710238095282,
-            0.06505006904761626,
-            0.09866280238095321,
-            0.13941888571430477,
-            0.18764546904762705,
-            0.240223735714271,
-            0.22341893571428187
+            0.009506999999999955,
+            0.03708005714285759,
+            0.0645503071428545,
+            0.09675784047619025,
+            0.13504150714287477,
+            0.18436367380953447,
+            0.24465089047617392,
+            0.2280487238095192
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7555835,
-          "expectedRank": 6.848773000000075,
-          "winProbability": 0.002394,
+          "expectedScore": 5.750278,
+          "expectedRank": 6.86849250000009,
+          "winProbability": 0.002554,
           "rankDistribution": [
-            0.0023939999999999964,
-            0.011417285714285812,
-            0.025643869047619085,
-            0.04762308571428556,
-            0.08158475238094413,
-            0.13533891904763481,
-            0.2318215023809406,
-            0.4641765857142988
+            0.0025540000000000055,
+            0.011915957142857226,
+            0.025896023809523834,
+            0.04652857380952389,
+            0.07847407380951596,
+            0.13083107380953818,
+            0.22945497380951274,
+            0.47434532380953875
           ]
         }
       ],
@@ -6743,33 +6695,33 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Zhu, Jiner",
-          "whiteWinProbability": 0.325502,
-          "drawProbability": 0.55823,
-          "blackWinProbability": 0.116268
+          "whiteWinProbability": 0.31985,
+          "drawProbability": 0.560617,
+          "blackWinProbability": 0.119533
         },
         {
           "board": 2,
           "white": "Goryachkina, Aleksandra",
           "black": "Tan, Zhongyi",
-          "whiteWinProbability": 0.310017,
-          "drawProbability": 0.565243,
-          "blackWinProbability": 0.12474
+          "whiteWinProbability": 0.309856,
+          "drawProbability": 0.56506,
+          "blackWinProbability": 0.125084
         },
         {
           "board": 3,
           "white": "Vaishali, Rameshbabu",
           "black": "Lagno, Kateryna",
-          "whiteWinProbability": 0.251847,
-          "drawProbability": 0.591156,
-          "blackWinProbability": 0.156997
+          "whiteWinProbability": 0.252407,
+          "drawProbability": 0.59039,
+          "blackWinProbability": 0.157203
         },
         {
           "board": 4,
           "white": "Divya Deshmukh",
           "black": "Assaubayeva, Bibisara",
-          "whiteWinProbability": 0.297167,
-          "drawProbability": 0.57099,
-          "blackWinProbability": 0.131843
+          "whiteWinProbability": 0.297248,
+          "drawProbability": 0.570756,
+          "blackWinProbability": 0.131996
         }
       ],
       "pairingOddsByRound": {
@@ -6778,17 +6730,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.257801,
-            "drawProbability": 0.588192,
-            "blackWinProbability": 0.154007
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.247631,
-            "drawProbability": 0.593581,
-            "blackWinProbability": 0.158788
+            "whiteWinProbability": 0.258135,
+            "drawProbability": 0.588366,
+            "blackWinProbability": 0.153499
           }
         ],
         "8": [
@@ -6796,33 +6740,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343972,
-            "drawProbability": 0.549387,
-            "blackWinProbability": 0.106641
+            "whiteWinProbability": 0.344331,
+            "drawProbability": 0.549657,
+            "blackWinProbability": 0.106012
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.218352,
-            "drawProbability": 0.606744,
-            "blackWinProbability": 0.174904
+            "whiteWinProbability": 0.218179,
+            "drawProbability": 0.606449,
+            "blackWinProbability": 0.175372
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.242415,
-            "drawProbability": 0.59582,
-            "blackWinProbability": 0.161765
+            "whiteWinProbability": 0.242123,
+            "drawProbability": 0.596383,
+            "blackWinProbability": 0.161494
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.191931,
-            "drawProbability": 0.618524,
-            "blackWinProbability": 0.189545
+            "whiteWinProbability": 0.187017,
+            "drawProbability": 0.618379,
+            "blackWinProbability": 0.194604
           }
         ],
         "9": [
@@ -6830,33 +6774,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151223,
-            "drawProbability": 0.588648,
-            "blackWinProbability": 0.260129
+            "whiteWinProbability": 0.152408,
+            "drawProbability": 0.586668,
+            "blackWinProbability": 0.260924
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.276524,
-            "drawProbability": 0.579939,
-            "blackWinProbability": 0.143537
+            "whiteWinProbability": 0.282392,
+            "drawProbability": 0.576901,
+            "blackWinProbability": 0.140707
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.308539,
-            "drawProbability": 0.565265,
-            "blackWinProbability": 0.126196
+            "whiteWinProbability": 0.307174,
+            "drawProbability": 0.5662,
+            "blackWinProbability": 0.126626
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.250039,
-            "drawProbability": 0.592173,
-            "blackWinProbability": 0.157788
+            "whiteWinProbability": 0.249887,
+            "drawProbability": 0.591777,
+            "blackWinProbability": 0.158336
           }
         ],
         "10": [
@@ -6864,33 +6808,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.34894,
-            "drawProbability": 0.547253,
-            "blackWinProbability": 0.103807
+            "whiteWinProbability": 0.34939,
+            "drawProbability": 0.547221,
+            "blackWinProbability": 0.103389
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.244667,
-            "drawProbability": 0.594664,
-            "blackWinProbability": 0.160669
+            "whiteWinProbability": 0.244449,
+            "drawProbability": 0.595184,
+            "blackWinProbability": 0.160367
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.19356,
-            "drawProbability": 0.618856,
-            "blackWinProbability": 0.187584
+            "whiteWinProbability": 0.188061,
+            "drawProbability": 0.620267,
+            "blackWinProbability": 0.191672
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.297796,
-            "drawProbability": 0.570662,
-            "blackWinProbability": 0.131542
+            "whiteWinProbability": 0.298119,
+            "drawProbability": 0.569913,
+            "blackWinProbability": 0.131968
           }
         ],
         "11": [
@@ -6898,33 +6842,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.175269,
-            "drawProbability": 0.606431,
-            "blackWinProbability": 0.2183
+            "whiteWinProbability": 0.174745,
+            "drawProbability": 0.607172,
+            "blackWinProbability": 0.218083
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.253771,
-            "drawProbability": 0.590675,
-            "blackWinProbability": 0.155554
+            "whiteWinProbability": 0.253398,
+            "drawProbability": 0.590416,
+            "blackWinProbability": 0.156186
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.2741,
-            "drawProbability": 0.581189,
-            "blackWinProbability": 0.144711
+            "whiteWinProbability": 0.280609,
+            "drawProbability": 0.578247,
+            "blackWinProbability": 0.141144
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.270713,
-            "drawProbability": 0.582877,
-            "blackWinProbability": 0.14641
+            "whiteWinProbability": 0.27157,
+            "drawProbability": 0.582813,
+            "blackWinProbability": 0.145617
           }
         ],
         "12": [
@@ -6932,33 +6876,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.333792,
-            "drawProbability": 0.55407,
-            "blackWinProbability": 0.112138
+            "whiteWinProbability": 0.333834,
+            "drawProbability": 0.553905,
+            "blackWinProbability": 0.112261
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230654,
-            "drawProbability": 0.60057,
-            "blackWinProbability": 0.168776
+            "whiteWinProbability": 0.225043,
+            "drawProbability": 0.604136,
+            "blackWinProbability": 0.170821
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.299183,
-            "drawProbability": 0.570006,
-            "blackWinProbability": 0.130811
+            "whiteWinProbability": 0.300186,
+            "drawProbability": 0.568553,
+            "blackWinProbability": 0.131261
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214329,
-            "drawProbability": 0.608602,
-            "blackWinProbability": 0.177069
+            "whiteWinProbability": 0.214613,
+            "drawProbability": 0.608846,
+            "blackWinProbability": 0.176541
           }
         ],
         "13": [
@@ -6966,33 +6910,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.153192,
-            "drawProbability": 0.587867,
-            "blackWinProbability": 0.258941
+            "whiteWinProbability": 0.152989,
+            "drawProbability": 0.588393,
+            "blackWinProbability": 0.258618
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.253963,
-            "drawProbability": 0.589677,
-            "blackWinProbability": 0.15636
+            "whiteWinProbability": 0.253484,
+            "drawProbability": 0.590605,
+            "blackWinProbability": 0.155911
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216046,
-            "drawProbability": 0.607281,
-            "blackWinProbability": 0.176673
+            "whiteWinProbability": 0.215837,
+            "drawProbability": 0.607621,
+            "blackWinProbability": 0.176542
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.263157,
-            "drawProbability": 0.585986,
-            "blackWinProbability": 0.150857
+            "whiteWinProbability": 0.268767,
+            "drawProbability": 0.583667,
+            "blackWinProbability": 0.147566
           }
         ],
         "14": [
@@ -7000,33 +6944,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325502,
-            "drawProbability": 0.55823,
-            "blackWinProbability": 0.116268
+            "whiteWinProbability": 0.31985,
+            "drawProbability": 0.560617,
+            "blackWinProbability": 0.119533
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.310017,
-            "drawProbability": 0.565243,
-            "blackWinProbability": 0.12474
+            "whiteWinProbability": 0.309856,
+            "drawProbability": 0.56506,
+            "blackWinProbability": 0.125084
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.251847,
-            "drawProbability": 0.591156,
-            "blackWinProbability": 0.156997
+            "whiteWinProbability": 0.252407,
+            "drawProbability": 0.59039,
+            "blackWinProbability": 0.157203
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.297167,
-            "drawProbability": 0.57099,
-            "blackWinProbability": 0.131843
+            "whiteWinProbability": 0.297248,
+            "drawProbability": 0.570756,
+            "blackWinProbability": 0.131996
           }
         ]
       },
@@ -7040,144 +6984,144 @@
           "name": "Muzychuk, Anna",
           "rating": 2522,
           "currentScore": 4.5,
-          "expectedScore": 8.585758,
-          "expectedRank": 1.6755239999999565,
-          "winProbability": 0.641877,
+          "expectedScore": 8.5822235,
+          "expectedRank": 1.6674539999999576,
+          "winProbability": 0.649593,
           "rankDistribution": [
-            0.6418769999999545,
-            0.18521985476193809,
-            0.0888613547618837,
-            0.04540605476190418,
-            0.02291063809523816,
-            0.010619888095238221,
-            0.004115188095238079,
-            0.0009900214285714281
+            0.649592999999955,
+            0.17988108571432115,
+            0.0864330523809298,
+            0.044565902380951976,
+            0.023093152380952487,
+            0.011050152380952478,
+            0.004299852380952364,
+            0.0010838023809523803
           ]
         },
         {
           "name": "Vaishali, Rameshbabu",
           "rating": 2470,
           "currentScore": 4.0,
-          "expectedScore": 7.3987,
-          "expectedRank": 3.640092000000207,
-          "winProbability": 0.106478,
+          "expectedScore": 7.3923955,
+          "expectedRank": 3.647713500000248,
+          "winProbability": 0.108426,
           "rankDistribution": [
-            0.1064779999999882,
-            0.21817861666668137,
-            0.1998337166666864,
-            0.1671092833333534,
-            0.13042803333334776,
-            0.09403111666666505,
-            0.058538249999998196,
-            0.025402983333333365
-          ]
-        },
-        {
-          "name": "Goryachkina, Aleksandra",
-          "rating": 2534,
-          "currentScore": 3.0,
-          "expectedScore": 7.0425095,
-          "expectedRank": 4.369822500000389,
-          "winProbability": 0.071676,
-          "rankDistribution": [
-            0.07167600000000326,
-            0.14012900000000206,
-            0.15907728333334692,
-            0.16075626666669462,
-            0.15419776666669088,
-            0.13826743333334915,
-            0.11013185000000338,
-            0.06576439999999859
+            0.10842599999998837,
+            0.2203837880952516,
+            0.19529880476192663,
+            0.16326372142860043,
+            0.12972055476191882,
+            0.09583230476190385,
+            0.060626588095236016,
+            0.026448238095238184
           ]
         },
         {
           "name": "Zhu, Jiner",
           "rating": 2554,
-          "currentScore": 3.0,
-          "expectedScore": 7.002021,
-          "expectedRank": 4.458969500000413,
-          "winProbability": 0.059397,
+          "currentScore": 3.5,
+          "expectedScore": 7.0812505,
+          "expectedRank": 4.287875500000407,
+          "winProbability": 0.061507,
           "rankDistribution": [
-            0.05939700000000339,
-            0.13812437380952514,
-            0.15556185714287027,
-            0.161118690476219,
-            0.15734235714288272,
-            0.1433461071428748,
-            0.11550192380952859,
-            0.06960769047618878
+            0.06150700000000366,
+            0.14916207142857485,
+            0.1696094880952712,
+            0.171372721428589,
+            0.16019155476193164,
+            0.13626905476192,
+            0.09995197142857201,
+            0.05193613809523772
+          ]
+        },
+        {
+          "name": "Goryachkina, Aleksandra",
+          "rating": 2534,
+          "currentScore": 3.5,
+          "expectedScore": 6.99188,
+          "expectedRank": 4.475610500000405,
+          "winProbability": 0.057645,
+          "rankDistribution": [
+            0.057645000000003915,
+            0.12698119523809562,
+            0.15658882857144274,
+            0.16788994523811646,
+            0.16498152857145568,
+            0.14750469523811452,
+            0.11452942857143324,
+            0.06387937857142723
           ]
         },
         {
           "name": "Lagno, Kateryna",
           "rating": 2508,
           "currentScore": 3.0,
-          "expectedScore": 6.9674905,
-          "expectedRank": 4.531615000000422,
-          "winProbability": 0.056974,
+          "expectedScore": 6.9599915,
+          "expectedRank": 4.549329000000421,
+          "winProbability": 0.057177,
           "rankDistribution": [
-            0.05697400000000349,
-            0.13123539761904812,
-            0.15166063095239327,
-            0.15917883095240865,
-            0.15746049761907338,
-            0.14675858095239988,
-            0.12123748095238727,
-            0.07549458095237892
+            0.05717700000000347,
+            0.1331356452380963,
+            0.14957521190477405,
+            0.15479401190478873,
+            0.15475042857145352,
+            0.14789551190478112,
+            0.12452371190476898,
+            0.07814847857142636
           ]
         },
         {
           "name": "Divya Deshmukh",
           "rating": 2510,
           "currentScore": 3.0,
-          "expectedScore": 6.981898,
-          "expectedRank": 4.510062000000419,
-          "winProbability": 0.052104,
+          "expectedScore": 6.978588,
+          "expectedRank": 4.518345500000412,
+          "winProbability": 0.053757,
           "rankDistribution": [
-            0.052104000000003405,
-            0.13935642380952493,
-            0.15432220714286987,
-            0.15972480714288528,
-            0.15666589047621596,
-            0.1447053904762088,
-            0.1191527404761962,
-            0.07396854047618857
+            0.053757000000003344,
+            0.14144885476190633,
+            0.1522736714285841,
+            0.15537203809526529,
+            0.15378303809526267,
+            0.145445454761923,
+            0.12156583809524422,
+            0.0763541047619027
           ]
         },
         {
           "name": "Assaubayeva, Bibisara",
           "rating": 2516,
           "currentScore": 3.0,
-          "expectedScore": 6.2678535,
-          "expectedRank": 5.963666500000011,
-          "winProbability": 0.009118,
+          "expectedScore": 6.2622725,
+          "expectedRank": 5.985937499999993,
+          "winProbability": 0.009394,
           "rankDistribution": [
-            0.009117999999999899,
-            0.03622473333333379,
-            0.06482201666666394,
-            0.09907921666666762,
-            0.13971780000001904,
-            0.1876146333333417,
-            0.2403494833333189,
-            0.223074116666663
+            0.009393999999999911,
+            0.03710500476190526,
+            0.06451465476190205,
+            0.09619637142857108,
+            0.13493670476192224,
+            0.18451287142858186,
+            0.24447985476188902,
+            0.22886053809523335
           ]
         },
         {
           "name": "Tan, Zhongyi",
           "rating": 2535,
           "currentScore": 2.5,
-          "expectedScore": 5.7537695,
-          "expectedRank": 6.850248500000082,
-          "winProbability": 0.002376,
+          "expectedScore": 5.7513985,
+          "expectedRank": 6.867734500000088,
+          "winProbability": 0.002501,
           "rankDistribution": [
-            0.002375999999999999,
-            0.011531600000000098,
-            0.025860933333333388,
-            0.04762684999999981,
-            0.08127701666665846,
-            0.13465685000001582,
-            0.23097308333332162,
-            0.46569766666668044
+            0.0025010000000000045,
+            0.011902354761904854,
+            0.025706288095238124,
+            0.04654528809523818,
+            0.07854303809523039,
+            0.1314899547619192,
+            0.23002275476189385,
+            0.4732893214285859
           ]
         }
       ],
@@ -7188,17 +7132,9 @@
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.257311,
-            "drawProbability": 0.588254,
-            "blackWinProbability": 0.154435
-          },
-          {
-            "board": 4,
-            "white": "Goryachkina, Aleksandra",
-            "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.24754,
-            "drawProbability": 0.593975,
-            "blackWinProbability": 0.158485
+            "whiteWinProbability": 0.25751,
+            "drawProbability": 0.58928,
+            "blackWinProbability": 0.15321
           }
         ],
         "8": [
@@ -7206,33 +7142,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.343765,
-            "drawProbability": 0.549478,
-            "blackWinProbability": 0.106757
+            "whiteWinProbability": 0.344279,
+            "drawProbability": 0.549903,
+            "blackWinProbability": 0.105818
           },
           {
             "board": 2,
             "white": "Assaubayeva, Bibisara",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.217954,
-            "drawProbability": 0.606893,
-            "blackWinProbability": 0.175153
+            "whiteWinProbability": 0.21851,
+            "drawProbability": 0.605373,
+            "blackWinProbability": 0.176117
           },
           {
             "board": 3,
             "white": "Lagno, Kateryna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.242001,
-            "drawProbability": 0.596583,
-            "blackWinProbability": 0.161416
+            "whiteWinProbability": 0.242744,
+            "drawProbability": 0.595025,
+            "blackWinProbability": 0.162231
           },
           {
             "board": 4,
             "white": "Tan, Zhongyi",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.191609,
-            "drawProbability": 0.618876,
-            "blackWinProbability": 0.189515
+            "whiteWinProbability": 0.187229,
+            "drawProbability": 0.617952,
+            "blackWinProbability": 0.194819
           }
         ],
         "9": [
@@ -7240,33 +7176,33 @@
             "board": 1,
             "white": "Tan, Zhongyi",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.151426,
-            "drawProbability": 0.587973,
-            "blackWinProbability": 0.260601
+            "whiteWinProbability": 0.152014,
+            "drawProbability": 0.587422,
+            "blackWinProbability": 0.260564
           },
           {
             "board": 2,
             "white": "Zhu, Jiner",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.275109,
-            "drawProbability": 0.58079,
-            "blackWinProbability": 0.144101
+            "whiteWinProbability": 0.281614,
+            "drawProbability": 0.57828,
+            "blackWinProbability": 0.140106
           },
           {
             "board": 3,
             "white": "Goryachkina, Aleksandra",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.308074,
-            "drawProbability": 0.565404,
-            "blackWinProbability": 0.126522
+            "whiteWinProbability": 0.307264,
+            "drawProbability": 0.566755,
+            "blackWinProbability": 0.125981
           },
           {
             "board": 4,
             "white": "Vaishali, Rameshbabu",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.250382,
-            "drawProbability": 0.59135,
-            "blackWinProbability": 0.158268
+            "whiteWinProbability": 0.249719,
+            "drawProbability": 0.592033,
+            "blackWinProbability": 0.158248
           }
         ],
         "10": [
@@ -7274,33 +7210,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.348254,
-            "drawProbability": 0.548224,
-            "blackWinProbability": 0.103522
+            "whiteWinProbability": 0.349362,
+            "drawProbability": 0.547163,
+            "blackWinProbability": 0.103475
           },
           {
             "board": 2,
             "white": "Divya Deshmukh",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.243499,
-            "drawProbability": 0.596084,
-            "blackWinProbability": 0.160417
+            "whiteWinProbability": 0.245006,
+            "drawProbability": 0.594655,
+            "blackWinProbability": 0.160339
           },
           {
             "board": 3,
             "white": "Assaubayeva, Bibisara",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.19345,
-            "drawProbability": 0.618669,
-            "blackWinProbability": 0.187881
+            "whiteWinProbability": 0.187222,
+            "drawProbability": 0.619821,
+            "blackWinProbability": 0.192957
           },
           {
             "board": 4,
             "white": "Lagno, Kateryna",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.29848,
-            "drawProbability": 0.570156,
-            "blackWinProbability": 0.131364
+            "whiteWinProbability": 0.29684,
+            "drawProbability": 0.571288,
+            "blackWinProbability": 0.131872
           }
         ],
         "11": [
@@ -7308,33 +7244,33 @@
             "board": 1,
             "white": "Lagno, Kateryna",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.174416,
-            "drawProbability": 0.60775,
-            "blackWinProbability": 0.217834
+            "whiteWinProbability": 0.174967,
+            "drawProbability": 0.606004,
+            "blackWinProbability": 0.219029
           },
           {
             "board": 2,
             "white": "Tan, Zhongyi",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.252821,
-            "drawProbability": 0.591018,
-            "blackWinProbability": 0.156161
+            "whiteWinProbability": 0.253206,
+            "drawProbability": 0.590629,
+            "blackWinProbability": 0.156165
           },
           {
             "board": 3,
             "white": "Zhu, Jiner",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.274257,
-            "drawProbability": 0.581114,
-            "blackWinProbability": 0.144629
+            "whiteWinProbability": 0.279954,
+            "drawProbability": 0.578927,
+            "blackWinProbability": 0.141119
           },
           {
             "board": 4,
             "white": "Goryachkina, Aleksandra",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.27199,
-            "drawProbability": 0.581684,
-            "blackWinProbability": 0.146326
+            "whiteWinProbability": 0.271783,
+            "drawProbability": 0.582301,
+            "blackWinProbability": 0.145916
           }
         ],
         "12": [
@@ -7342,33 +7278,33 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.333338,
-            "drawProbability": 0.554711,
-            "blackWinProbability": 0.111951
+            "whiteWinProbability": 0.333955,
+            "drawProbability": 0.554014,
+            "blackWinProbability": 0.112031
           },
           {
             "board": 2,
             "white": "Vaishali, Rameshbabu",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.230795,
-            "drawProbability": 0.600918,
-            "blackWinProbability": 0.168287
+            "whiteWinProbability": 0.22472,
+            "drawProbability": 0.603502,
+            "blackWinProbability": 0.171778
           },
           {
             "board": 3,
             "white": "Divya Deshmukh",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.299881,
-            "drawProbability": 0.568956,
-            "blackWinProbability": 0.131163
+            "whiteWinProbability": 0.299346,
+            "drawProbability": 0.569625,
+            "blackWinProbability": 0.131029
           },
           {
             "board": 4,
             "white": "Assaubayeva, Bibisara",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.214499,
-            "drawProbability": 0.608256,
-            "blackWinProbability": 0.177245
+            "whiteWinProbability": 0.215315,
+            "drawProbability": 0.607666,
+            "blackWinProbability": 0.177019
           }
         ],
         "13": [
@@ -7376,33 +7312,33 @@
             "board": 1,
             "white": "Assaubayeva, Bibisara",
             "black": "Muzychuk, Anna",
-            "whiteWinProbability": 0.152704,
-            "drawProbability": 0.588483,
-            "blackWinProbability": 0.258813
+            "whiteWinProbability": 0.153164,
+            "drawProbability": 0.588073,
+            "blackWinProbability": 0.258763
           },
           {
             "board": 2,
             "white": "Lagno, Kateryna",
             "black": "Divya Deshmukh",
-            "whiteWinProbability": 0.252932,
-            "drawProbability": 0.591862,
-            "blackWinProbability": 0.155206
+            "whiteWinProbability": 0.253497,
+            "drawProbability": 0.590833,
+            "blackWinProbability": 0.15567
           },
           {
             "board": 3,
             "white": "Tan, Zhongyi",
             "black": "Vaishali, Rameshbabu",
-            "whiteWinProbability": 0.216324,
-            "drawProbability": 0.607267,
-            "blackWinProbability": 0.176409
+            "whiteWinProbability": 0.21647,
+            "drawProbability": 0.607694,
+            "blackWinProbability": 0.175836
           },
           {
             "board": 4,
             "white": "Zhu, Jiner",
             "black": "Goryachkina, Aleksandra",
-            "whiteWinProbability": 0.263116,
-            "drawProbability": 0.586087,
-            "blackWinProbability": 0.150797
+            "whiteWinProbability": 0.268874,
+            "drawProbability": 0.583991,
+            "blackWinProbability": 0.147135
           }
         ],
         "14": [
@@ -7410,32 +7346,32 @@
             "board": 1,
             "white": "Muzychuk, Anna",
             "black": "Zhu, Jiner",
-            "whiteWinProbability": 0.325987,
-            "drawProbability": 0.557713,
-            "blackWinProbability": 0.1163
+            "whiteWinProbability": 0.319495,
+            "drawProbability": 0.560974,
+            "blackWinProbability": 0.119531
           },
           {
             "board": 2,
             "white": "Goryachkina, Aleksandra",
             "black": "Tan, Zhongyi",
-            "whiteWinProbability": 0.311016,
-            "drawProbability": 0.564089,
-            "blackWinProbability": 0.124895
+            "whiteWinProbability": 0.310231,
+            "drawProbability": 0.564991,
+            "blackWinProbability": 0.124778
           },
           {
             "board": 3,
             "white": "Vaishali, Rameshbabu",
             "black": "Lagno, Kateryna",
-            "whiteWinProbability": 0.252126,
-            "drawProbability": 0.591638,
-            "blackWinProbability": 0.156236
+            "whiteWinProbability": 0.251977,
+            "drawProbability": 0.591205,
+            "blackWinProbability": 0.156818
           },
           {
             "board": 4,
             "white": "Divya Deshmukh",
             "black": "Assaubayeva, Bibisara",
-            "whiteWinProbability": 0.297419,
-            "drawProbability": 0.570758,
+            "whiteWinProbability": 0.298309,
+            "drawProbability": 0.569868,
             "blackWinProbability": 0.131823
           }
         ]
