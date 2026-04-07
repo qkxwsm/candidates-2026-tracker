@@ -4364,17 +4364,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.831911,
-          "expectedRank": 1.2499735000000507,
-          "winProbability": 0.778706,
+          "expectedScore": 9.8689995,
+          "expectedRank": 1.1082665000000322,
+          "winProbability": 0.910365,
           "rankDistribution": [
-            0.7787060000000359,
-            0.1949477000000091,
-            0.024276449999998898,
-            0.0018328666666666698,
-            0.00021253333333333329,
-            2.253333333333333e-05,
-            1.9166666666666664e-06,
+            0.9103650000000288,
+            0.07371396666666771,
+            0.013609950000000417,
+            0.00196728333333334,
+            0.00029278333333333323,
+            4.6450000000000004e-05,
+            4.5666666666666664e-06,
             0.0
           ]
         },
@@ -4382,126 +4382,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.7952535,
-          "expectedRank": 2.0716825000000436,
-          "winProbability": 0.201165,
+          "expectedScore": 8.068851,
+          "expectedRank": 2.67073649999998,
+          "winProbability": 0.058064,
           "rankDistribution": [
-            0.2011650000000089,
-            0.5855248833333302,
-            0.16972646666667948,
-            0.031693716666667246,
-            0.008589883333333409,
-            0.0025813000000000056,
-            0.0006737500000000002,
-            4.5e-05
+            0.058064000000001594,
+            0.4783933666666665,
+            0.2916585666666532,
+            0.10738788333333647,
+            0.04208655000000155,
+            0.016422883333333128,
+            0.005505516666666649,
+            0.0004812333333333336
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.7677085,
-          "expectedRank": 3.1535260000000873,
-          "winProbability": 0.019273,
+          "expectedScore": 7.8059595,
+          "expectedRank": 3.0282109999999127,
+          "winProbability": 0.028796,
           "rankDistribution": [
-            0.01927299999999935,
-            0.18712476666667635,
-            0.5471242500000121,
-            0.15517236666667766,
-            0.05916869999999773,
-            0.023587366666666554,
-            0.007822850000000044,
-            0.0007267000000000003
+            0.02879599999999935,
+            0.34464231666664086,
+            0.35650763333330504,
+            0.1613668833333501,
+            0.06865079999999589,
+            0.029237383333333793,
+            0.009930233333333425,
+            0.0008687499999999997
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.299152,
-          "expectedRank": 5.354338999999854,
-          "winProbability": 0.000432,
+          "currentScore": 3.5,
+          "expectedScore": 6.802801,
+          "expectedRank": 4.666159499999949,
+          "winProbability": 0.001977,
           "rankDistribution": [
-            0.0004319999999999995,
-            0.01134196666666672,
-            0.08208641666666394,
-            0.22058734999999205,
-            0.2238397666666528,
-            0.2083087666666602,
-            0.1936668833333344,
-            0.05973684999999925
+            0.0019769999999999927,
+            0.05153051666666666,
+            0.15660945000001053,
+            0.2837604666666344,
+            0.22308021666665287,
+            0.15964980000001824,
+            0.10418903333333451,
+            0.019203516666666493
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.324093,
-          "expectedRank": 5.338452499999813,
-          "winProbability": 0.000192,
+          "expectedScore": 6.359981,
+          "expectedRank": 5.439511499999805,
+          "winProbability": 0.000346,
           "rankDistribution": [
-            0.00019200000000000006,
-            0.00800028333333336,
-            0.0657726666666651,
-            0.23851364999998687,
-            0.23796531666664641,
-            0.2158520666666567,
-            0.18368378333333787,
-            0.05002023333333325
+            0.00034599999999999963,
+            0.01950884999999979,
+            0.07073168333333044,
+            0.17648480000000985,
+            0.23729296666664623,
+            0.22847571666665176,
+            0.21258544999999557,
+            0.05457453333333292
           ]
         },
         {
           "name": "Wei, Yi",
           "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.2188505,
-          "expectedRank": 5.493306499999758,
-          "winProbability": 0.000185,
+          "expectedScore": 6.257341,
+          "expectedRank": 5.592948999999753,
+          "winProbability": 0.000319,
           "rankDistribution": [
-            0.0001850000000000001,
-            0.00751835000000002,
-            0.06247901666666535,
-            0.19055515000000242,
-            0.2329344833333148,
-            0.24109939999997834,
-            0.20467046666666408,
-            0.060558133333332445
+            0.0003189999999999997,
+            0.018551233333333157,
+            0.06245976666666471,
+            0.14534521666668032,
+            0.21668729999998937,
+            0.25756313333330677,
+            0.23464273333332278,
+            0.06443161666666553
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.0776905,
-          "expectedRank": 5.731904999999732,
-          "winProbability": 4.7e-05,
+          "expectedScore": 6.1162545,
+          "expectedRank": 5.837098999999724,
+          "winProbability": 0.000133,
           "rankDistribution": [
-            4.6999999999999984e-05,
-            0.005507499999999984,
-            0.04752276666666684,
-            0.15326388333334554,
-            0.21248954999999164,
-            0.24751338333330863,
-            0.25155621666665084,
-            0.08209969999999786
+            0.00013300000000000006,
+            0.013526866666666654,
+            0.047375533333333525,
+            0.11775700000000608,
+            0.19201016666667006,
+            0.25510066666664105,
+            0.28667129999997804,
+            0.08742546666666533
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.685341,
-          "expectedRank": 7.606815000000093,
+          "expectedScore": 4.7198125,
+          "expectedRank": 7.657067000000052,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            3.4550000000000006e-05,
-            0.001011966666666666,
-            0.00838101666666672,
-            0.024799766666666688,
-            0.0610351833333308,
-            0.15792413333334224,
-            0.7468133833333391
+            0.00013288333333333336,
+            0.001047416666666666,
+            0.005930466666666661,
+            0.019899216666666268,
+            0.05350396666666573,
+            0.14647116666667342,
+            0.7730148833333349
           ]
         }
       ],
@@ -4510,78 +4510,68 @@
           "board": 1,
           "white": "Nakamura, Hikaru",
           "black": "Esipenko, Andrey",
-          "whiteWinProbability": 0.452622,
-          "drawProbability": 0.500606,
-          "blackWinProbability": 0.046772
+          "whiteWinProbability": 0.448471,
+          "drawProbability": 0.502817,
+          "blackWinProbability": 0.048712
         },
         {
           "board": 2,
           "white": "Caruana, Fabiano",
           "black": "Giri, Anish",
-          "whiteWinProbability": 0.33551,
-          "drawProbability": 0.553704,
-          "blackWinProbability": 0.110786
+          "whiteWinProbability": 0.291192,
+          "drawProbability": 0.573776,
+          "blackWinProbability": 0.135032
         },
         {
           "board": 3,
           "white": "Praggnanandhaa R",
           "black": "Wei, Yi",
-          "whiteWinProbability": 0.254943,
-          "drawProbability": 0.589404,
-          "blackWinProbability": 0.155653
+          "whiteWinProbability": 0.254358,
+          "drawProbability": 0.590532,
+          "blackWinProbability": 0.15511
         },
         {
           "board": 4,
           "white": "Bluebaum, Matthias",
           "black": "Sindarov, Javokhir",
-          "whiteWinProbability": 0.138035,
-          "drawProbability": 0.576844,
-          "blackWinProbability": 0.285121
+          "whiteWinProbability": 0.138874,
+          "drawProbability": 0.576372,
+          "blackWinProbability": 0.284754
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172245,
-            "drawProbability": 0.604076,
-            "blackWinProbability": 0.223679
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452622,
-            "drawProbability": 0.500606,
-            "blackWinProbability": 0.046772
+            "whiteWinProbability": 0.448471,
+            "drawProbability": 0.502817,
+            "blackWinProbability": 0.048712
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.33551,
-            "drawProbability": 0.553704,
-            "blackWinProbability": 0.110786
+            "whiteWinProbability": 0.291192,
+            "drawProbability": 0.573776,
+            "blackWinProbability": 0.135032
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.254943,
-            "drawProbability": 0.589404,
-            "blackWinProbability": 0.155653
+            "whiteWinProbability": 0.254358,
+            "drawProbability": 0.590532,
+            "blackWinProbability": 0.15511
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.138035,
-            "drawProbability": 0.576844,
-            "blackWinProbability": 0.285121
+            "whiteWinProbability": 0.138874,
+            "drawProbability": 0.576372,
+            "blackWinProbability": 0.284754
           }
         ],
         "10": [
@@ -4589,33 +4579,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172555,
-            "drawProbability": 0.604907,
-            "blackWinProbability": 0.222538
+            "whiteWinProbability": 0.172875,
+            "drawProbability": 0.604184,
+            "blackWinProbability": 0.222941
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.37999,
-            "drawProbability": 0.533257,
-            "blackWinProbability": 0.086753
+            "whiteWinProbability": 0.379794,
+            "drawProbability": 0.533445,
+            "blackWinProbability": 0.086761
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.126721,
-            "drawProbability": 0.56708,
-            "blackWinProbability": 0.306199
+            "whiteWinProbability": 0.151812,
+            "drawProbability": 0.586215,
+            "blackWinProbability": 0.261973
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.270018,
-            "drawProbability": 0.583173,
-            "blackWinProbability": 0.146809
+            "whiteWinProbability": 0.275292,
+            "drawProbability": 0.579933,
+            "blackWinProbability": 0.144775
           }
         ],
         "11": [
@@ -4623,33 +4613,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.465684,
-            "drawProbability": 0.494262,
-            "blackWinProbability": 0.040054
+            "whiteWinProbability": 0.465486,
+            "drawProbability": 0.494289,
+            "blackWinProbability": 0.040225
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.338427,
-            "drawProbability": 0.551759,
-            "blackWinProbability": 0.109814
+            "whiteWinProbability": 0.332782,
+            "drawProbability": 0.555234,
+            "blackWinProbability": 0.111984
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.307059,
-            "drawProbability": 0.566391,
-            "blackWinProbability": 0.12655
+            "whiteWinProbability": 0.262034,
+            "drawProbability": 0.586844,
+            "blackWinProbability": 0.151122
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.285137,
-            "drawProbability": 0.576051,
-            "blackWinProbability": 0.138812
+            "whiteWinProbability": 0.285093,
+            "drawProbability": 0.576233,
+            "blackWinProbability": 0.138674
           }
         ],
         "12": [
@@ -4657,33 +4647,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.157012,
-            "drawProbability": 0.591338,
-            "blackWinProbability": 0.25165
+            "whiteWinProbability": 0.157048,
+            "drawProbability": 0.590188,
+            "blackWinProbability": 0.252764
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110677,
-            "drawProbability": 0.55308,
-            "blackWinProbability": 0.336243
+            "whiteWinProbability": 0.135108,
+            "drawProbability": 0.573101,
+            "blackWinProbability": 0.291791
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.298984,
-            "drawProbability": 0.569478,
-            "blackWinProbability": 0.131538
+            "whiteWinProbability": 0.303852,
+            "drawProbability": 0.567388,
+            "blackWinProbability": 0.12876
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.171484,
-            "drawProbability": 0.603432,
-            "blackWinProbability": 0.225084
+            "whiteWinProbability": 0.171164,
+            "drawProbability": 0.603609,
+            "blackWinProbability": 0.225227
           }
         ],
         "13": [
@@ -4691,33 +4681,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.378294,
-            "drawProbability": 0.534136,
-            "blackWinProbability": 0.08757
+            "whiteWinProbability": 0.377949,
+            "drawProbability": 0.534065,
+            "blackWinProbability": 0.087986
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226214,
-            "drawProbability": 0.603052,
-            "blackWinProbability": 0.170734
+            "whiteWinProbability": 0.22652,
+            "drawProbability": 0.603065,
+            "blackWinProbability": 0.170415
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.36705,
-            "drawProbability": 0.539303,
-            "blackWinProbability": 0.093647
+            "whiteWinProbability": 0.362707,
+            "drawProbability": 0.541028,
+            "blackWinProbability": 0.096265
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.427246,
-            "drawProbability": 0.511811,
-            "blackWinProbability": 0.060943
+            "whiteWinProbability": 0.386612,
+            "drawProbability": 0.530952,
+            "blackWinProbability": 0.082436
           }
         ],
         "14": [
@@ -4725,37 +4715,37 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.061636,
-            "drawProbability": 0.514235,
-            "blackWinProbability": 0.424129
+            "whiteWinProbability": 0.084596,
+            "drawProbability": 0.531198,
+            "blackWinProbability": 0.384206
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178566,
-            "drawProbability": 0.610341,
-            "blackWinProbability": 0.211093
+            "whiteWinProbability": 0.181419,
+            "drawProbability": 0.61295,
+            "blackWinProbability": 0.205631
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154357,
-            "drawProbability": 0.589064,
-            "blackWinProbability": 0.256579
+            "whiteWinProbability": 0.154672,
+            "drawProbability": 0.588523,
+            "blackWinProbability": 0.256805
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.378767,
-            "drawProbability": 0.534508,
-            "blackWinProbability": 0.086725
+            "whiteWinProbability": 0.378198,
+            "drawProbability": 0.534615,
+            "blackWinProbability": 0.087187
           }
         ]
       },
-      "isCompletedSnapshot": false
+      "isCompletedSnapshot": true
     },
     {
       "roundNumber": 9,
@@ -4765,17 +4755,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.831182,
-          "expectedRank": 1.2508550000000518,
-          "winProbability": 0.778094,
+          "expectedScore": 9.869467,
+          "expectedRank": 1.1082195000000317,
+          "winProbability": 0.910373,
           "rankDistribution": [
-            0.7780940000000367,
-            0.19537316666667584,
-            0.024422233333332218,
-            0.001843733333333337,
-            0.00023089999999999997,
-            3.3233333333333326e-05,
-            2.7333333333333336e-06,
+            0.9103730000000283,
+            0.07382288333333435,
+            0.01345165000000042,
+            0.00198698333333334,
+            0.0002993166666666665,
+            6.189999999999999e-05,
+            4.266666666666667e-06,
             0.0
           ]
         },
@@ -4783,126 +4773,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.795255,
-          "expectedRank": 2.0719625000000432,
-          "winProbability": 0.2014,
+          "expectedScore": 8.0681545,
+          "expectedRank": 2.672066499999979,
+          "winProbability": 0.058334,
           "rankDistribution": [
-            0.20140000000000904,
-            0.5847035499999963,
-            0.17040193333334624,
-            0.03154520000000057,
-            0.008650033333333413,
-            0.0026114500000000047,
-            0.0006527333333333338,
-            3.51e-05
+            0.05833400000000156,
+            0.47749756666666654,
+            0.29165083333331965,
+            0.10761901666666988,
+            0.04244768333333477,
+            0.016560849999999787,
+            0.0054151166666666474,
+            0.00047493333333333346
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.7697365,
-          "expectedRank": 3.150403000000084,
-          "winProbability": 0.019627,
+          "expectedScore": 7.8076055,
+          "expectedRank": 3.025091499999914,
+          "winProbability": 0.028499,
           "rankDistribution": [
-            0.01962699999999923,
-            0.1877577666666764,
-            0.547288466666678,
-            0.15443916666667742,
-            0.058919416666664524,
-            0.023475916666666537,
-            0.007752316666666708,
-            0.0007399500000000001
+            0.02849899999999936,
+            0.34536453333330797,
+            0.3572942666666387,
+            0.16106665000001663,
+            0.0683698166666626,
+            0.028873816666667086,
+            0.009633283333333416,
+            0.0008986333333333331
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.2986155,
-          "expectedRank": 5.354148999999858,
-          "winProbability": 0.000442,
+          "currentScore": 3.5,
+          "expectedScore": 6.8022845,
+          "expectedRank": 4.6667409999999485,
+          "winProbability": 0.001973,
           "rankDistribution": [
-            0.0004419999999999994,
-            0.01106910000000006,
-            0.08202751666666395,
-            0.22067138333332548,
-            0.2245446333333193,
-            0.20836729999999412,
-            0.19315078333333474,
-            0.05972728333333255
+            0.001972999999999993,
+            0.051814549999999945,
+            0.15614491666667707,
+            0.28329959999996807,
+            0.22380659999998578,
+            0.15942585000001802,
+            0.10436621666666797,
+            0.0191692666666665
           ]
         },
         {
           "name": "Wei, Yi",
           "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.218368,
-          "expectedRank": 5.493435499999757,
-          "winProbability": 0.000192,
+          "expectedScore": 6.25765,
+          "expectedRank": 5.592831999999751,
+          "winProbability": 0.000342,
           "rankDistribution": [
-            0.00019200000000000014,
-            0.007644000000000018,
-            0.06223338333333208,
-            0.19088215000000236,
-            0.2326962333333152,
-            0.24083389999997826,
-            0.2049044833333306,
-            0.06061384999999898
+            0.0003419999999999996,
+            0.018377816666666498,
+            0.06217563333333147,
+            0.14549376666668018,
+            0.2175145166666555,
+            0.257379433333307,
+            0.23435144999998944,
+            0.0643653833333322
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.324224,
-          "expectedRank": 5.3394249999998165,
-          "winProbability": 0.000179,
+          "expectedScore": 6.3594815,
+          "expectedRank": 5.439934499999805,
+          "winProbability": 0.000325,
           "rankDistribution": [
-            0.00017900000000000018,
-            0.007999733333333361,
-            0.0652567999999985,
-            0.23873963333332038,
-            0.23820479999997987,
-            0.21596896666665663,
-            0.18352873333333827,
-            0.05012233333333322
+            0.00032499999999999966,
+            0.01964431666666645,
+            0.07084019999999715,
+            0.17688301666667622,
+            0.2365697666666465,
+            0.22771934999998522,
+            0.21304353333332887,
+            0.05497481666666622
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.077389,
-          "expectedRank": 5.7321169999997315,
-          "winProbability": 6.6e-05,
+          "expectedScore": 6.11481,
+          "expectedRank": 5.83922149999972,
+          "winProbability": 0.000154,
           "rankDistribution": [
-            6.6e-05,
-            0.0054261499999999855,
-            0.04740200000000013,
-            0.15345041666667855,
-            0.2120853333333252,
-            0.24811741666664208,
-            0.2515615999999841,
-            0.08189108333333117
+            0.00015400000000000006,
+            0.013353249999999985,
+            0.04737073333333351,
+            0.1176836166666727,
+            0.19110720000000384,
+            0.2561919499999738,
+            0.2862873666666443,
+            0.08785188333333208
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.68523,
-          "expectedRank": 7.6076530000000915,
+          "expectedScore": 4.720547,
+          "expectedRank": 7.655893500000053,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            2.653333333333333e-05,
-            0.0009676666666666662,
-            0.008428316666666725,
-            0.024668650000000007,
-            0.06059181666666406,
-            0.15844661666667575,
-            0.7468704000000054
+            0.00012508333333333336,
+            0.001071766666666666,
+            0.005967349999999995,
+            0.01988509999999961,
+            0.05378684999999896,
+            0.14689876666667356,
+            0.7722650833333349
           ]
         }
       ],
@@ -4911,78 +4901,68 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Bluebaum, Matthias",
-          "whiteWinProbability": 0.172347,
-          "drawProbability": 0.605645,
-          "blackWinProbability": 0.222008
+          "whiteWinProbability": 0.173176,
+          "drawProbability": 0.604884,
+          "blackWinProbability": 0.22194
         },
         {
           "board": 2,
           "white": "Sindarov, Javokhir",
           "black": "Praggnanandhaa R",
-          "whiteWinProbability": 0.380047,
-          "drawProbability": 0.53385,
-          "blackWinProbability": 0.086103
+          "whiteWinProbability": 0.379184,
+          "drawProbability": 0.534078,
+          "blackWinProbability": 0.086738
         },
         {
           "board": 3,
           "white": "Wei, Yi",
           "black": "Caruana, Fabiano",
-          "whiteWinProbability": 0.126703,
-          "drawProbability": 0.566349,
-          "blackWinProbability": 0.306948
+          "whiteWinProbability": 0.151455,
+          "drawProbability": 0.586927,
+          "blackWinProbability": 0.261618
         },
         {
           "board": 4,
           "white": "Giri, Anish",
           "black": "Nakamura, Hikaru",
-          "whiteWinProbability": 0.270663,
-          "drawProbability": 0.582927,
-          "blackWinProbability": 0.14641
+          "whiteWinProbability": 0.274923,
+          "drawProbability": 0.581131,
+          "blackWinProbability": 0.143946
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172274,
-            "drawProbability": 0.604928,
-            "blackWinProbability": 0.222798
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452349,
-            "drawProbability": 0.501216,
-            "blackWinProbability": 0.046435
+            "whiteWinProbability": 0.44825,
+            "drawProbability": 0.502882,
+            "blackWinProbability": 0.048868
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.335626,
-            "drawProbability": 0.552616,
-            "blackWinProbability": 0.111758
+            "whiteWinProbability": 0.290828,
+            "drawProbability": 0.57354,
+            "blackWinProbability": 0.135632
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.254207,
-            "drawProbability": 0.590365,
-            "blackWinProbability": 0.155428
+            "whiteWinProbability": 0.254049,
+            "drawProbability": 0.589855,
+            "blackWinProbability": 0.156096
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.13869,
-            "drawProbability": 0.576024,
-            "blackWinProbability": 0.285286
+            "whiteWinProbability": 0.138499,
+            "drawProbability": 0.575874,
+            "blackWinProbability": 0.285627
           }
         ],
         "10": [
@@ -4990,33 +4970,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172347,
-            "drawProbability": 0.605645,
-            "blackWinProbability": 0.222008
+            "whiteWinProbability": 0.173176,
+            "drawProbability": 0.604884,
+            "blackWinProbability": 0.22194
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.380047,
-            "drawProbability": 0.53385,
-            "blackWinProbability": 0.086103
+            "whiteWinProbability": 0.379184,
+            "drawProbability": 0.534078,
+            "blackWinProbability": 0.086738
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.126703,
-            "drawProbability": 0.566349,
-            "blackWinProbability": 0.306948
+            "whiteWinProbability": 0.151455,
+            "drawProbability": 0.586927,
+            "blackWinProbability": 0.261618
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.270663,
-            "drawProbability": 0.582927,
-            "blackWinProbability": 0.14641
+            "whiteWinProbability": 0.274923,
+            "drawProbability": 0.581131,
+            "blackWinProbability": 0.143946
           }
         ],
         "11": [
@@ -5024,33 +5004,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.464962,
-            "drawProbability": 0.495727,
-            "blackWinProbability": 0.039311
+            "whiteWinProbability": 0.464549,
+            "drawProbability": 0.495366,
+            "blackWinProbability": 0.040085
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.337694,
-            "drawProbability": 0.552492,
-            "blackWinProbability": 0.109814
+            "whiteWinProbability": 0.333131,
+            "drawProbability": 0.554549,
+            "blackWinProbability": 0.11232
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.306951,
-            "drawProbability": 0.566764,
-            "blackWinProbability": 0.126285
+            "whiteWinProbability": 0.262244,
+            "drawProbability": 0.586588,
+            "blackWinProbability": 0.151168
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.285885,
-            "drawProbability": 0.575917,
-            "blackWinProbability": 0.138198
+            "whiteWinProbability": 0.284689,
+            "drawProbability": 0.57697,
+            "blackWinProbability": 0.138341
           }
         ],
         "12": [
@@ -5058,33 +5038,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.157019,
-            "drawProbability": 0.590763,
-            "blackWinProbability": 0.252218
+            "whiteWinProbability": 0.156398,
+            "drawProbability": 0.591333,
+            "blackWinProbability": 0.252269
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110676,
-            "drawProbability": 0.553146,
-            "blackWinProbability": 0.336178
+            "whiteWinProbability": 0.135031,
+            "drawProbability": 0.573278,
+            "blackWinProbability": 0.291691
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.299066,
-            "drawProbability": 0.569476,
-            "blackWinProbability": 0.131458
+            "whiteWinProbability": 0.304432,
+            "drawProbability": 0.566834,
+            "blackWinProbability": 0.128734
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.170866,
-            "drawProbability": 0.603422,
-            "blackWinProbability": 0.225712
+            "whiteWinProbability": 0.170564,
+            "drawProbability": 0.60341,
+            "blackWinProbability": 0.226026
           }
         ],
         "13": [
@@ -5092,33 +5072,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.377894,
-            "drawProbability": 0.534388,
-            "blackWinProbability": 0.087718
+            "whiteWinProbability": 0.378173,
+            "drawProbability": 0.534868,
+            "blackWinProbability": 0.086959
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226733,
-            "drawProbability": 0.603342,
-            "blackWinProbability": 0.169925
+            "whiteWinProbability": 0.226873,
+            "drawProbability": 0.603041,
+            "blackWinProbability": 0.170086
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.367209,
-            "drawProbability": 0.538897,
-            "blackWinProbability": 0.093894
+            "whiteWinProbability": 0.36218,
+            "drawProbability": 0.541931,
+            "blackWinProbability": 0.095889
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.427592,
-            "drawProbability": 0.511582,
-            "blackWinProbability": 0.060826
+            "whiteWinProbability": 0.386724,
+            "drawProbability": 0.530555,
+            "blackWinProbability": 0.082721
           }
         ],
         "14": [
@@ -5126,33 +5106,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.061999,
-            "drawProbability": 0.513063,
-            "blackWinProbability": 0.424938
+            "whiteWinProbability": 0.084916,
+            "drawProbability": 0.530957,
+            "blackWinProbability": 0.384127
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178696,
-            "drawProbability": 0.610101,
-            "blackWinProbability": 0.211203
+            "whiteWinProbability": 0.181412,
+            "drawProbability": 0.612416,
+            "blackWinProbability": 0.206172
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154198,
-            "drawProbability": 0.589821,
-            "blackWinProbability": 0.255981
+            "whiteWinProbability": 0.153867,
+            "drawProbability": 0.589549,
+            "blackWinProbability": 0.256584
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.378554,
-            "drawProbability": 0.534582,
-            "blackWinProbability": 0.086864
+            "whiteWinProbability": 0.378522,
+            "drawProbability": 0.534481,
+            "blackWinProbability": 0.086997
           }
         ]
       },
@@ -5166,17 +5146,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.8323925,
-          "expectedRank": 1.2506410000000516,
-          "winProbability": 0.778031,
+          "expectedScore": 9.8697265,
+          "expectedRank": 1.1077040000000327,
+          "winProbability": 0.910692,
           "rankDistribution": [
-            0.7780310000000366,
-            0.19561541666667587,
-            0.024317333333332223,
-            0.00178566666666667,
-            0.00022099999999999995,
-            2.7583333333333334e-05,
-            2e-06,
+            0.9106920000000291,
+            0.07360553333333442,
+            0.01341880000000043,
+            0.0019316333333333387,
+            0.00030113333333333324,
+            4.396666666666667e-05,
+            6.933333333333334e-06,
             0.0
           ]
         },
@@ -5184,126 +5164,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.795445,
-          "expectedRank": 2.0713690000000455,
-          "winProbability": 0.201701,
+          "expectedScore": 8.0685155,
+          "expectedRank": 2.6708864999999786,
+          "winProbability": 0.058082,
           "rankDistribution": [
-            0.20170100000000904,
-            0.5847157499999972,
-            0.16990625000001305,
-            0.03183203333333391,
-            0.008619366666666744,
-            0.002529950000000005,
-            0.000652116666666667,
-            4.353333333333333e-05
+            0.0580820000000016,
+            0.47827094999999925,
+            0.2916306999999865,
+            0.1075823166666698,
+            0.042043066666668225,
+            0.01639748333333314,
+            0.00550686666666665,
+            0.0004866166666666668
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.768975,
-          "expectedRank": 3.1507555000000895,
-          "winProbability": 0.019445,
+          "expectedScore": 7.8063185,
+          "expectedRank": 3.027423499999912,
+          "winProbability": 0.02842,
           "rankDistribution": [
-            0.019444999999999317,
-            0.18714306666667635,
-            0.5479653833333461,
-            0.15486766666667762,
-            0.05884941666666452,
-            0.023387083333333208,
-            0.007651100000000042,
-            0.0006912833333333338
+            0.028419999999999352,
+            0.34519451666664097,
+            0.35677183333330525,
+            0.16104705000001648,
+            0.06892304999999586,
+            0.028904133333333738,
+            0.009844616666666755,
+            0.0008947999999999997
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.2991845,
-          "expectedRank": 5.353383499999859,
-          "winProbability": 0.000432,
-          "rankDistribution": [
-            0.00043199999999999944,
-            0.011326716666666719,
-            0.08211658333333062,
-            0.2204713666666588,
-            0.2245015333333193,
-            0.20824578333332766,
-            0.1931676500000013,
-            0.059738366666665904
-          ]
-        },
-        {
-          "name": "Wei, Yi",
-          "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.2175445,
-          "expectedRank": 5.495261999999765,
-          "winProbability": 0.000172,
+          "expectedScore": 6.8046095,
+          "expectedRank": 4.662560999999949,
+          "winProbability": 0.00199,
           "rankDistribution": [
-            0.00017200000000000012,
-            0.007696683333333355,
-            0.06223461666666537,
-            0.1900929833333361,
-            0.2329027333333154,
-            0.2409916499999788,
-            0.20511738333333085,
-            0.06079194999999905
+            0.0019899999999999926,
+            0.05147373333333337,
+            0.15718288333334388,
+            0.2844168666666344,
+            0.2231553666666529,
+            0.15884920000001787,
+            0.10392021666666794,
+            0.01901173333333317
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.323019,
-          "expectedRank": 5.34024799999982,
-          "winProbability": 0.000146,
+          "expectedScore": 6.359688,
+          "expectedRank": 5.4397419999998045,
+          "winProbability": 0.00035,
           "rankDistribution": [
-            0.0001460000000000001,
-            0.008095483333333363,
-            0.06508871666666517,
-            0.23859813333332053,
-            0.23810221666664672,
-            0.21607396666665715,
-            0.18386640000000476,
-            0.05002908333333322
+            0.0003499999999999997,
+            0.019534916666666468,
+            0.07096466666666382,
+            0.17647180000000998,
+            0.2367417999999797,
+            0.22854621666665162,
+            0.2125701333333289,
+            0.05482046666666624
+          ]
+        },
+        {
+          "name": "Wei, Yi",
+          "rating": 2754,
+          "currentScore": 3.5,
+          "expectedScore": 6.256873,
+          "expectedRank": 5.5955204999997505,
+          "winProbability": 0.000347,
+          "rankDistribution": [
+            0.0003469999999999996,
+            0.018307549999999836,
+            0.061754466666664905,
+            0.14532843333334677,
+            0.2174645166666555,
+            0.257508433333307,
+            0.234708716666656,
+            0.06458088333333217
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.0777945,
-          "expectedRank": 5.7315774999997355,
-          "winProbability": 7.3e-05,
+          "expectedScore": 6.1147935,
+          "expectedRank": 5.839298999999718,
+          "winProbability": 0.000119,
           "rankDistribution": [
-            7.3e-05,
-            0.005375766666666646,
-            0.04735681666666683,
-            0.15396388333334543,
-            0.21205613333332543,
-            0.24775429999997564,
-            0.2513402833333176,
-            0.08207981666666447
+            0.00011900000000000005,
+            0.013492383333333325,
+            0.047216816666666925,
+            0.1172721666666726,
+            0.19157200000000338,
+            0.25625224999997376,
+            0.2865204499999777,
+            0.0875549333333321
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.685645,
-          "expectedRank": 7.606763500000096,
+          "expectedScore": 4.7194755,
+          "expectedRank": 7.6568635000000524,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            3.1116666666666666e-05,
-            0.0010142999999999994,
-            0.008388266666666725,
-            0.024747600000000012,
-            0.06098968333333071,
-            0.1582030666666756,
-            0.7466259666666728
+            0.00012041666666666666,
+            0.0010598333333333328,
+            0.005949733333333328,
+            0.019799066666666285,
+            0.05349831666666574,
+            0.1469220666666734,
+            0.7726505666666683
           ]
         }
       ],
@@ -5312,78 +5292,68 @@
           "board": 1,
           "white": "Giri, Anish",
           "black": "Esipenko, Andrey",
-          "whiteWinProbability": 0.465507,
-          "drawProbability": 0.494602,
-          "blackWinProbability": 0.039891
+          "whiteWinProbability": 0.465336,
+          "drawProbability": 0.494966,
+          "blackWinProbability": 0.039698
         },
         {
           "board": 2,
           "white": "Nakamura, Hikaru",
           "black": "Wei, Yi",
-          "whiteWinProbability": 0.338034,
-          "drawProbability": 0.552449,
-          "blackWinProbability": 0.109517
+          "whiteWinProbability": 0.333372,
+          "drawProbability": 0.554573,
+          "blackWinProbability": 0.112055
         },
         {
           "board": 3,
           "white": "Caruana, Fabiano",
           "black": "Sindarov, Javokhir",
-          "whiteWinProbability": 0.307172,
-          "drawProbability": 0.566379,
-          "blackWinProbability": 0.126449
+          "whiteWinProbability": 0.26267,
+          "drawProbability": 0.586626,
+          "blackWinProbability": 0.150704
         },
         {
           "board": 4,
           "white": "Praggnanandhaa R",
           "black": "Bluebaum, Matthias",
-          "whiteWinProbability": 0.284931,
-          "drawProbability": 0.576378,
-          "blackWinProbability": 0.138691
+          "whiteWinProbability": 0.285433,
+          "drawProbability": 0.576159,
+          "blackWinProbability": 0.138408
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172748,
-            "drawProbability": 0.604904,
-            "blackWinProbability": 0.222348
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452783,
-            "drawProbability": 0.50049,
-            "blackWinProbability": 0.046727
+            "whiteWinProbability": 0.449009,
+            "drawProbability": 0.501918,
+            "blackWinProbability": 0.049073
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.334866,
-            "drawProbability": 0.554549,
-            "blackWinProbability": 0.110585
+            "whiteWinProbability": 0.290607,
+            "drawProbability": 0.573919,
+            "blackWinProbability": 0.135474
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.254491,
-            "drawProbability": 0.590085,
-            "blackWinProbability": 0.155424
+            "whiteWinProbability": 0.254342,
+            "drawProbability": 0.590865,
+            "blackWinProbability": 0.154793
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.138958,
-            "drawProbability": 0.57575,
-            "blackWinProbability": 0.285292
+            "whiteWinProbability": 0.138461,
+            "drawProbability": 0.576383,
+            "blackWinProbability": 0.285156
           }
         ],
         "10": [
@@ -5391,33 +5361,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172678,
-            "drawProbability": 0.604956,
-            "blackWinProbability": 0.222366
+            "whiteWinProbability": 0.172429,
+            "drawProbability": 0.605227,
+            "blackWinProbability": 0.222344
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.379795,
-            "drawProbability": 0.533754,
-            "blackWinProbability": 0.086451
+            "whiteWinProbability": 0.379661,
+            "drawProbability": 0.534077,
+            "blackWinProbability": 0.086262
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.126149,
-            "drawProbability": 0.567619,
-            "blackWinProbability": 0.306232
+            "whiteWinProbability": 0.151522,
+            "drawProbability": 0.587339,
+            "blackWinProbability": 0.261139
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.270793,
-            "drawProbability": 0.582872,
-            "blackWinProbability": 0.146335
+            "whiteWinProbability": 0.274701,
+            "drawProbability": 0.580752,
+            "blackWinProbability": 0.144547
           }
         ],
         "11": [
@@ -5425,33 +5395,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.465507,
-            "drawProbability": 0.494602,
-            "blackWinProbability": 0.039891
+            "whiteWinProbability": 0.465336,
+            "drawProbability": 0.494966,
+            "blackWinProbability": 0.039698
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.338034,
-            "drawProbability": 0.552449,
-            "blackWinProbability": 0.109517
+            "whiteWinProbability": 0.333372,
+            "drawProbability": 0.554573,
+            "blackWinProbability": 0.112055
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.307172,
-            "drawProbability": 0.566379,
-            "blackWinProbability": 0.126449
+            "whiteWinProbability": 0.26267,
+            "drawProbability": 0.586626,
+            "blackWinProbability": 0.150704
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.284931,
-            "drawProbability": 0.576378,
-            "blackWinProbability": 0.138691
+            "whiteWinProbability": 0.285433,
+            "drawProbability": 0.576159,
+            "blackWinProbability": 0.138408
           }
         ],
         "12": [
@@ -5459,33 +5429,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.157011,
-            "drawProbability": 0.590661,
-            "blackWinProbability": 0.252328
+            "whiteWinProbability": 0.156735,
+            "drawProbability": 0.59132,
+            "blackWinProbability": 0.251945
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110431,
-            "drawProbability": 0.553267,
-            "blackWinProbability": 0.336302
+            "whiteWinProbability": 0.135005,
+            "drawProbability": 0.572832,
+            "blackWinProbability": 0.292163
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.299074,
-            "drawProbability": 0.570537,
-            "blackWinProbability": 0.130389
+            "whiteWinProbability": 0.302987,
+            "drawProbability": 0.567973,
+            "blackWinProbability": 0.12904
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.170781,
-            "drawProbability": 0.604269,
-            "blackWinProbability": 0.22495
+            "whiteWinProbability": 0.171408,
+            "drawProbability": 0.603271,
+            "blackWinProbability": 0.225321
           }
         ],
         "13": [
@@ -5493,33 +5463,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.377353,
-            "drawProbability": 0.534992,
-            "blackWinProbability": 0.087655
+            "whiteWinProbability": 0.378747,
+            "drawProbability": 0.53354,
+            "blackWinProbability": 0.087713
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226329,
-            "drawProbability": 0.60297,
-            "blackWinProbability": 0.170701
+            "whiteWinProbability": 0.226227,
+            "drawProbability": 0.60306,
+            "blackWinProbability": 0.170713
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.366844,
-            "drawProbability": 0.539606,
-            "blackWinProbability": 0.09355
+            "whiteWinProbability": 0.362778,
+            "drawProbability": 0.541343,
+            "blackWinProbability": 0.095879
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.428351,
-            "drawProbability": 0.511295,
-            "blackWinProbability": 0.060354
+            "whiteWinProbability": 0.386414,
+            "drawProbability": 0.531013,
+            "blackWinProbability": 0.082573
           }
         ],
         "14": [
@@ -5527,33 +5497,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.062144,
-            "drawProbability": 0.513377,
-            "blackWinProbability": 0.424479
+            "whiteWinProbability": 0.084779,
+            "drawProbability": 0.531126,
+            "blackWinProbability": 0.384095
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178261,
-            "drawProbability": 0.610233,
-            "blackWinProbability": 0.211506
+            "whiteWinProbability": 0.181242,
+            "drawProbability": 0.612348,
+            "blackWinProbability": 0.20641
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154222,
-            "drawProbability": 0.589196,
-            "blackWinProbability": 0.256582
+            "whiteWinProbability": 0.154007,
+            "drawProbability": 0.589435,
+            "blackWinProbability": 0.256558
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.379406,
-            "drawProbability": 0.533961,
-            "blackWinProbability": 0.086633
+            "whiteWinProbability": 0.379425,
+            "drawProbability": 0.534042,
+            "blackWinProbability": 0.086533
           }
         ]
       },
@@ -5567,17 +5537,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.8295895,
-          "expectedRank": 1.2519510000000524,
-          "winProbability": 0.777051,
+          "expectedScore": 9.86992,
+          "expectedRank": 1.1078385000000321,
+          "winProbability": 0.910743,
           "rankDistribution": [
-            0.7770510000000372,
-            0.19636070000000924,
-            0.02448419999999888,
-            0.0018328666666666703,
-            0.0002363666666666666,
-            3.136666666666667e-05,
-            3.5e-06,
+            0.9107430000000288,
+            0.07334561666666771,
+            0.013632883333333753,
+            0.0019398833333333387,
+            0.0002922166666666665,
+            3.98e-05,
+            6.6e-06,
             0.0
           ]
         },
@@ -5585,126 +5555,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.794818,
-          "expectedRank": 2.070502000000045,
-          "winProbability": 0.202734,
+          "expectedScore": 8.069365,
+          "expectedRank": 2.6702959999999787,
+          "winProbability": 0.057966,
           "rankDistribution": [
-            0.20273400000000918,
-            0.58351138333333,
-            0.17019301666667994,
-            0.03160930000000058,
-            0.008701216666666749,
-            0.0025751333333333386,
-            0.0006355000000000003,
-            4.0449999999999994e-05
+            0.05796600000000158,
+            0.4786810499999992,
+            0.29153918333332,
+            0.10747495000000298,
+            0.04198920000000158,
+            0.01642061666666646,
+            0.00545114999999998,
+            0.00047785000000000015
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.7680265,
-          "expectedRank": 3.1531135000000865,
-          "winProbability": 0.019408,
+          "expectedScore": 7.807007,
+          "expectedRank": 3.026980499999914,
+          "winProbability": 0.028424,
           "rankDistribution": [
-            0.01940799999999931,
-            0.18739165000001,
-            0.5466506166666784,
-            0.15508693333334425,
-            0.05941584999999775,
-            0.02352326666666656,
-            0.007785700000000042,
-            0.0007379833333333336
+            0.02842399999999936,
+            0.3450941666666415,
+            0.35702174999997205,
+            0.1611429833333498,
+            0.06875964999999588,
+            0.028866816666667086,
+            0.009793233333333418,
+            0.0008973999999999998
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.300056,
-          "expectedRank": 5.353665999999861,
-          "winProbability": 0.000421,
-          "rankDistribution": [
-            0.0004209999999999994,
-            0.011562100000000049,
-            0.08217506666666397,
-            0.22070624999999222,
-            0.22333041666665315,
-            0.20833641666666058,
-            0.19364998333333477,
-            0.059818766666665905
-          ]
-        },
-        {
-          "name": "Wei, Yi",
-          "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.219114,
-          "expectedRank": 5.493257499999762,
-          "winProbability": 0.000163,
+          "expectedScore": 6.8036955,
+          "expectedRank": 4.664214499999949,
+          "winProbability": 0.002009,
           "rankDistribution": [
-            0.00016300000000000014,
-            0.007663950000000018,
-            0.06248334999999874,
-            0.19031333333333592,
-            0.2331436666666483,
-            0.2407997499999786,
-            0.20491721666666424,
-            0.060515733333332405
+            0.0020089999999999926,
+            0.051518616666666725,
+            0.1568151666666771,
+            0.2846231333333008,
+            0.22275138333331948,
+            0.15875896666668488,
+            0.10427035000000133,
+            0.01925338333333317
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.324759,
-          "expectedRank": 5.3384904999998195,
-          "winProbability": 0.000157,
+          "expectedScore": 6.3583225,
+          "expectedRank": 5.441350499999803,
+          "winProbability": 0.000369,
           "rankDistribution": [
-            0.00015700000000000002,
-            0.008034683333333363,
-            0.06550309999999845,
-            0.23850019999998726,
-            0.23856911666664637,
-            0.21585403333332367,
-            0.18327068333333837,
-            0.050111183333333226
+            0.0003689999999999995,
+            0.019398033333333134,
+            0.07075159999999722,
+            0.1760195500000101,
+            0.23703704999997963,
+            0.22876038333331808,
+            0.21321018333332878,
+            0.054454199999999627
+          ]
+        },
+        {
+          "name": "Wei, Yi",
+          "rating": 2754,
+          "currentScore": 3.5,
+          "expectedScore": 6.2569565,
+          "expectedRank": 5.593731999999751,
+          "winProbability": 0.000343,
+          "rankDistribution": [
+            0.0003429999999999995,
+            0.018399466666666503,
+            0.06183981666666486,
+            0.14539041666667998,
+            0.21780508333332232,
+            0.25744041666664025,
+            0.234413366666656,
+            0.06436843333333227
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.0777545,
-          "expectedRank": 5.732133999999735,
-          "winProbability": 6.6e-05,
+          "expectedScore": 6.114976,
+          "expectedRank": 5.838381999999715,
+          "winProbability": 0.000146,
           "rankDistribution": [
-            6.599999999999999e-05,
-            0.0054470999999999825,
-            0.04752561666666683,
-            0.15355130000001205,
-            0.21180971666665888,
-            0.2480678833333088,
-            0.25132319999998415,
-            0.08220918333333126
+            0.00014600000000000008,
+            0.013436816666666653,
+            0.047336850000000236,
+            0.1175206166666725,
+            0.19153745000000347,
+            0.2563683666666402,
+            0.28585929999997756,
+            0.08779459999999875
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.6858825,
-          "expectedRank": 7.606885500000099,
+          "expectedScore": 4.7197575,
+          "expectedRank": 7.657206000000051,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            2.8433333333333334e-05,
-            0.0009850333333333327,
-            0.008399816666666726,
-            0.024793650000000025,
-            0.060812149999997386,
-            0.15841421666667563,
-            0.7465667000000065
+            0.00012623333333333336,
+            0.0010627499999999992,
+            0.005888466666666658,
+            0.019827966666666263,
+            0.05334463333333247,
+            0.14699581666667347,
+            0.7727541333333346
           ]
         }
       ],
@@ -5713,78 +5683,68 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Praggnanandhaa R",
-          "whiteWinProbability": 0.156729,
-          "drawProbability": 0.590198,
-          "blackWinProbability": 0.253073
+          "whiteWinProbability": 0.156373,
+          "drawProbability": 0.591408,
+          "blackWinProbability": 0.252219
         },
         {
           "board": 2,
           "white": "Bluebaum, Matthias",
           "black": "Caruana, Fabiano",
-          "whiteWinProbability": 0.110628,
-          "drawProbability": 0.552919,
-          "blackWinProbability": 0.336453
+          "whiteWinProbability": 0.134615,
+          "drawProbability": 0.573005,
+          "blackWinProbability": 0.29238
         },
         {
           "board": 3,
           "white": "Sindarov, Javokhir",
           "black": "Nakamura, Hikaru",
-          "whiteWinProbability": 0.298386,
-          "drawProbability": 0.570091,
-          "blackWinProbability": 0.131523
+          "whiteWinProbability": 0.303339,
+          "drawProbability": 0.568105,
+          "blackWinProbability": 0.128556
         },
         {
           "board": 4,
           "white": "Wei, Yi",
           "black": "Giri, Anish",
-          "whiteWinProbability": 0.170964,
-          "drawProbability": 0.603657,
-          "blackWinProbability": 0.225379
+          "whiteWinProbability": 0.170424,
+          "drawProbability": 0.604257,
+          "blackWinProbability": 0.225319
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.173331,
-            "drawProbability": 0.604325,
-            "blackWinProbability": 0.222344
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452305,
-            "drawProbability": 0.500664,
-            "blackWinProbability": 0.047031
+            "whiteWinProbability": 0.448938,
+            "drawProbability": 0.502029,
+            "blackWinProbability": 0.049033
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.335344,
-            "drawProbability": 0.553292,
-            "blackWinProbability": 0.111364
+            "whiteWinProbability": 0.29127,
+            "drawProbability": 0.57288,
+            "blackWinProbability": 0.13585
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.254373,
-            "drawProbability": 0.590716,
-            "blackWinProbability": 0.154911
+            "whiteWinProbability": 0.254502,
+            "drawProbability": 0.589367,
+            "blackWinProbability": 0.156131
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.138546,
-            "drawProbability": 0.57642,
-            "blackWinProbability": 0.285034
+            "whiteWinProbability": 0.138649,
+            "drawProbability": 0.576724,
+            "blackWinProbability": 0.284627
           }
         ],
         "10": [
@@ -5792,33 +5752,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172144,
-            "drawProbability": 0.606017,
-            "blackWinProbability": 0.221839
+            "whiteWinProbability": 0.172879,
+            "drawProbability": 0.605363,
+            "blackWinProbability": 0.221758
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.379013,
-            "drawProbability": 0.533689,
-            "blackWinProbability": 0.087298
+            "whiteWinProbability": 0.379891,
+            "drawProbability": 0.53405,
+            "blackWinProbability": 0.086059
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.127079,
-            "drawProbability": 0.566832,
-            "blackWinProbability": 0.306089
+            "whiteWinProbability": 0.150952,
+            "drawProbability": 0.587327,
+            "blackWinProbability": 0.261721
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.270591,
-            "drawProbability": 0.582686,
-            "blackWinProbability": 0.146723
+            "whiteWinProbability": 0.275227,
+            "drawProbability": 0.580728,
+            "blackWinProbability": 0.144045
           }
         ],
         "11": [
@@ -5826,33 +5786,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.464622,
-            "drawProbability": 0.49512,
-            "blackWinProbability": 0.040258
+            "whiteWinProbability": 0.465046,
+            "drawProbability": 0.495172,
+            "blackWinProbability": 0.039782
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.337152,
-            "drawProbability": 0.552997,
-            "blackWinProbability": 0.109851
+            "whiteWinProbability": 0.333247,
+            "drawProbability": 0.554293,
+            "blackWinProbability": 0.11246
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.308376,
-            "drawProbability": 0.565814,
-            "blackWinProbability": 0.12581
+            "whiteWinProbability": 0.262365,
+            "drawProbability": 0.586931,
+            "blackWinProbability": 0.150704
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.284799,
-            "drawProbability": 0.575855,
-            "blackWinProbability": 0.139346
+            "whiteWinProbability": 0.284752,
+            "drawProbability": 0.576543,
+            "blackWinProbability": 0.138705
           }
         ],
         "12": [
@@ -5860,33 +5820,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.156729,
-            "drawProbability": 0.590198,
-            "blackWinProbability": 0.253073
+            "whiteWinProbability": 0.156373,
+            "drawProbability": 0.591408,
+            "blackWinProbability": 0.252219
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110628,
-            "drawProbability": 0.552919,
-            "blackWinProbability": 0.336453
+            "whiteWinProbability": 0.134615,
+            "drawProbability": 0.573005,
+            "blackWinProbability": 0.29238
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.298386,
-            "drawProbability": 0.570091,
-            "blackWinProbability": 0.131523
+            "whiteWinProbability": 0.303339,
+            "drawProbability": 0.568105,
+            "blackWinProbability": 0.128556
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.170964,
-            "drawProbability": 0.603657,
-            "blackWinProbability": 0.225379
+            "whiteWinProbability": 0.170424,
+            "drawProbability": 0.604257,
+            "blackWinProbability": 0.225319
           }
         ],
         "13": [
@@ -5894,33 +5854,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.377885,
-            "drawProbability": 0.534727,
-            "blackWinProbability": 0.087388
+            "whiteWinProbability": 0.378807,
+            "drawProbability": 0.533766,
+            "blackWinProbability": 0.087427
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226506,
-            "drawProbability": 0.60239,
-            "blackWinProbability": 0.171104
+            "whiteWinProbability": 0.226267,
+            "drawProbability": 0.603203,
+            "blackWinProbability": 0.17053
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.367486,
-            "drawProbability": 0.539464,
-            "blackWinProbability": 0.09305
+            "whiteWinProbability": 0.362996,
+            "drawProbability": 0.540789,
+            "blackWinProbability": 0.096215
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.427359,
-            "drawProbability": 0.512463,
-            "blackWinProbability": 0.060178
+            "whiteWinProbability": 0.386249,
+            "drawProbability": 0.531406,
+            "blackWinProbability": 0.082345
           }
         ],
         "14": [
@@ -5928,33 +5888,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.062013,
-            "drawProbability": 0.513913,
-            "blackWinProbability": 0.424074
+            "whiteWinProbability": 0.083887,
+            "drawProbability": 0.533015,
+            "blackWinProbability": 0.383098
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178693,
-            "drawProbability": 0.609769,
-            "blackWinProbability": 0.211538
+            "whiteWinProbability": 0.180946,
+            "drawProbability": 0.612225,
+            "blackWinProbability": 0.206829
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154485,
-            "drawProbability": 0.589046,
-            "blackWinProbability": 0.256469
+            "whiteWinProbability": 0.154254,
+            "drawProbability": 0.589136,
+            "blackWinProbability": 0.25661
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.378965,
-            "drawProbability": 0.534151,
-            "blackWinProbability": 0.086884
+            "whiteWinProbability": 0.379655,
+            "drawProbability": 0.533335,
+            "blackWinProbability": 0.08701
           }
         ]
       },
@@ -5968,17 +5928,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.832755,
-          "expectedRank": 1.2502035000000506,
-          "winProbability": 0.778612,
+          "expectedScore": 9.868424,
+          "expectedRank": 1.1082465000000317,
+          "winProbability": 0.910424,
           "rankDistribution": [
-            0.7786120000000358,
-            0.19497345000000904,
-            0.024325783333332237,
-            0.0018200333333333364,
-            0.0002280333333333333,
-            3.795e-05,
-            2.75e-06,
+            0.9104240000000284,
+            0.07364730000000101,
+            0.013599783333333738,
+            0.001977200000000006,
+            0.00029569999999999987,
+            5.0866666666666665e-05,
+            5.150000000000001e-06,
             0.0
           ]
         },
@@ -5986,126 +5946,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.795759,
-          "expectedRank": 2.0711315000000443,
-          "winProbability": 0.201134,
+          "expectedScore": 8.0699525,
+          "expectedRank": 2.6697944999999788,
+          "winProbability": 0.058206,
           "rankDistribution": [
-            0.20113400000000892,
-            0.5857399499999969,
-            0.1697853000000129,
-            0.03147466666666724,
-            0.008637250000000077,
-            0.0025706666666666725,
-            0.0006125500000000004,
-            4.5616666666666666e-05
+            0.05820600000000154,
+            0.4782531333333329,
+            0.2919588166666531,
+            0.10731065000000307,
+            0.04198640000000158,
+            0.01642606666666646,
+            0.005396683333333315,
+            0.0004622500000000001
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.767345,
-          "expectedRank": 3.153486000000089,
-          "winProbability": 0.019416,
+          "expectedScore": 7.8072225,
+          "expectedRank": 3.025912999999916,
+          "winProbability": 0.028529,
           "rankDistribution": [
-            0.01941599999999929,
-            0.18701978333334307,
-            0.5470753166666791,
-            0.15500743333334435,
-            0.05921751666666443,
-            0.02386309999999992,
-            0.007698233333333372,
-            0.000702616666666667
+            0.02852899999999937,
+            0.3456403666666418,
+            0.35662599999997263,
+            0.16101056666668306,
+            0.06856473333332933,
+            0.028922900000000418,
+            0.00982953333333342,
+            0.0008768999999999997
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.29875,
-          "expectedRank": 5.353359499999861,
-          "winProbability": 0.000435,
+          "currentScore": 3.5,
+          "expectedScore": 6.8032225,
+          "expectedRank": 4.665551499999951,
+          "winProbability": 0.002037,
           "rankDistribution": [
-            0.0004349999999999994,
-            0.011205633333333385,
-            0.08208628333333065,
-            0.2207747333333258,
-            0.224260066666653,
-            0.20825123333332768,
-            0.19354868333333444,
-            0.059438366666665916
+            0.002036999999999993,
+            0.051118300000000054,
+            0.15712826666667717,
+            0.28374819999996787,
+            0.2232832833333196,
+            0.1595426166666849,
+            0.10391048333333444,
+            0.019231849999999842
           ]
         },
         {
           "name": "Wei, Yi",
           "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.21908,
-          "expectedRank": 5.492880999999764,
-          "winProbability": 0.00018,
+          "expectedScore": 6.256313,
+          "expectedRank": 5.59601899999975,
+          "winProbability": 0.000366,
           "rankDistribution": [
-            0.00018000000000000012,
-            0.007508966666666681,
-            0.06280129999999866,
-            0.19052361666666937,
-            0.23312269999998164,
-            0.24028886666664562,
-            0.2047583999999976,
-            0.06081614999999902
+            0.0003659999999999996,
+            0.01835188333333318,
+            0.061742349999998204,
+            0.1450935833333466,
+            0.21717216666665556,
+            0.25793508333330684,
+            0.23483494999998938,
+            0.0645039833333322
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.323777,
-          "expectedRank": 5.339006999999822,
-          "winProbability": 0.000152,
+          "expectedScore": 6.3590335,
+          "expectedRank": 5.440268999999806,
+          "winProbability": 0.000321,
           "rankDistribution": [
-            0.00015200000000000017,
-            0.00799590000000003,
-            0.06569274999999838,
-            0.2385955499999871,
-            0.2380326333333136,
-            0.21565163333332388,
-            0.18370648333333822,
-            0.05017304999999988
+            0.00032099999999999956,
+            0.019417266666666464,
+            0.07063399999999724,
+            0.17710928333334258,
+            0.23693069999997987,
+            0.22772203333331875,
+            0.2131370999999956,
+            0.05472861666666626
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.078345,
-          "expectedRank": 5.731940499999739,
-          "winProbability": 7.1e-05,
+          "expectedScore": 6.1161605,
+          "expectedRank": 5.8367529999997245,
+          "winProbability": 0.000117,
           "rankDistribution": [
-            7.099999999999998e-05,
-            0.005520133333333316,
-            0.047267800000000165,
-            0.15348786666667885,
-            0.2118276166666593,
-            0.24859328333330888,
-            0.2514818166666511,
-            0.08175048333333118
+            0.00011700000000000007,
+            0.01344204999999998,
+            0.047257833333333596,
+            0.11795088333333952,
+            0.19202088333333667,
+            0.2561187999999741,
+            0.28538274999997826,
+            0.08770979999999874
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.684189,
-          "expectedRank": 7.607991000000101,
+          "expectedScore": 4.7196715,
+          "expectedRank": 7.657453500000054,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            3.618333333333333e-05,
-            0.0009654666666666661,
-            0.008316100000000059,
-            0.02467418333333333,
-            0.06074326666666409,
-            0.15819108333334234,
-            0.7470737166666733
+            0.0001297,
+            0.0010529499999999993,
+            0.005799633333333323,
+            0.01974613333333294,
+            0.05328163333333244,
+            0.14750335000000686,
+            0.7724866000000017
           ]
         }
       ],
@@ -6114,78 +6074,68 @@
           "board": 1,
           "white": "Wei, Yi",
           "black": "Esipenko, Andrey",
-          "whiteWinProbability": 0.378501,
-          "drawProbability": 0.533903,
-          "blackWinProbability": 0.087596
+          "whiteWinProbability": 0.377796,
+          "drawProbability": 0.534448,
+          "blackWinProbability": 0.087756
         },
         {
           "board": 2,
           "white": "Giri, Anish",
           "black": "Sindarov, Javokhir",
-          "whiteWinProbability": 0.225911,
-          "drawProbability": 0.603483,
-          "blackWinProbability": 0.170606
+          "whiteWinProbability": 0.227161,
+          "drawProbability": 0.602216,
+          "blackWinProbability": 0.170623
         },
         {
           "board": 3,
           "white": "Nakamura, Hikaru",
           "black": "Bluebaum, Matthias",
-          "whiteWinProbability": 0.367176,
-          "drawProbability": 0.539445,
-          "blackWinProbability": 0.093379
+          "whiteWinProbability": 0.361779,
+          "drawProbability": 0.542238,
+          "blackWinProbability": 0.095983
         },
         {
           "board": 4,
           "white": "Caruana, Fabiano",
           "black": "Praggnanandhaa R",
-          "whiteWinProbability": 0.427194,
-          "drawProbability": 0.512305,
-          "blackWinProbability": 0.060501
+          "whiteWinProbability": 0.386503,
+          "drawProbability": 0.530945,
+          "blackWinProbability": 0.082552
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172203,
-            "drawProbability": 0.60529,
-            "blackWinProbability": 0.222507
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.451908,
-            "drawProbability": 0.501665,
-            "blackWinProbability": 0.046427
+            "whiteWinProbability": 0.448368,
+            "drawProbability": 0.502375,
+            "blackWinProbability": 0.049257
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.335491,
-            "drawProbability": 0.553185,
-            "blackWinProbability": 0.111324
+            "whiteWinProbability": 0.291174,
+            "drawProbability": 0.573495,
+            "blackWinProbability": 0.135331
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.253957,
-            "drawProbability": 0.590375,
-            "blackWinProbability": 0.155668
+            "whiteWinProbability": 0.254449,
+            "drawProbability": 0.590246,
+            "blackWinProbability": 0.155305
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.1387,
-            "drawProbability": 0.57613,
-            "blackWinProbability": 0.28517
+            "whiteWinProbability": 0.138736,
+            "drawProbability": 0.576742,
+            "blackWinProbability": 0.284522
           }
         ],
         "10": [
@@ -6193,33 +6143,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172117,
-            "drawProbability": 0.605671,
-            "blackWinProbability": 0.222212
+            "whiteWinProbability": 0.172363,
+            "drawProbability": 0.604913,
+            "blackWinProbability": 0.222724
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.380242,
-            "drawProbability": 0.533599,
-            "blackWinProbability": 0.086159
+            "whiteWinProbability": 0.380032,
+            "drawProbability": 0.533431,
+            "blackWinProbability": 0.086537
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.127051,
-            "drawProbability": 0.566055,
-            "blackWinProbability": 0.306894
+            "whiteWinProbability": 0.151762,
+            "drawProbability": 0.586895,
+            "blackWinProbability": 0.261343
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.269425,
-            "drawProbability": 0.583865,
-            "blackWinProbability": 0.14671
+            "whiteWinProbability": 0.274625,
+            "drawProbability": 0.58111,
+            "blackWinProbability": 0.144265
           }
         ],
         "11": [
@@ -6227,33 +6177,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.465483,
-            "drawProbability": 0.494248,
-            "blackWinProbability": 0.040269
+            "whiteWinProbability": 0.465428,
+            "drawProbability": 0.494972,
+            "blackWinProbability": 0.0396
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.337823,
-            "drawProbability": 0.552367,
-            "blackWinProbability": 0.10981
+            "whiteWinProbability": 0.333404,
+            "drawProbability": 0.554337,
+            "blackWinProbability": 0.112259
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.307534,
-            "drawProbability": 0.566065,
-            "blackWinProbability": 0.126401
+            "whiteWinProbability": 0.263178,
+            "drawProbability": 0.586683,
+            "blackWinProbability": 0.150139
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.285217,
-            "drawProbability": 0.575741,
-            "blackWinProbability": 0.139042
+            "whiteWinProbability": 0.284968,
+            "drawProbability": 0.576598,
+            "blackWinProbability": 0.138434
           }
         ],
         "12": [
@@ -6261,33 +6211,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.156312,
-            "drawProbability": 0.591205,
-            "blackWinProbability": 0.252483
+            "whiteWinProbability": 0.156535,
+            "drawProbability": 0.591099,
+            "blackWinProbability": 0.252366
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110679,
-            "drawProbability": 0.55302,
-            "blackWinProbability": 0.336301
+            "whiteWinProbability": 0.134764,
+            "drawProbability": 0.572467,
+            "blackWinProbability": 0.292769
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.299812,
-            "drawProbability": 0.569453,
-            "blackWinProbability": 0.130735
+            "whiteWinProbability": 0.303692,
+            "drawProbability": 0.567859,
+            "blackWinProbability": 0.128449
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.171365,
-            "drawProbability": 0.602988,
-            "blackWinProbability": 0.225647
+            "whiteWinProbability": 0.170723,
+            "drawProbability": 0.602911,
+            "blackWinProbability": 0.226366
           }
         ],
         "13": [
@@ -6295,33 +6245,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.378501,
-            "drawProbability": 0.533903,
-            "blackWinProbability": 0.087596
+            "whiteWinProbability": 0.377796,
+            "drawProbability": 0.534448,
+            "blackWinProbability": 0.087756
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.225911,
-            "drawProbability": 0.603483,
-            "blackWinProbability": 0.170606
+            "whiteWinProbability": 0.227161,
+            "drawProbability": 0.602216,
+            "blackWinProbability": 0.170623
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.367176,
-            "drawProbability": 0.539445,
-            "blackWinProbability": 0.093379
+            "whiteWinProbability": 0.361779,
+            "drawProbability": 0.542238,
+            "blackWinProbability": 0.095983
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.427194,
-            "drawProbability": 0.512305,
-            "blackWinProbability": 0.060501
+            "whiteWinProbability": 0.386503,
+            "drawProbability": 0.530945,
+            "blackWinProbability": 0.082552
           }
         ],
         "14": [
@@ -6329,33 +6279,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.061536,
-            "drawProbability": 0.513172,
-            "blackWinProbability": 0.425292
+            "whiteWinProbability": 0.083973,
+            "drawProbability": 0.532568,
+            "blackWinProbability": 0.383459
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178922,
-            "drawProbability": 0.609851,
-            "blackWinProbability": 0.211227
+            "whiteWinProbability": 0.180478,
+            "drawProbability": 0.613048,
+            "blackWinProbability": 0.206474
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154363,
-            "drawProbability": 0.589933,
-            "blackWinProbability": 0.255704
+            "whiteWinProbability": 0.154494,
+            "drawProbability": 0.589093,
+            "blackWinProbability": 0.256413
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.379264,
-            "drawProbability": 0.53379,
-            "blackWinProbability": 0.086946
+            "whiteWinProbability": 0.378748,
+            "drawProbability": 0.534405,
+            "blackWinProbability": 0.086847
           }
         ]
       },
@@ -6369,17 +6319,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.8318735,
-          "expectedRank": 1.2503135000000516,
-          "winProbability": 0.778518,
+          "expectedScore": 9.869754,
+          "expectedRank": 1.1085430000000311,
+          "winProbability": 0.910276,
           "rankDistribution": [
-            0.7785180000000365,
-            0.19505250000000923,
-            0.024325333333332214,
-            0.0018426666666666704,
-            0.0002286666666666666,
-            2.9333333333333333e-05,
-            3.4999999999999995e-06,
+            0.910276000000028,
+            0.07356713333333435,
+            0.013872600000000396,
+            0.001959850000000006,
+            0.0002770166666666665,
+            4.135e-05,
+            6.05e-06,
             0.0
           ]
         },
@@ -6387,126 +6337,126 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.793292,
-          "expectedRank": 2.0716455000000447,
-          "winProbability": 0.20115,
+          "expectedScore": 8.0697275,
+          "expectedRank": 2.6693099999999794,
+          "winProbability": 0.05832,
           "rankDistribution": [
-            0.20115000000000904,
-            0.5852231166666636,
-            0.1701829166666797,
-            0.031629183333333935,
-            0.008609766666666744,
-            0.002540350000000006,
-            0.0006244833333333336,
-            4.018333333333333e-05
+            0.05832000000000153,
+            0.478429069047619,
+            0.2917489357142724,
+            0.10711571904762199,
+            0.04225696904762051,
+            0.016249052380952183,
+            0.00539901904761903,
+            0.0004812357142857144
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.7679765,
-          "expectedRank": 3.152460500000089,
-          "winProbability": 0.019452,
+          "expectedScore": 7.805314,
+          "expectedRank": 3.0275229999999147,
+          "winProbability": 0.028548,
           "rankDistribution": [
-            0.019451999999999293,
-            0.18753888333334312,
-            0.5469037666666791,
-            0.15487885000001098,
-            0.059032433333331163,
-            0.023586683333333233,
-            0.007837300000000045,
-            0.0007700833333333332
+            0.02854799999999937,
+            0.34460915238092704,
+            0.35684545238092474,
+            0.16178075238096898,
+            0.06867208571428164,
+            0.028966419047619433,
+            0.009686719047619136,
+            0.0008914190476190474
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.3002235,
-          "expectedRank": 5.353441999999864,
-          "winProbability": 0.000464,
-          "rankDistribution": [
-            0.0004639999999999995,
-            0.011224716666666723,
-            0.0824199833333306,
-            0.22060203333332565,
-            0.2238561166666531,
-            0.20813569999999448,
-            0.1936139000000014,
-            0.05968354999999926
-          ]
-        },
-        {
-          "name": "Praggnanandhaa R",
-          "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.324468,
-          "expectedRank": 5.338602499999818,
-          "winProbability": 0.00018,
+          "expectedScore": 6.802128,
+          "expectedRank": 4.666143999999949,
+          "winProbability": 0.001988,
           "rankDistribution": [
-            0.00018000000000000012,
-            0.008039966666666698,
-            0.06550759999999846,
-            0.23867614999998704,
-            0.23846514999997964,
-            0.2154171499999906,
-            0.18342535000000484,
-            0.05028863333333322
+            0.001987999999999993,
+            0.05182106904761896,
+            0.15651428571429615,
+            0.2830356023809204,
+            0.2238744357142715,
+            0.1593206857143041,
+            0.10403506904762025,
+            0.01941085238095222
           ]
         },
         {
           "name": "Wei, Yi",
           "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.218474,
-          "expectedRank": 5.4944059999997625,
-          "winProbability": 0.000174,
+          "expectedScore": 6.25618,
+          "expectedRank": 5.595682499999747,
+          "winProbability": 0.000376,
           "rankDistribution": [
-            0.0001740000000000001,
-            0.007532500000000017,
-            0.062409549999998745,
-            0.1901826000000027,
-            0.2333322666666483,
-            0.24073243333331212,
-            0.20494118333333075,
-            0.06069546666666576
+            0.0003759999999999995,
+            0.018529435714285544,
+            0.06184016904761725,
+            0.14486751904763243,
+            0.21715151904760824,
+            0.25782426904759237,
+            0.234734869047608,
+            0.06467621904761793
+          ]
+        },
+        {
+          "name": "Praggnanandhaa R",
+          "rating": 2741,
+          "currentScore": 3.5,
+          "expectedScore": 6.359076,
+          "expectedRank": 5.439858499999805,
+          "winProbability": 0.000356,
+          "rankDistribution": [
+            0.0003559999999999996,
+            0.019520619047618842,
+            0.07071103571428286,
+            0.17732975238096157,
+            0.23621250238093244,
+            0.22823350238093756,
+            0.21254708571428138,
+            0.05508950238095194
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.077958,
-          "expectedRank": 5.732392999999733,
-          "winProbability": 6.2e-05,
+          "expectedScore": 6.1162915,
+          "expectedRank": 5.836519499999718,
+          "winProbability": 0.000136,
           "rankDistribution": [
-            6.199999999999998e-05,
-            0.005356633333333315,
-            0.04725780000000019,
-            0.15370526666667877,
-            0.2117078499999921,
-            0.2486971833333083,
-            0.25140521666665105,
-            0.08180804999999781
+            0.00013600000000000003,
+            0.013394652380952367,
+            0.04741941904761922,
+            0.11804145238095845,
+            0.19188961904762222,
+            0.2556652857142595,
+            0.2858982523809302,
+            0.08755531904761779
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.6857345,
-          "expectedRank": 7.606737000000099,
+          "expectedScore": 4.721529,
+          "expectedRank": 7.656419500000053,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            3.1683333333333335e-05,
-            0.0009930499999999994,
-            0.008483250000000058,
-            0.024767750000000012,
-            0.06086116666666415,
-            0.15814906666667558,
-            0.7467140333333399
+            0.0001288690476190476,
+            0.00104810238095238,
+            0.005869352380952373,
+            0.01966585238095198,
+            0.05369943571428469,
+            0.14769293571429268,
+            0.7718954523809539
           ]
         }
       ],
@@ -6515,78 +6465,68 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Caruana, Fabiano",
-          "whiteWinProbability": 0.062112,
-          "drawProbability": 0.514296,
-          "blackWinProbability": 0.423592
+          "whiteWinProbability": 0.084306,
+          "drawProbability": 0.530845,
+          "blackWinProbability": 0.384849
         },
         {
           "board": 2,
           "white": "Praggnanandhaa R",
           "black": "Nakamura, Hikaru",
-          "whiteWinProbability": 0.178899,
-          "drawProbability": 0.609984,
-          "blackWinProbability": 0.211117
+          "whiteWinProbability": 0.181494,
+          "drawProbability": 0.612161,
+          "blackWinProbability": 0.206345
         },
         {
           "board": 3,
           "white": "Bluebaum, Matthias",
           "black": "Giri, Anish",
-          "whiteWinProbability": 0.154567,
-          "drawProbability": 0.58923,
-          "blackWinProbability": 0.256203
+          "whiteWinProbability": 0.154368,
+          "drawProbability": 0.589549,
+          "blackWinProbability": 0.256083
         },
         {
           "board": 4,
           "white": "Sindarov, Javokhir",
           "black": "Wei, Yi",
-          "whiteWinProbability": 0.379872,
-          "drawProbability": 0.533125,
-          "blackWinProbability": 0.087003
+          "whiteWinProbability": 0.37861,
+          "drawProbability": 0.534707,
+          "blackWinProbability": 0.086683
         }
       ],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172767,
-            "drawProbability": 0.605397,
-            "blackWinProbability": 0.221836
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452818,
-            "drawProbability": 0.500556,
-            "blackWinProbability": 0.046626
+            "whiteWinProbability": 0.448246,
+            "drawProbability": 0.502878,
+            "blackWinProbability": 0.048876
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.335255,
-            "drawProbability": 0.553561,
-            "blackWinProbability": 0.111184
+            "whiteWinProbability": 0.291372,
+            "drawProbability": 0.573204,
+            "blackWinProbability": 0.135424
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.253883,
-            "drawProbability": 0.590516,
-            "blackWinProbability": 0.155601
+            "whiteWinProbability": 0.254797,
+            "drawProbability": 0.589314,
+            "blackWinProbability": 0.155889
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.138488,
-            "drawProbability": 0.576028,
-            "blackWinProbability": 0.285484
+            "whiteWinProbability": 0.13916,
+            "drawProbability": 0.576548,
+            "blackWinProbability": 0.284292
           }
         ],
         "10": [
@@ -6594,33 +6534,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172904,
-            "drawProbability": 0.604925,
-            "blackWinProbability": 0.222171
+            "whiteWinProbability": 0.173066,
+            "drawProbability": 0.605313,
+            "blackWinProbability": 0.221621
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.379161,
-            "drawProbability": 0.534189,
-            "blackWinProbability": 0.08665
+            "whiteWinProbability": 0.379193,
+            "drawProbability": 0.534483,
+            "blackWinProbability": 0.086324
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.126792,
-            "drawProbability": 0.56723,
-            "blackWinProbability": 0.305978
+            "whiteWinProbability": 0.151321,
+            "drawProbability": 0.586399,
+            "blackWinProbability": 0.26228
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.269841,
-            "drawProbability": 0.583194,
-            "blackWinProbability": 0.146965
+            "whiteWinProbability": 0.275567,
+            "drawProbability": 0.580697,
+            "blackWinProbability": 0.143736
           }
         ],
         "11": [
@@ -6628,33 +6568,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.465521,
-            "drawProbability": 0.494457,
-            "blackWinProbability": 0.040022
+            "whiteWinProbability": 0.463884,
+            "drawProbability": 0.49631,
+            "blackWinProbability": 0.039806
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.337977,
-            "drawProbability": 0.551915,
-            "blackWinProbability": 0.110108
+            "whiteWinProbability": 0.333357,
+            "drawProbability": 0.554587,
+            "blackWinProbability": 0.112056
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.307024,
-            "drawProbability": 0.566555,
-            "blackWinProbability": 0.126421
+            "whiteWinProbability": 0.261625,
+            "drawProbability": 0.586792,
+            "blackWinProbability": 0.151583
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.285306,
-            "drawProbability": 0.575394,
-            "blackWinProbability": 0.1393
+            "whiteWinProbability": 0.285149,
+            "drawProbability": 0.576024,
+            "blackWinProbability": 0.138827
           }
         ],
         "12": [
@@ -6662,33 +6602,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.156442,
-            "drawProbability": 0.591116,
-            "blackWinProbability": 0.252442
+            "whiteWinProbability": 0.156629,
+            "drawProbability": 0.591689,
+            "blackWinProbability": 0.251682
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110561,
-            "drawProbability": 0.553326,
-            "blackWinProbability": 0.336113
+            "whiteWinProbability": 0.134554,
+            "drawProbability": 0.57334,
+            "blackWinProbability": 0.292106
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.298107,
-            "drawProbability": 0.570834,
-            "blackWinProbability": 0.131059
+            "whiteWinProbability": 0.303395,
+            "drawProbability": 0.567896,
+            "blackWinProbability": 0.128709
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.170817,
-            "drawProbability": 0.603427,
-            "blackWinProbability": 0.225756
+            "whiteWinProbability": 0.17149,
+            "drawProbability": 0.603132,
+            "blackWinProbability": 0.225378
           }
         ],
         "13": [
@@ -6696,33 +6636,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.377657,
-            "drawProbability": 0.534779,
-            "blackWinProbability": 0.087564
+            "whiteWinProbability": 0.376932,
+            "drawProbability": 0.535479,
+            "blackWinProbability": 0.087589
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226122,
-            "drawProbability": 0.60283,
-            "blackWinProbability": 0.171048
+            "whiteWinProbability": 0.226077,
+            "drawProbability": 0.60291,
+            "blackWinProbability": 0.171013
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.366874,
-            "drawProbability": 0.539413,
-            "blackWinProbability": 0.093713
+            "whiteWinProbability": 0.361311,
+            "drawProbability": 0.542629,
+            "blackWinProbability": 0.09606
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.427085,
-            "drawProbability": 0.512453,
-            "blackWinProbability": 0.060462
+            "whiteWinProbability": 0.387053,
+            "drawProbability": 0.530305,
+            "blackWinProbability": 0.082642
           }
         ],
         "14": [
@@ -6730,33 +6670,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.062112,
-            "drawProbability": 0.514296,
-            "blackWinProbability": 0.423592
+            "whiteWinProbability": 0.084306,
+            "drawProbability": 0.530845,
+            "blackWinProbability": 0.384849
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178899,
-            "drawProbability": 0.609984,
-            "blackWinProbability": 0.211117
+            "whiteWinProbability": 0.181494,
+            "drawProbability": 0.612161,
+            "blackWinProbability": 0.206345
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154567,
-            "drawProbability": 0.58923,
-            "blackWinProbability": 0.256203
+            "whiteWinProbability": 0.154368,
+            "drawProbability": 0.589549,
+            "blackWinProbability": 0.256083
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.379872,
-            "drawProbability": 0.533125,
-            "blackWinProbability": 0.087003
+            "whiteWinProbability": 0.37861,
+            "drawProbability": 0.534707,
+            "blackWinProbability": 0.086683
           }
         ]
       },
@@ -6770,17 +6710,17 @@
           "name": "Sindarov, Javokhir",
           "rating": 2745,
           "currentScore": 6.5,
-          "expectedScore": 9.832002,
-          "expectedRank": 1.2504140000000512,
-          "winProbability": 0.778447,
+          "expectedScore": 9.8684335,
+          "expectedRank": 1.1087325000000314,
+          "winProbability": 0.909907,
           "rankDistribution": [
-            0.7784470000000362,
-            0.19512426666667584,
-            0.02431796666666555,
-            0.0018260500000000029,
-            0.00024988333333333327,
-            3.288333333333333e-05,
-            1.95e-06,
+            0.9099070000000281,
+            0.07417028333333434,
+            0.013598516666667077,
+            0.0019881833333333394,
+            0.00028501666666666656,
+            4.5433333333333324e-05,
+            5.566666666666666e-06,
             0.0
           ]
         },
@@ -6788,173 +6728,163 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 4.5,
-          "expectedScore": 8.794554,
-          "expectedRank": 2.0720040000000446,
-          "winProbability": 0.201287,
+          "expectedScore": 8.06955,
+          "expectedRank": 2.6699939999999787,
+          "winProbability": 0.058571,
           "rankDistribution": [
-            0.20128700000000896,
-            0.5849261833333304,
-            0.17025241666667965,
-            0.03154401666666724,
-            0.008735266666666746,
-            0.0025735166666666725,
-            0.0006389166666666671,
-            4.268333333333333e-05
+            0.05857100000000155,
+            0.47804672619047595,
+            0.29179334285712927,
+            0.10711035952381247,
+            0.04189752619047781,
+            0.016518609523809312,
+            0.005590692857142844,
+            0.00047174285714285716
           ]
         },
         {
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 4.5,
-          "expectedScore": 7.768694,
-          "expectedRank": 3.1524115000000874,
-          "winProbability": 0.019389,
+          "expectedScore": 7.806994,
+          "expectedRank": 3.0276569999999157,
+          "winProbability": 0.028733,
           "rankDistribution": [
-            0.019388999999999317,
-            0.18747810000000975,
-            0.5472690500000121,
-            0.15455293333334422,
-            0.059041433333331096,
-            0.0237737666666666,
-            0.007768083333333379,
-            0.0007276333333333336
+            0.02873299999999938,
+            0.3447000761904512,
+            0.3565145761904487,
+            0.16152807619049275,
+            0.06887215952380546,
+            0.028954326190476606,
+            0.009801226190476282,
+            0.0008965595238095236
           ]
         },
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 2.5,
-          "expectedScore": 6.2999785,
-          "expectedRank": 5.35282699999986,
-          "winProbability": 0.000438,
+          "currentScore": 3.5,
+          "expectedScore": 6.803346,
+          "expectedRank": 4.665151999999952,
+          "winProbability": 0.001993,
           "rankDistribution": [
-            0.0004379999999999995,
-            0.011232816666666716,
-            0.08203538333333056,
-            0.22117441666665855,
-            0.22403591666665262,
-            0.20827283333332752,
-            0.19318210000000163,
-            0.05962853333333258
+            0.0019929999999999926,
+            0.05162055952380952,
+            0.15698587619048682,
+            0.28358122619044407,
+            0.2231870595237961,
+            0.15905680952382767,
+            0.10424455952381072,
+            0.019330909523809354
           ]
         },
         {
           "name": "Wei, Yi",
           "rating": 2754,
           "currentScore": 3.5,
-          "expectedScore": 6.2190305,
-          "expectedRank": 5.4926854999997685,
-          "winProbability": 0.000201,
+          "expectedScore": 6.2581905,
+          "expectedRank": 5.592359499999756,
+          "winProbability": 0.000347,
           "rankDistribution": [
-            0.00020100000000000017,
-            0.007710750000000018,
-            0.06256083333333204,
-            0.19039386666666916,
-            0.23309319999998174,
-            0.24068978333331242,
-            0.20460419999999807,
-            0.060746366666665795
+            0.00034699999999999954,
+            0.018518376190476023,
+            0.06176937619047439,
+            0.1459120761904897,
+            0.2171209928571322,
+            0.2584279928571163,
+            0.2333870928571327,
+            0.06451709285714176
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
           "currentScore": 3.5,
-          "expectedScore": 6.323451,
-          "expectedRank": 5.340227999999817,
-          "winProbability": 0.000162,
+          "expectedScore": 6.3585975,
+          "expectedRank": 5.441865499999808,
+          "winProbability": 0.000313,
           "rankDistribution": [
-            0.00016200000000000006,
-            0.008060416666666697,
-            0.06529918333333182,
-            0.2381774666666538,
-            0.23855463333331284,
-            0.2155943833333237,
-            0.18421705000000474,
-            0.049934866666666584
+            0.0003129999999999995,
+            0.01938697619047599,
+            0.07072247619047334,
+            0.17637810952381944,
+            0.2370036095237894,
+            0.22799344285712841,
+            0.21349910952380485,
+            0.05470327619047578
           ]
         },
         {
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 3.5,
-          "expectedScore": 6.0769095,
-          "expectedRank": 5.732914499999738,
-          "winProbability": 7.6e-05,
+          "expectedScore": 6.114938,
+          "expectedRank": 5.837994499999725,
+          "winProbability": 0.000136,
           "rankDistribution": [
-            7.6e-05,
-            0.005428583333333316,
-            0.047286633333333515,
-            0.15389296666667873,
-            0.2114282999999923,
-            0.24810571666664227,
-            0.2514806333333177,
-            0.08230116666666455
+            0.00013600000000000005,
+            0.013443742857142836,
+            0.0475802761904764,
+            0.1174582095238155,
+            0.1917260428571465,
+            0.2554878761904506,
+            0.28650294285712086,
+            0.08766490952380825
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 2.5,
-          "expectedScore": 4.6853805,
-          "expectedRank": 7.606515500000103,
+          "expectedScore": 4.7199505,
+          "expectedRank": 7.656245000000051,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            3.8883333333333334e-05,
-            0.000978533333333333,
-            0.008438283333333392,
-            0.02486136666666668,
-            0.0609571166666641,
-            0.1581070666666757,
-            0.7466187500000068
+            0.00011325952380952383,
+            0.001035559523809523,
+            0.006043759523809522,
+            0.01990759285714245,
+            0.05351550952380855,
+            0.14696880952381638,
+            0.7724155095238109
           ]
         }
       ],
       "pairingOdds": [],
       "pairingOddsByRound": {
-        "8": [
-          {
-            "board": 4,
-            "white": "Nakamura, Hikaru",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.172576,
-            "drawProbability": 0.6049,
-            "blackWinProbability": 0.222524
-          }
-        ],
         "9": [
           {
             "board": 1,
             "white": "Nakamura, Hikaru",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.452779,
-            "drawProbability": 0.500406,
-            "blackWinProbability": 0.046815
+            "whiteWinProbability": 0.448626,
+            "drawProbability": 0.502309,
+            "blackWinProbability": 0.049065
           },
           {
             "board": 2,
             "white": "Caruana, Fabiano",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.335991,
-            "drawProbability": 0.552471,
-            "blackWinProbability": 0.111538
+            "whiteWinProbability": 0.290747,
+            "drawProbability": 0.573446,
+            "blackWinProbability": 0.135807
           },
           {
             "board": 3,
             "white": "Praggnanandhaa R",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.253831,
-            "drawProbability": 0.590194,
-            "blackWinProbability": 0.155975
+            "whiteWinProbability": 0.25375,
+            "drawProbability": 0.590519,
+            "blackWinProbability": 0.155731
           },
           {
             "board": 4,
             "white": "Bluebaum, Matthias",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.138122,
-            "drawProbability": 0.576002,
-            "blackWinProbability": 0.285876
+            "whiteWinProbability": 0.138682,
+            "drawProbability": 0.576728,
+            "blackWinProbability": 0.28459
           }
         ],
         "10": [
@@ -6962,33 +6892,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.172759,
-            "drawProbability": 0.604623,
-            "blackWinProbability": 0.222618
+            "whiteWinProbability": 0.173656,
+            "drawProbability": 0.604281,
+            "blackWinProbability": 0.222063
           },
           {
             "board": 2,
             "white": "Sindarov, Javokhir",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.380858,
-            "drawProbability": 0.532534,
-            "blackWinProbability": 0.086608
+            "whiteWinProbability": 0.378857,
+            "drawProbability": 0.535114,
+            "blackWinProbability": 0.086029
           },
           {
             "board": 3,
             "white": "Wei, Yi",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.127109,
-            "drawProbability": 0.567211,
-            "blackWinProbability": 0.30568
+            "whiteWinProbability": 0.151367,
+            "drawProbability": 0.586808,
+            "blackWinProbability": 0.261825
           },
           {
             "board": 4,
             "white": "Giri, Anish",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.271011,
-            "drawProbability": 0.582286,
-            "blackWinProbability": 0.146703
+            "whiteWinProbability": 0.27558,
+            "drawProbability": 0.580053,
+            "blackWinProbability": 0.144367
           }
         ],
         "11": [
@@ -6996,33 +6926,33 @@
             "board": 1,
             "white": "Giri, Anish",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.465073,
-            "drawProbability": 0.494871,
-            "blackWinProbability": 0.040056
+            "whiteWinProbability": 0.465889,
+            "drawProbability": 0.494246,
+            "blackWinProbability": 0.039865
           },
           {
             "board": 2,
             "white": "Nakamura, Hikaru",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.338304,
-            "drawProbability": 0.552229,
-            "blackWinProbability": 0.109467
+            "whiteWinProbability": 0.333259,
+            "drawProbability": 0.55419,
+            "blackWinProbability": 0.112551
           },
           {
             "board": 3,
             "white": "Caruana, Fabiano",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.307053,
-            "drawProbability": 0.566608,
-            "blackWinProbability": 0.126339
+            "whiteWinProbability": 0.262963,
+            "drawProbability": 0.585851,
+            "blackWinProbability": 0.151186
           },
           {
             "board": 4,
             "white": "Praggnanandhaa R",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.285031,
-            "drawProbability": 0.576737,
-            "blackWinProbability": 0.138232
+            "whiteWinProbability": 0.284655,
+            "drawProbability": 0.576524,
+            "blackWinProbability": 0.138821
           }
         ],
         "12": [
@@ -7030,33 +6960,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.157018,
-            "drawProbability": 0.5905,
-            "blackWinProbability": 0.252482
+            "whiteWinProbability": 0.15681,
+            "drawProbability": 0.590796,
+            "blackWinProbability": 0.252394
           },
           {
             "board": 2,
             "white": "Bluebaum, Matthias",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.110262,
-            "drawProbability": 0.553339,
-            "blackWinProbability": 0.336399
+            "whiteWinProbability": 0.134955,
+            "drawProbability": 0.572852,
+            "blackWinProbability": 0.292193
           },
           {
             "board": 3,
             "white": "Sindarov, Javokhir",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.297148,
-            "drawProbability": 0.571761,
-            "blackWinProbability": 0.131091
+            "whiteWinProbability": 0.303219,
+            "drawProbability": 0.567318,
+            "blackWinProbability": 0.129463
           },
           {
             "board": 4,
             "white": "Wei, Yi",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.171244,
-            "drawProbability": 0.603426,
-            "blackWinProbability": 0.22533
+            "whiteWinProbability": 0.171648,
+            "drawProbability": 0.603329,
+            "blackWinProbability": 0.225023
           }
         ],
         "13": [
@@ -7064,33 +6994,33 @@
             "board": 1,
             "white": "Wei, Yi",
             "black": "Esipenko, Andrey",
-            "whiteWinProbability": 0.377659,
-            "drawProbability": 0.534466,
-            "blackWinProbability": 0.087875
+            "whiteWinProbability": 0.378128,
+            "drawProbability": 0.534301,
+            "blackWinProbability": 0.087571
           },
           {
             "board": 2,
             "white": "Giri, Anish",
             "black": "Sindarov, Javokhir",
-            "whiteWinProbability": 0.226499,
-            "drawProbability": 0.602718,
-            "blackWinProbability": 0.170783
+            "whiteWinProbability": 0.226191,
+            "drawProbability": 0.603082,
+            "blackWinProbability": 0.170727
           },
           {
             "board": 3,
             "white": "Nakamura, Hikaru",
             "black": "Bluebaum, Matthias",
-            "whiteWinProbability": 0.366944,
-            "drawProbability": 0.538748,
-            "blackWinProbability": 0.094308
+            "whiteWinProbability": 0.362514,
+            "drawProbability": 0.541671,
+            "blackWinProbability": 0.095815
           },
           {
             "board": 4,
             "white": "Caruana, Fabiano",
             "black": "Praggnanandhaa R",
-            "whiteWinProbability": 0.42682,
-            "drawProbability": 0.512494,
-            "blackWinProbability": 0.060686
+            "whiteWinProbability": 0.387335,
+            "drawProbability": 0.530051,
+            "blackWinProbability": 0.082614
           }
         ],
         "14": [
@@ -7098,33 +7028,33 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.062088,
-            "drawProbability": 0.512673,
-            "blackWinProbability": 0.425239
+            "whiteWinProbability": 0.084116,
+            "drawProbability": 0.531802,
+            "blackWinProbability": 0.384082
           },
           {
             "board": 2,
             "white": "Praggnanandhaa R",
             "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.178525,
-            "drawProbability": 0.610117,
-            "blackWinProbability": 0.211358
+            "whiteWinProbability": 0.181331,
+            "drawProbability": 0.612645,
+            "blackWinProbability": 0.206024
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.154317,
-            "drawProbability": 0.588652,
-            "blackWinProbability": 0.257031
+            "whiteWinProbability": 0.153763,
+            "drawProbability": 0.589622,
+            "blackWinProbability": 0.256615
           },
           {
             "board": 4,
             "white": "Sindarov, Javokhir",
             "black": "Wei, Yi",
-            "whiteWinProbability": 0.379035,
-            "drawProbability": 0.534303,
-            "blackWinProbability": 0.086662
+            "whiteWinProbability": 0.378823,
+            "drawProbability": 0.53397,
+            "blackWinProbability": 0.087207
           }
         ]
       },

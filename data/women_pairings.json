@@ -337,7 +337,7 @@
           "board": 1,
           "white": "Muzychuk, Anna",
           "black": "Divya Deshmukh",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "NzRF1NOH",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-8/R0BP4Jy4/NzRF1NOH"
         },
@@ -345,7 +345,7 @@
           "board": 2,
           "white": "Assaubayeva, Bibisara",
           "black": "Vaishali, Rameshbabu",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "5flELPwi",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-8/R0BP4Jy4/5flELPwi"
         },
@@ -353,7 +353,7 @@
           "board": 3,
           "white": "Lagno, Kateryna",
           "black": "Goryachkina, Aleksandra",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "RzdzddFi",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-8/R0BP4Jy4/RzdzddFi"
         },
@@ -361,7 +361,7 @@
           "board": 4,
           "white": "Tan, Zhongyi",
           "black": "Zhu, Jiner",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "faK2GhOG",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-8/R0BP4Jy4/faK2GhOG"
         }
