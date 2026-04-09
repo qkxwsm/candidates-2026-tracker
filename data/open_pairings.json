@@ -413,7 +413,7 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Bluebaum, Matthias",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "UO81qK9U",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/UO81qK9U"
         },
@@ -421,7 +421,7 @@
           "board": 2,
           "white": "Sindarov, Javokhir",
           "black": "Praggnanandhaa R",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "RN9BrHlK",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/RN9BrHlK"
         },
@@ -429,7 +429,7 @@
           "board": 3,
           "white": "Wei, Yi",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "rnuH0n1M",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/rnuH0n1M"
         },
@@ -437,7 +437,7 @@
           "board": 4,
           "white": "Giri, Anish",
           "black": "Nakamura, Hikaru",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "Uav0LRGT",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-10/G3oSxPgs/Uav0LRGT"
         }
