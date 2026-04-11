@@ -451,7 +451,7 @@
           "board": 1,
           "white": "Lagno, Kateryna",
           "black": "Muzychuk, Anna",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "M0L8Djwv",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-11/fDNFUpG9/M0L8Djwv"
         },
@@ -467,7 +467,7 @@
           "board": 3,
           "white": "Zhu, Jiner",
           "black": "Divya Deshmukh",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "7yZlBJGK",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-11/fDNFUpG9/7yZlBJGK"
         },
@@ -475,7 +475,7 @@
           "board": 4,
           "white": "Goryachkina, Aleksandra",
           "black": "Vaishali, Rameshbabu",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "gyFkz2sd",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-11/fDNFUpG9/gyFkz2sd"
         }
