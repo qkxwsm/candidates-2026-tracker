@@ -497,7 +497,7 @@
           "board": 2,
           "white": "Bluebaum, Matthias",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "AIHuz0Li",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/AIHuz0Li"
         },
@@ -513,7 +513,7 @@
           "board": 4,
           "white": "Wei, Yi",
           "black": "Giri, Anish",
-          "result": "*",
+          "result": "1/2-1/2",
           "chapter_id": "EqHkv1Mp",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-12/9SHysZuu/EqHkv1Mp"
         }
