@@ -497,7 +497,7 @@
           "board": 2,
           "white": "Vaishali, Rameshbabu",
           "black": "Zhu, Jiner",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "jHupbJCv",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-12/u3pemMHq/jHupbJCv"
         },
@@ -505,7 +505,7 @@
           "board": 3,
           "white": "Divya Deshmukh",
           "black": "Tan, Zhongyi",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "lP5dTPMR",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-12/u3pemMHq/lP5dTPMR"
         },
@@ -513,7 +513,7 @@
           "board": 4,
           "white": "Assaubayeva, Bibisara",
           "black": "Lagno, Kateryna",
-          "result": "*",
+          "result": "1-0",
           "chapter_id": "oygDSqkr",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-women/round-12/u3pemMHq/oygDSqkr"
         }
