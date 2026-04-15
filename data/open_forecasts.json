@@ -6218,13 +6218,13 @@
           "name": "Giri, Anish",
           "rating": 2753,
           "currentScore": 7.5,
-          "expectedScore": 8.047738,
-          "expectedRank": 2.0238555,
+          "expectedScore": 8.0474595,
+          "expectedRank": 2.024223,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            0.9761445,
-            0.0238555,
+            0.975777,
+            0.024223,
             0.0,
             0.0,
             0.0,
@@ -6236,16 +6236,16 @@
           "name": "Caruana, Fabiano",
           "rating": 2793,
           "currentScore": 6.5,
-          "expectedScore": 7.090644,
-          "expectedRank": 3.6234230000001113,
+          "expectedScore": 7.0907695,
+          "expectedRank": 3.549054999999822,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            0.0238555,
-            0.5334925833334428,
-            0.28218274999991555,
-            0.11631175000002163,
-            0.0441574166666687,
+            0.024223,
+            0.5517691666667289,
+            0.30934999999992785,
+            0.08004549999998087,
+            0.03461233333333659,
             0.0,
             0.0
           ]
@@ -6255,15 +6255,15 @@
           "rating": 2754,
           "currentScore": 7.0,
           "expectedScore": 7.0,
-          "expectedRank": 3.775110000000389,
+          "expectedRank": 3.6691595000002355,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
-            0.3541775833332866,
-            0.5246117500001136,
-            0.11313375000001487,
-            0.008076916666666762,
+            0.3846181666666621,
+            0.5616041666667319,
+            0.05377766666666434,
+            0.0,
             0.0,
             0.0
           ]
@@ -6271,18 +6271,18 @@
         {
           "name": "Nakamura, Hikaru",
           "rating": 2810,
-          "currentScore": 6.0,
-          "expectedScore": 6.517728,
-          "expectedRank": 5.392863499999901,
+          "currentScore": 6.5,
+          "expectedScore": 6.5,
+          "expectedRank": 5.389661000000333,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
-            0.05138974999999861,
-            0.10723441666667498,
-            0.3938904166666677,
-            0.29209341666664457,
-            0.155392,
+            0.0,
+            0.04065583333333779,
+            0.529027333333379,
+            0.4303168333333478,
+            0.0,
             0.0
           ]
         },
@@ -6290,44 +6290,44 @@
           "name": "Bluebaum, Matthias",
           "rating": 2695,
           "currentScore": 6.0,
-          "expectedScore": 6.452262,
-          "expectedRank": 5.547365499999902,
+          "expectedScore": 6.4525405,
+          "expectedRank": 5.493750999999677,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
-            0.0370845833333371,
-            0.07877641666665045,
-            0.2827794166666138,
-            0.50240808333337,
-            0.0989515,
+            0.03938966666667173,
+            0.08838999999998885,
+            0.3371494999999335,
+            0.40922133333333977,
+            0.1258495,
             0.0
           ]
         },
         {
           "name": "Praggnanandhaa R",
           "rating": 2741,
-          "currentScore": 5.5,
-          "expectedScore": 5.982272,
-          "expectedRank": 6.650779000000015,
+          "currentScore": 6.0,
+          "expectedScore": 6.0,
+          "expectedRank": 6.874150500000001,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
             0.0,
-            0.007194666666666738,
-            0.09388466666666628,
-            0.1532641666666695,
-            0.73226,
-            0.0133965
+            0.0,
+            0.0,
+            0.1258495,
+            0.8741505,
+            0.0
           ]
         },
         {
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 4.5,
-          "expectedScore": 4.909356,
-          "expectedRank": 7.986603499999999,
+          "expectedScore": 4.9092305,
+          "expectedRank": 8.0,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
@@ -6336,8 +6336,8 @@
             0.0,
             0.0,
             0.0,
-            0.0133965,
-            0.9866035
+            0.0,
+            1.0
           ]
         }
       ],
@@ -6348,25 +6348,17 @@
             "board": 1,
             "white": "Esipenko, Andrey",
             "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.125858,
-            "drawProbability": 0.566996,
-            "blackWinProbability": 0.307146
-          },
-          {
-            "board": 2,
-            "white": "Praggnanandhaa R",
-            "black": "Nakamura, Hikaru",
-            "whiteWinProbability": 0.177617,
-            "drawProbability": 0.60931,
-            "blackWinProbability": 0.213073
+            "whiteWinProbability": 0.125759,
+            "drawProbability": 0.566943,
+            "blackWinProbability": 0.307298
           },
           {
             "board": 3,
             "white": "Bluebaum, Matthias",
             "black": "Giri, Anish",
-            "whiteWinProbability": 0.155859,
-            "drawProbability": 0.592806,
-            "blackWinProbability": 0.251335
+            "whiteWinProbability": 0.15678,
+            "drawProbability": 0.591521,
+            "blackWinProbability": 0.251699
           }
         ]
       },
