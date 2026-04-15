@@ -6217,14 +6217,14 @@
         {
           "name": "Giri, Anish",
           "rating": 2753,
-          "currentScore": 7.5,
-          "expectedScore": 8.0474595,
-          "expectedRank": 2.024223,
+          "currentScore": 8.5,
+          "expectedScore": 8.5,
+          "expectedRank": 2.0,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            0.975777,
-            0.024223,
+            1.0,
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -6235,17 +6235,17 @@
         {
           "name": "Caruana, Fabiano",
           "rating": 2793,
-          "currentScore": 6.5,
-          "expectedScore": 7.0907695,
-          "expectedRank": 3.549054999999822,
+          "currentScore": 7.5,
+          "expectedScore": 7.5,
+          "expectedRank": 3.0,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
-            0.024223,
-            0.5517691666667289,
-            0.30934999999992785,
-            0.08004549999998087,
-            0.03461233333333659,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
             0.0,
             0.0
           ]
@@ -6255,14 +6255,14 @@
           "rating": 2754,
           "currentScore": 7.0,
           "expectedScore": 7.0,
-          "expectedRank": 3.6691595000002355,
+          "expectedRank": 4.0,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
-            0.3846181666666621,
-            0.5616041666667319,
-            0.05377766666666434,
+            0.0,
+            1.0,
+            0.0,
             0.0,
             0.0,
             0.0
@@ -6273,34 +6273,16 @@
           "rating": 2810,
           "currentScore": 6.5,
           "expectedScore": 6.5,
-          "expectedRank": 5.389661000000333,
+          "expectedRank": 5.0,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
             0.0,
             0.0,
-            0.04065583333333779,
-            0.529027333333379,
-            0.4303168333333478,
             0.0,
-            0.0
-          ]
-        },
-        {
-          "name": "Bluebaum, Matthias",
-          "rating": 2695,
-          "currentScore": 6.0,
-          "expectedScore": 6.4525405,
-          "expectedRank": 5.493750999999677,
-          "winProbability": 0.0,
-          "rankDistribution": [
+            1.0,
             0.0,
             0.0,
-            0.03938966666667173,
-            0.08838999999998885,
-            0.3371494999999335,
-            0.40922133333333977,
-            0.1258495,
             0.0
           ]
         },
@@ -6309,7 +6291,7 @@
           "rating": 2741,
           "currentScore": 6.0,
           "expectedScore": 6.0,
-          "expectedRank": 6.874150500000001,
+          "expectedRank": 6.5,
           "winProbability": 0.0,
           "rankDistribution": [
             0.0,
@@ -6317,8 +6299,26 @@
             0.0,
             0.0,
             0.0,
-            0.1258495,
-            0.8741505,
+            0.5,
+            0.5,
+            0.0
+          ]
+        },
+        {
+          "name": "Bluebaum, Matthias",
+          "rating": 2695,
+          "currentScore": 6.0,
+          "expectedScore": 6.0,
+          "expectedRank": 6.5,
+          "winProbability": 0.0,
+          "rankDistribution": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.5,
             0.0
           ]
         },
@@ -6326,7 +6326,7 @@
           "name": "Esipenko, Andrey",
           "rating": 2698,
           "currentScore": 4.5,
-          "expectedScore": 4.9092305,
+          "expectedScore": 4.5,
           "expectedRank": 8.0,
           "winProbability": 0.0,
           "rankDistribution": [
@@ -6342,27 +6342,8 @@
         }
       ],
       "pairingOdds": [],
-      "pairingOddsByRound": {
-        "14": [
-          {
-            "board": 1,
-            "white": "Esipenko, Andrey",
-            "black": "Caruana, Fabiano",
-            "whiteWinProbability": 0.125759,
-            "drawProbability": 0.566943,
-            "blackWinProbability": 0.307298
-          },
-          {
-            "board": 3,
-            "white": "Bluebaum, Matthias",
-            "black": "Giri, Anish",
-            "whiteWinProbability": 0.15678,
-            "drawProbability": 0.591521,
-            "blackWinProbability": 0.251699
-          }
-        ]
-      },
-      "isCompletedSnapshot": false
+      "pairingOddsByRound": {},
+      "isCompletedSnapshot": true
     }
   ]
 }

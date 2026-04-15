@@ -565,7 +565,7 @@
           "board": 1,
           "white": "Esipenko, Andrey",
           "black": "Caruana, Fabiano",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "gi2VX6NQ",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/gi2VX6NQ"
         },
@@ -581,7 +581,7 @@
           "board": 3,
           "white": "Bluebaum, Matthias",
           "black": "Giri, Anish",
-          "result": "*",
+          "result": "0-1",
           "chapter_id": "f07nrkYa",
           "broadcast_url": "https://lichess.org/broadcast/fide-candidates-2026-open/round-14/oBkeHnpi/f07nrkYa"
         },
