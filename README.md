@@ -26,7 +26,7 @@ Update data manually:
 
 Automatic updates:
 
-- `.github/workflows/daily-refresh.yml` refreshes both JSON files every hour and pushes changes back to `main`
+- `.github/workflows/daily-refresh.yml` can still be run manually to refresh both JSON files and push changes back to `main`
 
 Sources:
 
